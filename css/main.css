@@ -5,6 +5,13 @@ hr.style-one {
     background-image: linear-gradient(to right, #6495ED, #333, #6495ED);
 }
 
+.imgCir {
+    margin: 25px 50px 70px 50px;
+    border-radius: 200px;
+    border: 1px solid grey;
+    width: 70%;
+}
+
 .w3-2021-marigold
 {color:#fff!important;background-color:#FDAC53!important}
 .w3-2021-cerulean
@@ -317,12 +324,7 @@ select {
     text-transform: none
 }
 
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-    -webkit-appearance: button
-}
+
 
 button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
@@ -368,7 +370,6 @@ textarea {
 }
 
 [type=search] {
-    -webkit-appearance: textfield;
     outline-offset: -2px
 }
 

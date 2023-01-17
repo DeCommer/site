@@ -12,6 +12,11 @@ hr.style-one {
     width: 70%;
 }
 
+.title { 
+    font-size: 3em;
+    -webkit-text-stroke: 1px white;
+}
+
 .w3-2021-marigold
 {color:#fff!important;background-color:#FDAC53!important}
 .w3-2021-cerulean

@@ -14,7 +14,7 @@ hr.style-one {
 
 .title { 
     font-size: 3em;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: .5px white;
 }
 
 .w3-2021-marigold

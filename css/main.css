@@ -12,8 +12,7 @@ hr.style-one {
     width: 70%;
 }
 
-.title { 
-    font-size: 3em;
+.title {
     -webkit-text-stroke: .5px white;
 }
 

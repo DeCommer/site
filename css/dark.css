@@ -2,13 +2,13 @@ hr.style-one {
     border: 0;
     height: 1px;
     background: #333;
-    background-image: linear-gradient(to right, #6495ED, #333, #6495ED);
+    background-image: linear-gradient(to right, rgb(78, 62, 62), #8264ed, rgb(60, 54, 54));
 }
 
 .imgCir {
     margin: 25px 50px 70px 50px;
     border-radius: 200px;
-    border: 1px solid darkslategray;
+    border: 1px solid rgb(112, 102, 209);
     width: 70%;
 }
 
@@ -172,7 +172,8 @@ hr.style-one {
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html {
-    box-sizing: border-box
+    box-sizing: border-box;
+    
 }
 
 *,
@@ -184,11 +185,13 @@ html {
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html {
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
+
 }
 
 body {
-    margin: 0
+    margin: 0;
+    
 }
 
 article,
@@ -230,7 +233,7 @@ template {
     display: none
 }
 
-a {
+a{
     background-color: transparent
 }
 
@@ -323,8 +326,6 @@ button,
 select {
     text-transform: none
 }
-
-
 
 button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
@@ -465,7 +466,7 @@ img {
 }
 
 a {
-    color: inherit
+    color: #ccc; /* changed */
 }
 
 .w3-table,
@@ -725,7 +726,7 @@ a {
 
 .w3-modal-content {
     margin: auto;
-    background-color: #fff;
+    background-color: rgb(201, 178, 178);
     position: relative;
     padding: 0;
     outline: 0;
@@ -1805,8 +1806,8 @@ a {
 
 .w3-white,
 .w3-hover-white:hover {
-    color: #000 !important;
-    background-color: #fff !important
+    color: rgb(203, 199, 199) !important;
+    background-color: rgb(29, 18, 54) !important /* Changes main bg color*/
 }
 
 .w3-black,
@@ -1820,7 +1821,7 @@ a {
 .w3-gray,
 .w3-hover-gray:hover {
     color: #000 !important;
-    background-color: #9e9e9e !important
+    background-color: #9e9e9e !important /* Changes main bg color of status bars*/
 }
 
 .w3-light-grey,
@@ -1828,7 +1829,7 @@ a {
 .w3-light-gray,
 .w3-hover-light-gray:hover {
     color: #000 !important;
-    background-color: #f1f1f1 !important
+    background-color: #9e9e9e !important
 }
 
 .w3-dark-grey,

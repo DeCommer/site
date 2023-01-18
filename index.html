@@ -8,9 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script> 
   function toggleTheme() { 
-
       var theme = document.getElementsByTagName('link')[0]; 
-
       if (theme.getAttribute('href') == './css/main.css') { 
           theme.setAttribute('href', './css/dark.css');
           document.querySelector('#mode').innerHTML = 'Light Mode';
@@ -68,6 +66,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
             <div class="w3-container w3-center w3-round-xlarge w3-green w3-text-white" style="height:20px;width:75%">75%</div>
           </div>
           <br>
+          <hr class="style-one">
 <!-- Languages -->
           <p class="w3-xlarge w3-text-theme"><b><i class="fa fa-code fa-fw w3-margin-right w3-text-safety-blue"></i>Languages</b></p>
           <p>HTML / CSS</p>
@@ -91,7 +90,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
             <div class="w3-round-xlarge w3-center w3-red w3-text-white" style="height:20px;width:30%">30%</div>
           </div>
           <br>
-          <hr>
+          <hr class="style-one">
           <div>
           <a href="https://www.codewars.com/users/JDeCo"><img src="https://www.codewars.com/users/JDeCo/badges/small?theme=light" width="100%" ></a>
         </div>
@@ -112,15 +111,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
           <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xlarge w3-text-safety-blue"></i>Education</h2>
           <!-- <div class="w3-twothird"><a href="./img/diploma.png" target="_blank"><img src="./img/diploma.png" style="width:250px; float: right;" alt="diploma"></a></div> -->
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Excelsior University</b></h5>
+          <h5 class="w3-text-blue-grey"><b>Excelsior University</b></h5>
           <h6 class="w3-text-safety-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2022</h6>
           <p>Bachelor of Science</p>
           
         </div>
-        <hr>
+        <hr class="style-one">
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Technology Courses</b></h5>
-          <h6 class="w3-text-safety-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - <span class="w3-tag w3-green w3-round">Current</span></h6>
+          <h5 class="w3-text-blue-grey"><b>Technology Courses</b></h5>
+          <h6 class="w3-text-safety-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - <span class="w3-tag w3-green w3-round w3-text-white">Current</span></h6>
           <p>
             Oracle Autonomous Database Administration Workshop, Business Statistics, 
             Economics, Data Science Boot Camp Course, Advanced Excel Training, Advanced Power Modeling, 
@@ -133,14 +132,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16">
           <i class="fa fa-calculator fa-fw w3-margin-right w3-xlarge w3-text-safety-blue"></i>Skills</h2>
-          <h5 class="w3-opacity"><b>Interpersonal</b></h5>
+          <h5 class="w3-text-blue-grey"><b>Interpersonal</b></h5>
           <p>Ability to learn and grow, active listening, adaptable, analytical, logical, and critical thinking, 
             compromise, conflict resolution, creative, customer relations/service, decision making, dependability, 
             diligence, effective oral/written communication, empathy, financial skills, initiative, integrity, 
             manage schedules, monitor progress, motivating and empowering others, organization, problem-solving, 
             project-planning, project-planning, public speaking, research skills, teaching and training, teamwork,
           </b >willingness to learn</p>
-          <h5 class="w3-opacity"><b>Technical</b></h5>
+          <h5 class="w3-text-blue-grey"><b>Technical</b></h5>
           <p>Apache web server / Nginx, Data mining, database management, Docker, Epic Systems, Excel, 
             Google Analytics, ITIL(Service Now) Javascript, Jira, Jupyter Notebooks, math, MySQL Workbench, 
             Oracle Cloud Infrastructure, Oracle Database, Oracle SQLDeveloper, Outlook, package management, 
@@ -152,7 +151,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xlarge w3-text-safety-blue"></i>Work Experience</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Technical Support Specialist</b> | Spectrum Health Hospital System</h5>
+          <h5 class="w3-text-blue-grey"><b>Technical Support Specialist</b> | Spectrum Health Hospital System</h5>
           <h6 class="w3-text-safety-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2021 - Apr 2022</h6>
           <ul>
             <li>Answer user inquiries regarding computer software or hardware operation to resolve problems.</li>
@@ -160,10 +159,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
             <li>Escalate significant hardware or software problems to vendors or technicians for service.</li>
             <li>Maintain records of communication transactions, actions taken, or troubleshooting.</li>
           </ul>
-          <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Communications Technician</b> | Comcast</h5>
+          <h5 class="w3-text-blue-grey"><b>Communications Technician</b> | Comcast</h5>
           <h6 class="w3-text-safety-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2020 - Dec 2021</h6>
           <ul>
             <li>Set up service for customers, installing, connecting, testing, or adjusting equipment.</li>
@@ -173,7 +171,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
           </ul>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Owner - Fine Art Oil Painter</b> | DeCommer Fine Art</h5>
+          <h5 class="w3-text-blue-grey"><b>Owner - Fine Art Oil Painter</b> | DeCommer Fine Art</h5>
           <h6 class="w3-text-safety-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2019</h6>
           <ul>
             <li>Developed original products</li>
@@ -184,7 +182,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
           </ul>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Art Instructor</b> | Self-employed</h5>
+          <h5 class="w3-text-blue-grey"><b>Art Instructor</b> | Self-employed</h5>
           <h6 class="w3-text-safety-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2017</h6>
           <ul>
             <li>Instructed groups of up to 30 people</li>
@@ -194,7 +192,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
           </ul>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Master Control Operator</b> | Ion Media Networks</h5>
+          <h5 class="w3-text-blue-grey"><b>Master Control Operator</b> | Ion Media Networks</h5>
           <h6 class="w3-text-safety-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 1999 - Apr 2014</h6>
           <ul>
             <li>Analyzed data from offsite transmitter</li>

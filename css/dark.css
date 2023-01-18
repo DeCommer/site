@@ -2,7 +2,7 @@ hr.style-one {
     border: 0;
     height: 1px;
     background: #333;
-    background-image: linear-gradient(to right, rgb(78, 62, 62), #8264ed, rgb(60, 54, 54));
+    background-image: linear-gradient(to right, rgb(26, 24, 34), #5b45ad, rgb(26, 24, 34));
 }
 
 .imgCir {
@@ -37,7 +37,7 @@ hr.style-one {
 }
 .ldButton:active {
 	position:relative;
-	top:1px;
+	padding: 4px 14px;
 }
 
 .w3-2021-marigold
@@ -1929,7 +1929,7 @@ a {
 .w3-hover-text-blue-grey:hover,
 .w3-text-blue-gray,
 .w3-hover-text-blue-gray:hover {
-    color: #607d8b !important
+    color: #b9bd91 !important
 }
 
 .w3-text-green,

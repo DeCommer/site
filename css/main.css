@@ -16,6 +16,35 @@ hr.style-one {
     -webkit-text-stroke: .5px white;
 }
 
+.button {
+    position: absolute;
+    top: 0px;
+    right: 40px;
+}
+
+.ldButton {
+	background-color:#44c767;
+	border-radius: 0 0 15px 15px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:5px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627
+}
+
+.ldButton:hover {
+	background-color:#5cbf2a;
+}
+.ldButton:active {
+	position:relative;
+	top:1px;
+}
+
+
 .w3-2021-marigold
 {color:#fff!important;background-color:#FDAC53!important}
 .w3-2021-cerulean
@@ -192,7 +221,8 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+    background: linear-gradient(#fff, #CFDEF3);
 }
 
 article,
@@ -235,7 +265,8 @@ template {
 }
 
 a {
-    background-color: transparent
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a:active,

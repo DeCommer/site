@@ -6,12 +6,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script> 
+  function toggleTheme() { 
+
+      var theme = document.getElementsByTagName('link')[0]; 
+
+      if (theme.getAttribute('href') == './css/main.css') { 
+          theme.setAttribute('href', './css/dark.css');
+          document.querySelector('#mode').innerHTML = 'Light Mode';
+      } else { 
+          theme.setAttribute('href', './css/main.css');
+          document.querySelector('#mode').innerHTML = 'Dark Mode'; 
+      } 
+  } 
+</script> 
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "helvetica", sans-serif}
 body {font-family: Arial, Helvetica, sans-serif;}
 </style>
 </head>
-<body style="background: linear-gradient(#fff, #CFDEF3);">
+<body style=>
 <!-- Page Container -->
 <div class="w3-content" style="max-width:1400px;">
   <!-- The Grid -->
@@ -39,7 +53,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
           <p class="w3-large"><b><i class="fa fa-industry fa-fw w3-margin-right w3-text-safety-blue"></i>Skills</b></p>
           <p>Mac/Lin/Win</p>
           <div class="w3-light-grey w3-card w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-green" style="height:20px;width:95%">95%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-green w3-text-white" style="height:20px;width:95%">95%</div>
           </div>
           <p>MS Office</p>
           <div class="w3-light-grey w3-card w3-round-xlarge w3-small">
@@ -70,7 +84,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
           </div>
           <p>JavaScript</p>
           <div class="w3-light-grey w3-card w3-round-xlarge">
-            <div class="w3-round-xlarge w3-center w3-safety-yellow w3-text-gray" style="height:20px;width:55%">55%</div>
+            <div class="w3-round-xlarge w3-center w3-safety-yellow w3-text-white" style="height:20px;width:55%">55%</div>
           </div>
           <p>Python</p>
           <div class="w3-light-grey w3-card w3-round-xlarge">
@@ -91,6 +105,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
       
 <!-- Education -->
       <div class="w3-container w3-card w3-white">
+        <div class="button">
+         <button id="mode" class="ldButton" onclick="toggleTheme()">Dark Mode</button> 
+        </div>
         <h2 class="w3-text-grey w3-padding-16">
           <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xlarge w3-text-safety-blue"></i>Education</h2>
           <!-- <div class="w3-twothird"><a href="./img/diploma.png" target="_blank"><img src="./img/diploma.png" style="width:250px; float: right;" alt="diploma"></a></div> -->

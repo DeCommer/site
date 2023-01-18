@@ -12,6 +12,34 @@ hr.style-one {
     width: 70%;
 }
 
+.button {
+    position: absolute;
+    top: 0px;
+    right: 40px;
+}
+
+.ldButton {
+	background-color:#313a81;
+	border-radius: 0 0 15px 15px;
+	border:1px solid #090c2e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:5px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627
+}
+
+.ldButton:hover {
+	background-color:#3d489b;
+}
+.ldButton:active {
+	position:relative;
+	top:1px;
+}
+
 .w3-2021-marigold
 {color:#fff!important;background-color:#FDAC53!important}
 .w3-2021-cerulean
@@ -191,6 +219,8 @@ html {
 
 body {
     margin: 0;
+    background: linear-gradient(#392c42, rgb(21, 11, 28));
+
     
 }
 
@@ -467,6 +497,7 @@ img {
 
 a {
     color: #ccc; /* changed */
+    text-decoration: none;
 }
 
 .w3-table,
@@ -1973,7 +2004,7 @@ a {
 
 .w3-text-white,
 .w3-hover-text-white:hover {
-    color: #fff !important
+    color: rgb(45, 39, 39) !important
 }
 
 .w3-text-black,
@@ -1985,7 +2016,7 @@ a {
 .w3-hover-text-grey:hover,
 .w3-text-gray,
 .w3-hover-text-gray:hover {
-    color: #757575 !important
+    color: #e3e4e2 !important
 }
 
 .w3-text-light-grey,

@@ -8,7 +8,7 @@ hr.style-one {
 .imgCir {
     margin: 25px 50px 70px 50px;
     border-radius: 200px;
-    border: 1px solid rgb(112, 102, 209);
+    border: 1px solid rgb(58, 65, 208);
     width: 70%;
 }
 
@@ -219,7 +219,7 @@ html {
 
 body {
     margin: 0;
-    background: linear-gradient(#392c42, rgb(21, 11, 28));
+    background: linear-gradient(rgb(33, 32, 73), rgb(18, 17, 42));
 
     
 }
@@ -1838,7 +1838,7 @@ a {
 .w3-white,
 .w3-hover-white:hover {
     color: rgb(203, 199, 199) !important;
-    background-color: rgb(29, 18, 54) !important /* Changes main bg color*/
+    background-color: rgb(16, 15, 44) !important /* Changes main bg color*/
 }
 
 .w3-black,
@@ -1851,8 +1851,8 @@ a {
 .w3-hover-grey:hover,
 .w3-gray,
 .w3-hover-gray:hover {
-    color: #000 !important;
-    background-color: #9e9e9e !important /* Changes main bg color of status bars*/
+    color: #383838 !important;
+    background-color: #3d3d3d !important /* Changes main bg color of status bars*/
 }
 
 .w3-light-grey,

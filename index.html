@@ -18,9 +18,12 @@
       var theme = document.getElementsByTagName('link')[0]; 
       if (theme.getAttribute('href') == './css/main.css') { 
           theme.setAttribute('href', './css/dark.css');
+          document.querySelector(".imgCir").src="./img/profile-betterImg-dark.jpg";
           document.querySelector('#mode').innerHTML = 'Light Mode';
+
       } else { 
           theme.setAttribute('href', './css/main.css');
+          document.querySelector(".imgCir").src="./img/profile-betterImg.jpg";
           document.querySelector('#mode').innerHTML = 'Dark Mode'; 
       } 
   } 

@@ -3,30 +3,26 @@
 html{
     font-family: 'Roboto', sans-serif;
 }
-
 hr.style-one {
     border: 0;
     height: 1px;
     background: #333;
     background-image: linear-gradient(to right, #f4f8ff, rgb(145, 154, 214), #f4f8ff);
 }
-
 .imgCir {
     margin: 25px 50px 70px 15px;
     border-radius: 200px;
     width: 90%;
 }
-
 .title {
     -webkit-text-stroke: .5px white;
+    margin-left: 20px;
 }
-
 .button {
     position: absolute;
     top: 0px;
     right: 40px;
 }
-
 .ldButton {
 	background-color:#44c767;
 	border-radius: 0 0 15px 15px;
@@ -1075,6 +1071,9 @@ a {
         margin: 0 10px;
         width: auto !important
     }
+    .title {
+        margin-left: 50px;
+    }
 
     .w3-modal {
         padding-top: 30px
@@ -1132,12 +1131,15 @@ a {
     .w3-sidebar.w3-collapse {
         display: block !important
     }
+
+
 }
 
 @media (max-width:992px) and (min-width:601px) {
     .w3-hide-medium {
         display: none !important
     }
+
 }
 
 @media (max-width:992px) {

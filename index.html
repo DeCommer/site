@@ -18,12 +18,12 @@
       var theme = document.getElementsByTagName('link')[0]; 
       if (theme.getAttribute('href') == './css/main.css') { 
           theme.setAttribute('href', './css/dark.css');
-          document.querySelector(".imgCir").src="./img/profile-betterImg-dark.jpg";
+          document.querySelector(".imgCir").src="./img/uc-mono-dark.png";
           document.querySelector('#mode').innerHTML = 'Light Mode';
 
       } else { 
           theme.setAttribute('href', './css/main.css');
-          document.querySelector(".imgCir").src="./img/profile-betterImg.jpg";
+          document.querySelector(".imgCir").src="./img/uc-mono.png";
           document.querySelector('#mode').innerHTML = 'Dark Mode'; 
       } 
   } 
@@ -38,7 +38,7 @@
     <div class="w3-third">
       <div class="w3-white w3-text-grey w3-card">
         <div class="w3-display-container">
-          <img class="imgCir" src="./img/profile-betterImg.jpg" alt="Avatar">
+          <img class="imgCir" src="./img/uc-mono.png" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-safety-blue">
             <h1 class="title">Joseph DeCommer</h1>
           </div>

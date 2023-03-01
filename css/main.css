@@ -12,10 +12,9 @@ hr.style-one {
 }
 
 .imgCir {
-    margin: 25px 50px 70px 50px;
+    margin: 25px 50px 70px 15px;
     border-radius: 200px;
-    border: 1px solid darkslategray;
-    width: 70%;
+    width: 90%;
 }
 
 .title {

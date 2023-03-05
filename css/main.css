@@ -23,9 +23,9 @@ hr.style-one {
     right: 40px;
 }
 .ldButton {
-	background-color:#44c767;
+	background-color:#1b5188;
 	border-radius: 0 0 15px 15px;
-	border:1px solid #18ab29;
+	border:1px solid #0e375f;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -37,7 +37,7 @@ hr.style-one {
 }
 
 .ldButton:hover {
-	background-color:#5cbf2a;
+	background-color:#2a7cbf;
 }
 .ldButton:active {
 	position:relative;
@@ -222,7 +222,7 @@ html {
 
 body {
     margin: 0;
-    background: linear-gradient(#fff, #CFDEF3);
+    background: linear-gradient(#c4e2f4, #669BBC);
 }
 
 article,
@@ -524,7 +524,7 @@ a {
 }
 
 .w3-table-all tr:nth-child(odd) {
-    background-color: #fff
+    background-color: #f7efe0
 }
 
 .w3-table-all tr:nth-child(even) {
@@ -1846,7 +1846,7 @@ a {
 .w3-white,
 .w3-hover-white:hover {
     color: #000 !important;
-    background-color: #fff !important
+    background-color: #f7efe0 !important /* Main bg */
 }
 
 .w3-black,
@@ -1937,7 +1937,7 @@ a {
 .w3-hover-text-blue-grey:hover,
 .w3-text-blue-gray,
 .w3-hover-text-blue-gray:hover {
-    color: #607d8b !important
+    color: #c1121f !important /* Small headers */
 }
 
 .w3-text-green,
@@ -2024,7 +2024,7 @@ a {
 .w3-hover-text-grey:hover,
 .w3-text-gray,
 .w3-hover-text-gray:hover {
-    color: #757575 !important
+    color: #003049 !important /* Header Text */
 }
 
 .w3-text-light-grey,

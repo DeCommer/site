@@ -12,9 +12,11 @@ hr.style-one {
     margin: 25px 50px 70px 15px;
     border-radius: 50%;
     width: 90%;
+    -webkit-filter: invert(1);
+    filter: invert(1);
 }
 .title {
-    color: #f7efe0;
+    color: #c1121f;
     margin-left: 25px;
 }
 .button {
@@ -222,7 +224,7 @@ html {
 
 body {
     margin: 0;
-    background: linear-gradient(#669BBC, #c4e2f4);
+    background-color: #c4e2f4;
 }
 
 article,

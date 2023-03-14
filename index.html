@@ -18,12 +18,10 @@
       var theme = document.getElementsByTagName('link')[0]; 
       if (theme.getAttribute('href') == './css/main.css') { 
           theme.setAttribute('href', './css/dark.css');
-          document.querySelector(".imgCir").src="./img/uc-mono-dark.png";
           document.querySelector('#mode').innerHTML = 'Light Mode';
 
       } else { 
           theme.setAttribute('href', './css/main.css');
-          document.querySelector(".imgCir").src="./img/uc-mono-dark.png";
           document.querySelector('#mode').innerHTML = 'Dark Mode'; 
       } 
   } 

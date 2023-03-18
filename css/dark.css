@@ -15,7 +15,7 @@ hr.style-one {
 }
 .title {
     margin-left: 25px;
-    color: #f7efe0;
+    color: #b2a389;
 }
 .button {
     position: absolute;
@@ -47,7 +47,6 @@ footer {
 	position:relative;
 	padding: 4px 14px;
 }
-
 
 .w3-2021-marigold
 {color:#fff!important;background-color:#FDAC53!important}
@@ -227,6 +226,14 @@ html {
 body {
     margin: 0;
     background-color: #003049;
+}
+
+p{
+    color: #b2a389;
+}
+
+ul li {
+    color: #b2a389;
 }
 
 article,
@@ -1872,7 +1879,7 @@ a {
 .w3-light-gray,
 .w3-hover-light-gray:hover {
     color: #000 !important;
-    background-color: #f7efe0 !important
+    background-color: #71695a !important
 }
 
 .w3-dark-grey,

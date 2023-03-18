@@ -13,7 +13,7 @@ hr.style-one {
     width: 90%;
 }
 .title {
-    color: #003049;
+    color: #f7efe0;
     margin-left: 25px;
 }
 .button {
@@ -222,6 +222,14 @@ html {
 body {
     margin: 0;
     background-color: #669bbc;
+}
+
+p {
+    color: #f7efe0;
+}
+
+ul li {
+    color: #f7efe0;
 }
 
 article,

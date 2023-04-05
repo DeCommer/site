@@ -22,14 +22,14 @@ img {
 a {
   background-color: transparent;
   font-size: 1.2rem;
-  color: #c1121f;
+  color: #f7efe0;
   text-decoration: none;
 }
 
 a:active,
 a:hover {
   outline-width: 0;
-  color: #f7efe0;
+  color: #c1121f;
 }
 
 .container {

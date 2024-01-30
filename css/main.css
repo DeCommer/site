@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+
+.scroll-gauge {
+    height: 3px;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    background-color: red;
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-gauge linear;
+    animation-timeline: scroll();
+}
+
+@keyframes scroll-gauge {
+    to {scale: 100% 100%;}
+}
+
 html{
     font-family: 'Roboto', sans-serif;
 }
+
 hr.style-one {
     border: 0;
     height: 1px;

@@ -386,8 +386,6 @@ select {
     text-transform: none
 }
 
-
-
 button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,

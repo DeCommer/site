@@ -242,12 +242,16 @@ body {
 }
 
 p {
-    font-size: 15pt;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    padding: 5px;
+    margin: 5px;
     color: #f7efe0;
 }
 
 ul li {
     color: #f7efe0;
+    font-weight: lighter;
 }
 
 article,
@@ -457,6 +461,9 @@ h1 {
 
 h2 {
     font-size: 30px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
 }
 
 h3 {

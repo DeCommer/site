@@ -1,18 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 hr.style-one {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, #003049, #669bbc, #003049);
 }
+
 .imgCir {
-    margin: 25px 50px 70px 15px;
-    opacity: 70%;
+    /* border: 1px solid red; */
+    word-wrap: break-word;
+    line-height: 3.5rem;
+    margin: 25px 25px;
     width: 90%;
 }
+
+.imgCir h1 {
+    color: #c1121f;
+    font-size: 10rem;
+}
+
 .title {
     margin-left: 25px;
     color: #b2a389;
@@ -1077,6 +1086,17 @@ a {
 }
 
 @media (max-width:600px) {
+
+    .imgCir h1 {
+        color: #c1121f;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .title {
+        display: none;
+    }
+
     .w3-modal-content {
         margin: 0 10px;
         width: auto !important

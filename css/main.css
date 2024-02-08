@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600&family=Lora&display=swap');
+
 
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lora', serif;  */
 }
 
 body {
@@ -12,15 +15,24 @@ body {
 hr.style-one {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, #669bbc, #024c74, #669bbc);
+    background-image: linear-gradient(to right, #0093E9, #2c6380, #0093E9);
 }
 .imgCir {
-    margin: 25px 50px 70px 15px;
+    /* border: 1px solid red; */
+    word-wrap: break-word;
+    line-height: 3.5rem;
+    margin: 25px 25px;
     width: 90%;
 }
+
+.imgCir h1 {
+    color: #c1121f;
+    font-size: 10rem;
+}
+
 .title {
     color: #f7efe0;
-    margin-left: 25px;
+    margin-left: 35px;
 }
 .button {
     position: absolute;
@@ -248,7 +260,7 @@ main,
 menu,
 nav,
 section {
-    display: block
+    display: block;
 }
 
 summary {
@@ -908,6 +920,7 @@ a {
 }
 
 @media (min-width:601px) {
+
     .w3-col.m1 {
         width: 8.33333%
     }
@@ -1076,6 +1089,17 @@ a {
 }
 
 @media (max-width:600px) {
+
+    .imgCir h1 {
+        color: #c1121f;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .title {
+        display: none;
+    }
+
     .w3-modal-content {
         margin: 0 10px;
         width: auto !important
@@ -1311,12 +1335,14 @@ a {
 
 .w3-container,
 .w3-panel {
-    padding: 0.01em 16px
+    padding: 0.01em 16px;
+    
 }
 
 .w3-panel {
     margin-top: 16px;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+
 }
 
 .w3-code,
@@ -1341,15 +1367,16 @@ a {
     font-size: 110%
 }
 
-.w3-card,
+/* .w3-card,
 .w3-card-2 {
-    xbox-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff31;
+} */
 
-.w3-card-4,
+/* .w3-card-4,
 .w3-hover-shadow:hover {
-    xbox-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-}
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+} */
 
 .w3-spin {
     animation: w3-spin 2s infinite linear

@@ -13,18 +13,6 @@
 <meta property="og:name" content="DeCommer.com">
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-<script> 
-  function toggleTheme() { 
-      var theme = document.getElementsByTagName('link')[0]; 
-      if (theme.getAttribute('href') == './css/main.css') { 
-          theme.setAttribute('href', './css/dark.css');
-          document.querySelector('#mode').innerHTML = 'Light Mode';
-      } else { 
-          theme.setAttribute('href', './css/main.css');
-          document.querySelector('#mode').innerHTML = 'Dark Mode'; 
-      } 
-  } 
-</script> 
 </head>
 <body>
   <div class="scroll-gauge"></div>
@@ -258,5 +246,18 @@
 <footer class="w3-container w3-text-grey w3-center w3-margin-top">
   <p>© Joseph DeComer 2024 | Hosted by GitHub <i class="fa-brands fa-github w3-xlarge"></i></p>
 </footer>
+
+<script> 
+  function toggleTheme() { 
+      var theme = document.getElementsByTagName('link')[0]; 
+      if (theme.getAttribute('href') == './css/main.css') { 
+          theme.setAttribute('href', './css/dark.css');
+          document.querySelector('#mode').innerHTML = 'Light Mode';
+      } else { 
+          theme.setAttribute('href', './css/main.css');
+          document.querySelector('#mode').innerHTML = 'Dark Mode'; 
+      } 
+  } 
+</script> 
 </body>
 </html>

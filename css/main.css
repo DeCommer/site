@@ -23,6 +23,7 @@ hr.style-one {
     line-height: 3.5rem;
     margin: 25px 25px;
     width: 90%;
+    cursor: default;
 }
 
 .imgCir h1 {

@@ -40,10 +40,10 @@ hr.style-one {
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     margin-top: 15px;
     width: auto;
-    height: 250px;
+    height: 150px;
 }
 
 .quote {

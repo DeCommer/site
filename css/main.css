@@ -35,6 +35,30 @@ hr.style-one {
     color: #f7efe0;
     margin-left: 35px;
 }
+
+.quoteWrap {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: auto;
+    height: 250px;
+}
+
+.quote {
+    color: #003049;
+    /* border: 1px solid blue; */
+}
+
+.quote p {
+    text-align: right;
+}
+
+q {
+    font-size: 1.5rem;
+}
+
 .button {
     position: absolute;
     top: 0px;

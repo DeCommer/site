@@ -27,6 +27,30 @@ hr.style-one {
     margin-left: 25px;
     color: #b2a389;
 }
+
+.quoteWrap {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 25px;
+    width: auto;
+    height: 150px;
+}
+
+.quote {
+    color: #b2a389;
+    /* border: 1px solid blue; */
+}
+
+.quote p {
+    text-align: right;
+}
+
+q {
+    font-size: 1.5rem;
+}
+
 .button {
     position: absolute;
     top: 0px;

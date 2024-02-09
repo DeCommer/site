@@ -260,10 +260,10 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
-
+/* 
 body {
     margin: 0;
-}
+} */
 
 p {
     font-size: 1.2rem;
@@ -278,7 +278,7 @@ ul li {
     font-weight: lighter;
 }
 
-article,
+/* article,
 aside,
 details,
 figcaption,
@@ -290,7 +290,7 @@ menu,
 nav,
 section {
     display: block;
-}
+} */
 
 summary {
     display: list-item

@@ -38,10 +38,10 @@ hr.style-one {
 
 .quoteWrap {
      /* border: 1px solid red; */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: end;
-    margin-top: 15px;
     /* max-width: 750px; */
     width: auto;
     height: 150px;
@@ -58,6 +58,23 @@ hr.style-one {
 
 q {
     font-size: 1.5rem;
+}
+
+#generate {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    color: #c1121f;
+    border: none;
+    padding: 5px 10px;
+    background: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#generate:hover {
+    color:#f7efe0
 }
 
 .button {

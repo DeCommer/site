@@ -30,12 +30,13 @@ hr.style-one {
 
 .quoteWrap {
     /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    margin-top: 25px;
-    width: auto;
-    height: 150px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: end;
+   /* max-width: 750px; */
+   width: auto;
+   height: 150px;
 }
 
 .quote {
@@ -49,6 +50,23 @@ hr.style-one {
 
 q {
     font-size: 1.5rem;
+}
+
+#generate {
+    position: absolute;
+    left: 0px;
+    top: -15px;
+    color: #c1121f;
+    border: none;
+    padding: 5px 10px;
+    background: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#generate:hover {
+    color:#f7efe0
 }
 
 .button {

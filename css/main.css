@@ -37,11 +37,12 @@ hr.style-one {
 }
 
 .quoteWrap {
-    /* border: 1px solid red; */
+     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: end;
     margin-top: 15px;
+    /* max-width: 750px; */
     width: auto;
     height: 150px;
 }

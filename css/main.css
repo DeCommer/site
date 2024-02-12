@@ -1138,7 +1138,16 @@ a {
     }
 }
 
+@media (min-width:400px) {
+    #generate {
+        position: absolute;
+        left: 0px;
+        bottom: -100px;
+    }
+}
+
 @media (max-width:600px) {
+
 
     .imgCir h1 {
         color: #c1121f;

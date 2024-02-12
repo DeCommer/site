@@ -1138,7 +1138,7 @@ a {
     }
 }
 
-@media (min-width:400px) {
+@media (min-width:200px) {
     #generate {
         position: absolute;
         left: 0px;

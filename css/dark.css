@@ -334,7 +334,8 @@ a {
 
 a:active,
 a:hover {
-    outline-width: 0
+    color:#c1121f;
+    transition: ease-in 0.2s;
 }
 
 abbr[title] {
@@ -564,6 +565,8 @@ img {
 a {
     color: inherit
 }
+
+
 
 .w3-table,
 .w3-table-all {

@@ -241,6 +241,8 @@ q {
 
 .w3-safety-red
 {color:#fff!important;background-color:#bd1e24!important}
+.w3-text-safety-red
+{color:#bd1e24!important}
 
 .w3-safety-orange
 {color:#fff!important;background-color:#e97600!important}
@@ -342,7 +344,8 @@ a {
 
 a:active,
 a:hover {
-    outline-width: 0
+    color:#c1121f;
+    transition: ease-in 0.2s;
 }
 
 abbr[title] {

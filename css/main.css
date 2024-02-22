@@ -1161,15 +1161,34 @@ a {
 
 @media (max-width:600px) {
 
-
-    .imgCir h1 {
-        color: #c1121f;
-        font-size: 3rem;
-        text-align: center;
+    .imgCir {
+        /* border: 1px solid red; */
+        background-color: #fff;
+        position: relative;
+        /* word-wrap: break-word;
+        line-height: 3.5rem; */
+        margin: 35px auto 5px auto;
+        height: 275px;
+        width: 300px;
+        cursor: default;
     }
-
+    
+    .logo {
+        /* border: 1px solid red; */
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .logo h1 {
+        color: #007acc;
+        font-size: 10rem;
+        line-height: 7rem;
+    }
+    
     .title {
-        display: none;
+        color: #f7efe0;
+        margin-left: 25px;
     }
 
     .w3-modal-content {

@@ -717,7 +717,8 @@ a {
 
 .w3-tooltip,
 .w3-display-container {
-    position: relative
+    position: relative;
+    text-align: center;
 }
 
 .w3-tooltip .w3-text {

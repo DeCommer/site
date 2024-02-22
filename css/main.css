@@ -22,9 +22,9 @@ hr.style-one {
     position: relative;
     /* word-wrap: break-word;
     line-height: 3.5rem; */
-    margin: 35px;
-    height: 270px;
-    width: 80%;
+    margin: 35px auto;
+    height: 340px;
+    width: 350px;
     cursor: default;
 }
 
@@ -296,19 +296,18 @@ body {
 } */
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: lighter;
-    padding: 5px;
-    margin: 5px;
     color: #f7efe0;
 }
 
 ul li {
+    font-size: 1.2rem;
     color: #f7efe0;
     font-weight: lighter;
 }
 
-/* article,
+article,
 aside,
 details,
 figcaption,
@@ -320,7 +319,7 @@ menu,
 nav,
 section {
     display: block;
-} */
+}
 
 summary {
     display: list-item
@@ -354,7 +353,7 @@ a {
 
 a:active,
 a:hover {
-    color:#c1121f;
+    color:#0f4a89;
     transition: ease-in 0.2s;
 }
 

@@ -24,9 +24,9 @@ hr.style-one {
     position: relative;
     /* word-wrap: break-word;
     line-height: 3.5rem; */
-    margin: 35px 25px 5px 25px;
-    height: 270px;
-    width: 80%;
+    margin: 35px auto;
+    height: 340px;
+    width: 350px;
     cursor: default;
 }
 
@@ -295,11 +295,12 @@ html {
 }
 
 p{
-    font-size: 15pt;
+    font-size: 1.3rem;
     color: #5b8fa8;
 }
 
 ul li {
+    font-size: 1.2rem;
     color: #5b8fa8;
 }
 

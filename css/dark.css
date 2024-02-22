@@ -1156,22 +1156,39 @@ a {
 
 @media (max-width:600px) {
 
-    .imgCir h1 {
-        color: #c1121f;
-        font-size: 3rem;
-        text-align: center;
+    .imgCir {
+        /* border: 1px solid red; */
+        background-color: #194787;
+        position: relative;
+        /* word-wrap: break-word;
+        line-height: 3.5rem; */
+        margin: 35px auto;
+        height: 275px;
+        width: 300px;
+        cursor: default;
     }
-
+    
+    .logo {
+        /* border: 1px solid red; */
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .logo h1 {
+        color: #0b2443;
+        font-size: 10rem;
+        line-height: 7rem;
+    }
+    
     .title {
-        display: none;
+        color: #b2a389;
+        margin-left: 25px;
     }
 
     .w3-modal-content {
         margin: 0 10px;
         width: auto !important
-    }
-    .title {
-        margin-left: 50px;
     }
 
     .w3-modal {

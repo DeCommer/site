@@ -1188,15 +1188,12 @@ a {
     
     .title {
         color: #f7efe0;
-        margin-left: 25px;
+        margin-left: 30px;
     }
 
     .w3-modal-content {
         margin: 0 10px;
         width: auto !important
-    }
-    .title {
-        margin-left: 50px;
     }
 
     .w3-modal {

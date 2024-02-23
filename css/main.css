@@ -57,11 +57,17 @@ hr.style-one {
 }
 
 #q-Btn {
-    margin-left: 120px;
+    float: right;
+    font-size: 1.3rem;
     background: none;
     border: none;
     color: #fff;
     cursor: pointer;
+}
+
+#q-Btn:hover {
+    color:#0f4a89;
+    transition: ease-in 0.1s;
 }
 
 .quote p {
@@ -1144,10 +1150,6 @@ a {
         cursor: default;
     }
 
-    #q-Btn {
-        margin-left: 10px;
-    }
-    
     .logo {
         /* border: 1px solid red; */
         position: absolute;
@@ -1187,10 +1189,6 @@ a {
         cursor: default;
     }
 
-    #q-Btn {
-        margin-left: 0;
-    }
-    
     .logo {
         /* border: 1px solid red; */
         position: absolute;

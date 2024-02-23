@@ -69,12 +69,19 @@ q {
 }
 
 #q-Btn {
-    margin-left: 120px;
+    float: right;
+    font-size: 1.3rem;
     background: none;
     border: none;
-    color: #fff;
+    color: #0f4a89;
     cursor: pointer;
 }
+
+#q-Btn:hover {
+    color:#b2a389;
+    transition: ease-in 0.1s;
+}
+
 
 /* Light dark button */
 .button {
@@ -1143,11 +1150,7 @@ a {
         width: 200px;
         cursor: default;
     }
-    
-    #q-Btn {
-        margin-left: 0;
-    }
-    
+
     .logo {
         /* border: 1px solid red; */
         position: absolute;
@@ -1185,10 +1188,6 @@ a {
         height: 275px;
         width: 300px;
         cursor: default;
-    }
-
-    #q-Btn {
-        margin-left: 0;
     }
     
     .logo {

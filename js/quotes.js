@@ -40,7 +40,5 @@ const generateQuote = function() {
     document.getElementById("attr").innerHTML = ` - ${quotes[arrayIdx].attr}`;
 }
 
-
-
 generateQuote();
 document.getElementById("q-Btn").addEventListener('click', generateQuote);

@@ -38,9 +38,9 @@ const generateQuote = function() {
     let arrayIdx = Math.floor(Math.random() * quotes.length);
     document.getElementById("quote").innerHTML = quotes[arrayIdx].quote;
     document.getElementById("attr").innerHTML = ` - ${quotes[arrayIdx].attr}`;
+}
 
-}
-window.onload = function() {
-    generateQuote();
-    document.getElementById("generate").addEventListener('click', generateQuote);
-}
+
+
+generateQuote();
+document.getElementById("q-Btn").addEventListener('click', generateQuote);

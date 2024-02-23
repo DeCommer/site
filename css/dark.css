@@ -49,12 +49,12 @@ hr.style-one {
 
 .quoteWrap {
     /* border: 1px solid red; */
-    /* position: relative; */
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: end; */
+    align-items: center;
     margin: 45px auto 0 auto;
-    max-width: 750px;
+    max-width: 650px;
+    min-height: 110px;
 }
 
 .quote p {
@@ -66,6 +66,14 @@ hr.style-one {
 q {
     font-size: 1.5rem;
     color: #b2a389;
+}
+
+#q-Btn {
+    margin-left: 120px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 /* Light dark button */
@@ -1136,6 +1144,10 @@ a {
         cursor: default;
     }
     
+    #q-Btn {
+        margin-left: 0;
+    }
+    
     .logo {
         /* border: 1px solid red; */
         position: absolute;
@@ -1173,6 +1185,10 @@ a {
         height: 275px;
         width: 300px;
         cursor: default;
+    }
+
+    #q-Btn {
+        margin-left: 0;
     }
     
     .logo {

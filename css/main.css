@@ -46,46 +46,27 @@ hr.style-one {
 }
 
 .quoteWrap {
-     /* border: 1px solid red; */
-    position: relative;
-    display: flex;
+    /* border: 1px solid red; */
+    /* position: relative; */
+    /* display: flex;
     justify-content: center;
-    align-items: end;
-    /* max-width: 750px; */
-    width: auto;
-    height: 150px;
-}
-
-.quote {
-    color: rgb(30, 65, 117);
-    /* border: 1px solid blue; */
+    align-items: end; */
+    margin: 45px auto 0 auto;
+    max-width: 750px;
 }
 
 .quote p {
     text-align: right;
+    padding: 0;
+    margin: 0;
 }
 
 q {
     font-size: 1.5rem;
+    color: rgb(30, 65, 117);
 }
 
-#generate {
-    position: absolute;
-    left: 0px;
-    top: 0;
-    color: #c1121f;
-    border: none;
-    padding: 5px 10px;
-    background: none;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-#generate:hover {
-    color:#f7efe0
-}
-
+/* Light dark button */
 .button {
     position: absolute;
     top: 0px;
@@ -1141,6 +1122,31 @@ a {
 }
 
 @media (max-width:1205px) {
+
+    .imgCir {
+        /* border: 1px solid red; */
+        background-color: #fff;
+        position: relative;
+        /* word-wrap: break-word;
+        line-height: 3.5rem; */
+        margin: 35px auto 5px auto;
+        height: 175px;
+        width: 200px;
+        cursor: default;
+    }
+    
+    .logo {
+        /* border: 1px solid red; */
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .logo h1 {
+        color: #007acc;
+        font-size: 6rem;
+        line-height: 4rem;
+    }
     .w3-auto {
         max-width: 95%
     }

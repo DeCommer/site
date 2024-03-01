@@ -37,13 +37,13 @@ hr.style-one {
     font-size: 3rem;
     position: absolute;
     top: 5px;
-    left: 25px;
+    left: 15px;
 }
 
 .logo-center {
     position: absolute;
     top: 20px;
-    left: 87px;
+    left: 79px;
     margin: 0px;
     padding: 0px;
     font-size: 10rem;
@@ -1206,8 +1206,7 @@ a {
         max-width: 350px;
         cursor: default;
     }
-
-
+    
 .logo-upper-left {
     margin: 0px;
     padding: 0px;

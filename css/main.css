@@ -24,6 +24,8 @@ hr.style-one {
     line-height: 3.5rem; */
     margin: 35px auto;
     padding: 0;
+    height: 340px;
+    width: 350px;
     max-height: 340px;
     max-width: 350px;
     cursor: default;
@@ -39,15 +41,25 @@ hr.style-one {
 }
 
 .logo-center {
+    position: absolute;
+    top: 20px;
+    left: 87px;
     margin: 0px;
     padding: 0px;
-    font-size: 15em;
+    font-size: 10rem;
 }
 
 .logo-center span {
     margin: 0px;
     padding: 0px;
-    font-size: 10rem;
+    font-size: 8rem;
+}
+
+.logo-bottom-center-name {
+    position: absolute;
+    font-size: 2.5rem;
+    bottom: 30px;
+    left: 79px;
 }
 
 .logo-bottom-center {
@@ -1178,6 +1190,66 @@ a {
 .w3-show-inline-block {
     display: inline-block !important
 }
+
+@media (max-width:1050px) {
+    .elem-logo {
+        border: 5px solid #fff;
+        position: relative;
+        /* background-color: #fff; */
+        /* word-wrap: break-word;
+        line-height: 3.5rem; */
+        margin: 35px auto;
+        padding: 0;
+        height: 300px;
+        width: 300px;
+        max-height: 340px;
+        max-width: 350px;
+        cursor: default;
+    }
+
+
+.logo-upper-left {
+    margin: 0px;
+    padding: 0px;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 5px;
+    left: 25px;
+}
+
+.logo-center {
+    position: absolute;
+    top: 20px;
+    left: 87px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 8rem;
+}
+
+.logo-center span {
+    margin: 0px;
+    padding: 0px;
+    font-size: 6rem;
+}
+
+.logo-bottom-center-name {
+    position: absolute;
+    font-size: 2rem;
+    bottom: 30px;
+    left: 79px;
+}
+
+.logo-bottom-center {
+    margin: 0px;
+    padding: 0px;
+    font-size: 2rem;
+    position: absolute;
+    top: 79%;
+    left: 35%;
+}
+
+}
+
 
 @media (max-width:1205px) {
 

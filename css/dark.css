@@ -18,6 +18,50 @@ hr.style-one {
     height: 1px;
     background-image: linear-gradient(to right, #0093E9, #c7d3e5, #0093E9);
 }
+
+.elem-logo {
+    border: 5px solid #194787;
+    position: relative;
+    /* background-color: #fff; */
+    /* word-wrap: break-word;
+    line-height: 3.5rem; */
+    margin: 35px auto;
+    padding: 0;
+    max-height: 340px;
+    max-width: 350px;
+    cursor: default;
+}
+
+.logo-upper-left {
+    margin: 0px;
+    padding: 0px;
+    font-size: 3rem;
+    position: absolute;
+    top: 5px;
+    left: 25px;
+}
+
+.logo-center {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15em;
+}
+
+.logo-center span {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10rem;
+}
+
+.logo-bottom-center {
+    margin: 0px;
+    padding: 0px;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 79%;
+    left: 35%;
+}
+
 .imgCir {
     /* border: 1px solid red; */
     background-color: #194787;

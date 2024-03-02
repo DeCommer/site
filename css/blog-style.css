@@ -1,0 +1,19 @@
+
+.main-blog-container {
+    margin-top: 45px;
+}
+
+.blog-container {
+    background-color: rgba(240, 248, 255, 0.451);
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.blog-container p {
+    color: #282828;
+}
+
+.rm {
+    text-align: right;
+    margin-right: 25px;
+}

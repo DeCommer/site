@@ -71,12 +71,12 @@ hr.style-one {
     left: 35%;
 }
 
-.imgCir {
-    /* border: 1px solid red; */
+/* .imgCir {
+    border: 1px solid red;
     background-color: #fff;
     position: relative;
-    /* word-wrap: break-word;
-    line-height: 3.5rem; */
+    word-wrap: break-word;
+    line-height: 3.5rem;
     margin: 35px auto;
     height: 340px;
     width: 350px;
@@ -84,7 +84,7 @@ hr.style-one {
 }
 
 .logo {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -94,7 +94,7 @@ hr.style-one {
     color: #007acc;
     font-size: 15rem;
     line-height: 11rem;
-}
+} */
 
 .title {
     color: #f7efe0;
@@ -401,6 +401,13 @@ a:active,
 a:hover {
     color:#0f4a89;
     transition: ease-in 0.2s;
+}
+
+.w3-third :nth-child(5) a {
+    color: #f6c700;
+}
+.w3-third :nth-child(5) a:hover {
+    color: #0f4a89;
 }
 
 abbr[title] {

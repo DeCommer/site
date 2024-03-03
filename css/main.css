@@ -16,6 +16,12 @@ hr.style-one {
     background-image: linear-gradient(to right, #0093E9, #c7d3e5, #0093E9);
 }
 
+footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
 .elem-logo {
     border: 5px solid #fff;
     position: relative;
@@ -358,7 +364,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 main,
 menu,

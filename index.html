@@ -268,8 +268,8 @@
   </div>
   <!-- End Page Container -->
 </div>
-<footer class="w3-container w3-text-grey w3-center w3-margin-top">
-  <p>Made by Joseph DeComer 2024 | Hosted by GitHub <i class="fa-brands fa-github w3-xlarge"></i></p>
+<footer>
+  <p>Made by Joseph DeComer</p><p class="year"></p> <p>| Hosted by GitHub <i class="fa-brands fa-github w3-xlarge"></i></p>
 </footer>
 
 <script> 
@@ -283,6 +283,10 @@
           document.querySelector('#mode').innerHTML = 'Dark theme'; 
       } 
   } 
+  const year = document.querySelector('.year');
+
+  yearText = new Date().getFullYear();
+  year.textContent = yearText;
 </script> 
 </body>
 </html>

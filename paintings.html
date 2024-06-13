@@ -25,5 +25,26 @@
             <img src="./img/paintings/forever.jpg" alt="">
             <img class="container-col-2" src="./img/paintings/endlesslyending.jpg" alt="">
         </div>
+
+        <footer>
+            <p>Made by Joseph DeComer</p><p class="year"></p> <p> Hosted by GitHub <i class="fa-brands fa-github w3-xlarge"></i></p>
+          </footer>
+
+          <script> 
+            function toggleTheme() { 
+                let theme = document.getElementsByTagName('link')[0]; 
+                if (theme.getAttribute('href') == './css/main.css') { 
+                    theme.setAttribute('href', './css/dark.css');
+                    document.querySelector('#mode').innerHTML = 'Light theme';
+                } else { 
+                    theme.setAttribute('href', './css/main.css');
+                    document.querySelector('#mode').innerHTML = 'Dark theme'; 
+                } 
+            } 
+            const year = document.querySelector('.year');
+          
+            yearText = new Date().getFullYear();
+            year.textContent = yearText;
+          </script> 
     </body>
 </html>

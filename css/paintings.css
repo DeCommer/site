@@ -25,6 +25,16 @@ header {
   margin: 25px 0 10px 25px;
 }
 
+footer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
 a {
   background-color: transparent;
   font-size: 1.5rem;

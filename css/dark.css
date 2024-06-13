@@ -24,11 +24,20 @@ footer {
     gap: 10px;
     justify-content: center;
 }
+.w3-third {
+    border: 1px solid #b4a2a2;
+    border-radius: 25px;
+}
+
+.section {
+    margin-bottom: 0px;
+}
 
 .links{
-    /* border: 1px solid red; */
+    border: 1px solid #b4a2a2;
+    border-radius: 25px;
+    padding: 25px;
     display: flex;
-    margin-top: 75px;
     flex-direction: column;
     align-items: center;
     /* justify-content: left; */
@@ -129,13 +138,15 @@ section h2 {
 }
 
 .quoteWrap {
-    /* border: 1px solid red; */
+    border: 1px solid #b4a2a2;
+    border-radius: 25px;
     /* position: relative; */
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 145px auto 0 auto;
-    max-width: 650px;
+    margin: 50px auto 0 auto;
+    max-width: 90%;
     min-height: 110px;
 }
 
@@ -151,11 +162,12 @@ q {
 }
 
 #q-Btn {
+    margin-top: 10px;
     float: right;
     font-size: 1.3rem;
     background: none;
     border: none;
-    color: #0f4a89;
+    color: #b4a2a2;
     cursor: pointer;
 }
 

@@ -2187,7 +2187,7 @@ a {
 .w3-white,
 .w3-hover-white:hover {
     color: #000 !important;
-    xbackground-color: #f7efe0 !important /* Main bg */
+    /* xbackground-color: #f7efe0 !important */
 }
 
 .w3-black,

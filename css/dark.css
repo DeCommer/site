@@ -1647,15 +1647,15 @@ a {
     font-size: 110%
 }
 
-.w3-card,
+/* .w3-card,
 .w3-card-2 {
     xbox-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
-}
+} */
 
-.w3-card-4,
+/* .w3-card-4,
 .w3-hover-shadow:hover {
     xbox-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
-}
+} */
 
 .w3-spin {
     animation: w3-spin 2s infinite linear
@@ -2162,7 +2162,7 @@ a {
 .w3-white,
 .w3-hover-white:hover {
     color: #aaaaaa !important;
-    xbackground-color: #082032 !important /* Main bg */
+    /* xbackground-color: #082032 !important */
 }
 
 .w3-black,

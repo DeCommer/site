@@ -25,8 +25,9 @@ footer {
     justify-content: center;
 }
 .w3-third {
-    border: 1px solid #b4a2a2;
-    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
 }
 
 .section {
@@ -34,8 +35,9 @@ footer {
 }
 
 .links{
-    border: 1px solid #b4a2a2;
-    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -138,8 +140,9 @@ section h2 {
 }
 
 .quoteWrap {
-    border: 1px solid #b4a2a2;
-    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
     /* position: relative; */
     padding: 20px;
     display: flex;

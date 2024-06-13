@@ -1340,18 +1340,6 @@ a {
 
 @media (max-width:600px) {
 
-    .imgCir {
-        /* border: 1px solid red; */
-        background-color: #fff;
-        position: relative;
-        /* word-wrap: break-word;
-        line-height: 3.5rem; */
-        margin: 35px auto 5px auto;
-        height: 275px;
-        width: 300px;
-        cursor: default;
-    }
-
     .links{
         /* border: 1px solid red; */
         display: flex;
@@ -1434,6 +1422,36 @@ a {
 
     .w3-modal {
         padding-top: 50px
+    }
+
+    .elem-logo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .logo-upper-left {
+        font-size: 2rem;
+    }
+    
+    .logo-center {
+        font-size: 5rem;
+        top: 15%;
+        left: 25%;
+    }
+    
+    .logo-center span {
+        font-size: 5rem;
+    }
+    
+    .logo-bottom-center-name {
+        font-size: 1.5rem;
+        left: 15%;
+        margin: 10px;
+    }
+    
+    .logo-bottom-center {
+        font-size: 1.5rem;
+
     }
 }
 

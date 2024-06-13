@@ -86,3 +86,17 @@ a:hover {
     --row-height: 200px;
   }
 }
+
+@media screen and (max-width: 600) {
+  .container {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+
+  footer {
+    display: inline;
+    text-align: center;
+  }
+  
+}
+

@@ -15,9 +15,14 @@ body {
   background-image: linear-gradient(160deg, #0093E9 0%, #70badc 100%);
 }
 
+h1 {
+  color: #09396c;
+  margin: 10px;
+}
+
 header {
   text-align: center;
-  margin-top: 25px;
+  margin: 25px 0 10px 25px;
 }
 
 a {
@@ -25,12 +30,14 @@ a {
   font-size: 1.5rem;
   color: #f7efe0;
   text-decoration: none;
+  margin: 10px;
 }
 
 a:active,
 a:hover {
   outline-width: 0;
-  color: #c1121f;
+  color: #205b9a;
+  transition: 0.5s;
 }
 
 .container {

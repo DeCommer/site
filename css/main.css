@@ -434,9 +434,9 @@ a:hover {
     transition: ease-in 0.2s;
 }
 
-.w3-third :nth-child(5) a {
+/* .w3-third :nth-child(5) a {
     color: #f6c700;
-}
+} */
 .w3-third :nth-child(5) a:hover {
     color: #0f4a89;
 }

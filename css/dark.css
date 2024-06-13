@@ -19,6 +19,15 @@ hr.style-one {
     background-image: linear-gradient(to right, #0093E9, #c7d3e5, #0093E9);
 }
 
+.links{
+    /* border: 1px solid red; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: start;
+    justify-content: center;
+    gap: 4rem;
+}
+
 .elem-logo {
     border: 5px solid #194787;
     position: relative;

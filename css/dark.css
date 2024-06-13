@@ -19,13 +19,28 @@ hr.style-one {
     background-image: linear-gradient(to right, #0093E9, #c7d3e5, #0093E9);
 }
 
+footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
 .links{
     /* border: 1px solid red; */
     display: flex;
-    /* flex-direction: column; */
-    align-items: start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: left; */
+    /* color: #fff; */
     gap: 4rem;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+section h2 {
+    border-bottom: 1px solid #b4a2a2;
+    font-size: 3rem;
+    text-decoration: none;
 }
 
 .elem-logo {
@@ -155,9 +170,6 @@ q {
     right: 40px;
 }
 
-footer {
-    text-shadow: 1px 1px 1px #0000006d;
-}
 .ldButton {
 	background-color:#2a72a9;
 	border: none;
@@ -369,7 +381,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 main,
 menu,
@@ -410,7 +421,7 @@ a {
 
 a:active,
 a:hover {
-    color:#b2a389;
+    color:#4e7f8d;
     transition: ease-in 0.2s;
 }
 
@@ -1298,6 +1309,8 @@ a {
         left: 0px;
         bottom: -100px;
     }
+
+    
 }
 
 @media (max-width:600px) {
@@ -1312,6 +1325,29 @@ a {
         height: 275px;
         width: 300px;
         cursor: default;
+    }
+
+    .links{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: left; */
+        /* color: #fff; */
+        gap: 4rem;
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    
+    section h2 {
+        border-bottom: 1px solid #b4a2a2;
+        font-size: 3rem;
+        text-decoration: none;
+    }
+
+    footer {
+        display: inline;
+        text-align: center;
     }
     
     .logo {

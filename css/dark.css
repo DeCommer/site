@@ -28,6 +28,7 @@ footer {
 .links{
     /* border: 1px solid red; */
     display: flex;
+    margin-top: 75px;
     flex-direction: column;
     align-items: center;
     /* justify-content: left; */
@@ -64,13 +65,13 @@ section h2 {
     font-size: 3rem;
     position: absolute;
     top: 5px;
-    left: 25px;
+    left: 15px;
 }
 
 .logo-center {
     position: absolute;
     top: 20px;
-    left: 87px;
+    left: 79px;
     margin: 0px;
     padding: 0px;
     font-size: 10rem;
@@ -129,10 +130,11 @@ section h2 {
 
 .quoteWrap {
     /* border: 1px solid red; */
+    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 45px auto 0 auto;
+    margin: 145px auto 0 auto;
     max-width: 650px;
     min-height: 110px;
 }

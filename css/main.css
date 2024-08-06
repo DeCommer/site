@@ -1,8 +1,13 @@
+:root {
+    --darkPurple: #5D0E41;
+    --darkRed: #A0153E;
+    --darkBlue: #00224D;
+    --white: #fff;
+  }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600&family=Lora&display=swap');
 
 html{
-    font-family: 'Lato', sans-serif;
+    font-family: Helvetica, sans-serif
     /* font-family: 'Lora', serif;  */
 }
 
@@ -17,6 +22,10 @@ body {
     justify-content: center;
     align-items: center;
     width: 90%;
+}
+
+section a {
+    color: var(--white);
 }
 
 hr.style-one {

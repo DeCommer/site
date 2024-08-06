@@ -1,7 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+    --darkPurple: #5D0E41;
+    --darkRed: #A0153E;
+    --btnRed: #c1121f;
+    --lightBlue: #6482AD;
+    --darkBlue: #00224D;
+  }
 
 html{
-    font-family: 'Lato', sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 hr.style-one {
     border: 0;
@@ -10,7 +16,7 @@ hr.style-one {
 }
 
 body {
-    background-color: #0b2443;
+    background-color: #0a131f;
 }
 
 .main-container {
@@ -71,13 +77,18 @@ footer {
 }
 
 section h2 {
-    border-bottom: 1px solid #b4a2a2;
+    border-bottom: 1px solid var(--lightBlue);
+    color: var(--lightBlue);
     font-size: 3rem;
     text-decoration: none;
 }
 
+section a {
+    color: var(--lightBlue);
+}
+
 .elem-logo {
-    border: 5px solid #1a5371;
+    border: 5px solid var(--lightBlue);
     position: relative;
     color: #1a5371;
     /* background-color: #fff; */

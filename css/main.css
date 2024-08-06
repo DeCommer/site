@@ -31,7 +31,9 @@ section a {
 hr.style-one {
     border: none;
     height: 1px;
-    background-image: linear-gradient(to right, #0093E9, #c7d3e5, #0093E9);
+    color: #fff;
+    /* background-image: linear-gradient(to right, #007acc, #c7d3e5, #007acc); */
+    background-color: #fff;
 }
 
 footer {
@@ -78,7 +80,6 @@ footer {
 }
 
 section h2 {
-    border-bottom: 1px solid #fff;
     font-size: 3rem;
     text-decoration: none;
 }

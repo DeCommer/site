@@ -9,10 +9,13 @@
 html{
     font-family: Helvetica, sans-serif;
 }
+
+
 hr.style-one {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, #003049, #669bbc, #003049);
+    /* background-image: linear-gradient(to right, #0a131f, #6482AD, #0a131f); */
+    background-color: #6482AD;
 }
 
 body {
@@ -26,12 +29,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 90%;
-}
-
-hr.style-one {
-    border: none;
-    height: 1px;
-    background-image: linear-gradient(to right, #0093E9, #c7d3e5, #0093E9);
 }
 
 footer {
@@ -77,7 +74,6 @@ footer {
 }
 
 section h2 {
-    border-bottom: 1px solid var(--lightBlue);
     color: var(--lightBlue);
     font-size: 3rem;
     text-decoration: none;

@@ -10,6 +10,15 @@ body {
     background-color: #007acc;
 }
 
+.main-container {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
 hr.style-one {
     border: none;
     height: 1px;
@@ -27,33 +36,36 @@ footer {
     padding: 0;
 }
 
-.w3-third {
+/* .w3-third {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
-}
+} */
 
 .links-title {
-    text-decoration: none;
+    /* text-decoration: underline; */
+    text-align: center;
     margin: 0;
     color: #fff;
 }
 
 .links{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    margin: 0 auto;
-    padding: 25px;
-    display: flex;
+    border-radius: 16px; */
+    /* margin: 0 auto; */
+    /* padding: 25px; */
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     /* justify-content: left; */
+    margin-left: 25px;
+    text-align: right;
     color: #fff;
     gap: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 100;
-    width: 85%;
+    width: 100%;
 }
 
 section h2 {
@@ -70,8 +82,8 @@ section h2 {
     line-height: 3.5rem; */
     margin: 35px auto;
     padding: 0;
-    height: 340px;
-    width: 350px;
+    height: 240px;
+    width: 250px;
     max-height: 340px;
     max-width: 350px;
     cursor: default;
@@ -80,7 +92,7 @@ section h2 {
 .logo-upper-left {
     margin: 0px;
     padding: 0px;
-    font-size: 3rem;
+    font-size: 2rem;
     position: absolute;
     top: 5px;
     left: 15px;
@@ -88,11 +100,11 @@ section h2 {
 
 .logo-center {
     position: absolute;
-    top: 20px;
-    left: 79px;
+    /* top: 5px; */
+    left: 50px;
     margin: 0px;
     padding: 0px;
-    font-size: 10rem;
+    font-size: 7rem;
 }
 
 .logo-center span {
@@ -103,9 +115,9 @@ section h2 {
 
 .logo-bottom-center-name {
     position: absolute;
-    font-size: 2.5rem;
-    bottom: 30px;
-    left: 79px;
+    font-size: 2rem;
+    bottom: 20px;
+    left: 50px;
 }
 
 .logo-bottom-center {
@@ -113,8 +125,8 @@ section h2 {
     padding: 0px;
     font-size: 2.5rem;
     position: absolute;
-    top: 79%;
-    left: 35%;
+    bottom: 5px;
+    left: 75px;
 }
 
 /* .imgCir {
@@ -1354,11 +1366,13 @@ a {
 
     .links{
         /* border: 1px solid red; */
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; */
         /* justify-content: left; */
         /* color: #fff; */
+        margin: 0;
+        text-align: center;
         gap: 4rem;
         font-size: 1.5rem;
         font-weight: 100;

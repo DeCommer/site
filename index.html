@@ -113,7 +113,7 @@
 <!-- Education -->
       <div class="w3-container w3-card-right w3-white">
         <div class="button">
-         <button id="mode" class="ldButton" onclick="toggleTheme()">Dark theme</button> 
+         <button id="mode-btn" class="ldButton" onclick="toggleTheme()">☁️ Dark theme</button> 
         </div>
 
         <!-- <h2 class="w3-text-grey w3-padding-1">
@@ -325,13 +325,13 @@ data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"
 
 <script> 
   function toggleTheme() { 
-      let theme = document.getElementsByTagName('link')[0]; 
+      const theme = document.getElementsByTagName('link')[0]; 
       if (theme.getAttribute('href') == './css/main.css') { 
           theme.setAttribute('href', './css/dark.css');
-          document.querySelector('#mode').innerHTML = 'Light theme';
+          document.querySelector('#mode-btn').innerHTML = '☀️ Light theme';
       } else { 
           theme.setAttribute('href', './css/main.css');
-          document.querySelector('#mode').innerHTML = 'Dark theme'; 
+          document.querySelector('#mode-btn').innerHTML = '☁️ Dark theme'; 
       } 
   } 
   const year = document.querySelector('.year');

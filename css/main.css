@@ -32,6 +32,10 @@ section a {
     color: var(--white);
 }
 
+.to-apps-link {
+    display: none;
+}
+
 section h2 {
     font-size: 3rem;
     text-decoration: none;
@@ -1385,6 +1389,10 @@ a {
         /* border: 1px solid red; */
         width: fit-content;
         margin: 0 auto;
+    }
+
+    .to-apps-link {
+        display: block;
     }
 
     .w3-card-right .w3-container {

@@ -90,6 +90,10 @@ section a {
     color: var(--lightBlue);
 }
 
+.to-apps-link {
+    display: none;
+}
+
 .elem-logo {
     border: 5px solid var(--lightBlue);
     position: relative;
@@ -1360,6 +1364,10 @@ a {
         /* border: 1px solid red; */
         width: fit-content;
         margin: 0 auto;
+    }
+    
+    .to-apps-link {
+        display: block;
     }
     
     .title {

@@ -117,15 +117,15 @@ footer {
 .logo-upper-left {
     margin: 0px;
     padding: 0px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: absolute;
-    top: 5px;
+    top: 9px;
     left: 15px;
 }
 
 .logo-center {
     position: absolute;
-    /* top: 5px; */
+    top: 0px;
     left: 50px;
     margin: 0px;
     padding: 0px;
@@ -140,15 +140,15 @@ footer {
 
 .logo-bottom-center-name {
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.5rem;
     bottom: 20px;
-    left: 50px;
+    left: 60px;
 }
 
 .logo-bottom-center {
     margin: 0px;
     padding: 0px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     position: absolute;
     bottom: 5px;
     left: 75px;
@@ -1286,62 +1286,6 @@ a {
     display: inline-block !important
 }
 
-@media (max-width:1050px) {
-    .elem-logo {
-        border: 5px solid #fff;
-        position: relative;
-        /* background-color: #fff; */
-        /* word-wrap: break-word;
-        line-height: 3.5rem; */
-        margin: 35px auto;
-        padding: 0;
-        height: 300px;
-        width: 300px;
-        max-height: 340px;
-        max-width: 350px;
-        cursor: default;
-    }
-    
-.logo-upper-left {
-    margin: 0px;
-    padding: 0px;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 5px;
-    left: 25px;
-}
-
-.logo-center {
-    position: absolute;
-    top: 20px;
-    left: 87px;
-    margin: 0px;
-    padding: 0px;
-    font-size: 8rem;
-}
-
-.logo-center span {
-    margin: 0px;
-    padding: 0px;
-    font-size: 6rem;
-}
-
-.logo-bottom-center-name {
-    position: absolute;
-    font-size: 2rem;
-    bottom: 30px;
-    left: 79px;
-}
-
-.logo-bottom-center {
-    margin: 0px;
-    padding: 0px;
-    font-size: 2rem;
-    position: absolute;
-    top: 79%;
-    left: 35%;
-}
-}
 @media (max-width:1205px) {
     .logo {
         /* border: 1px solid red; */

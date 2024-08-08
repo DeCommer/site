@@ -1356,6 +1356,11 @@ a {
         text-align: center;
     }
     
+    .main-links {
+        /* border: 1px solid red; */
+        width: fit-content;
+        margin: 0 auto;
+    }
     
     .title {
         color: #b2a389;

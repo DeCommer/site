@@ -9,8 +9,6 @@
     --darkText: #b2a389;
   }
 
-
-
 html{
     font-family: Helvetica, sans-serif;
 
@@ -92,7 +90,10 @@ footer {
     width: 100%;
 }
 
-
+.main-link-icon {
+    font-size: 2rem;
+    margin-right: 15px;
+}
 
 .elem-logo {
     border: 5px solid #fff;

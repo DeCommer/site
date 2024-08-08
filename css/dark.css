@@ -75,6 +75,11 @@ footer {
     width: 100%;
 }
 
+.main-link-icon {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
 section h2 {
     color: var(--darkText);
     font-size: 3rem;

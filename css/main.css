@@ -3,11 +3,17 @@
     --darkRed: #A0153E;
     --darkBlue: #00224D;
     --white: #fff;
+    --btnRed: #c1121f;
+    --lightBlue: #164b9e;;
+    --darkBlue: #00224D;
+    --darkText: #b2a389;
   }
 
 
+
 html{
-    font-family: Helvetica, sans-serif
+    font-family: Helvetica, sans-serif;
+
     /* font-family: 'Lora', serif;  */
 }
 
@@ -83,6 +89,7 @@ footer {
 section h2 {
     font-size: 3rem;
     text-decoration: none;
+    color: var(--lightBlue);
 }
 
 .elem-logo {
@@ -1647,7 +1654,7 @@ a {
 }
 
 .w3-round-xlarge {
-    border-radius: 16px
+    border-radius: 0px
 }
 
 .w3-round-xxlarge {

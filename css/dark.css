@@ -391,6 +391,7 @@ html {
 
 p{
     font-size: 1.3rem;
+    font-weight: lighter;
     color: #5b8fa8;
 }
 
@@ -457,6 +458,12 @@ abbr[title] {
 b,
 strong {
     font-weight: bolder
+}
+
+p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: #f7efe0;
 }
 
 dfn {
@@ -648,7 +655,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: 400;
     margin: 10px 0
 }

@@ -34,6 +34,12 @@ section a {
     color: var(--white);
 }
 
+section h2 {
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
 hr.style-one {
     border: none;
     height: 1px;
@@ -86,11 +92,7 @@ footer {
     width: 100%;
 }
 
-section h2 {
-    font-size: 3rem;
-    text-decoration: none;
-    color: var(--lightBlue);
-}
+
 
 .elem-logo {
     border: 5px solid #fff;

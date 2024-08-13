@@ -1,11 +1,13 @@
 :root {
     --backgroundBlue: #007acc;
+    --buttonRed: #c1121f;
     --darkBlue: #03346E;
     --barFgColor: #06D001;
     --barBgColor: #fff;
     --leftGrad: #12C2E9;
     --centerGrad: #c471ed;
     --rightGrad: #f64f59;
+    --h2: #fff;
     --white: #fff;
   }
 
@@ -36,7 +38,7 @@ p {
 }
 
 h2 {
-    color: var(--white);
+    color: var(--h2);
 }
 
 .main-container {

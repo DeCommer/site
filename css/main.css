@@ -21,10 +21,6 @@ body {
     background-color: var(--backgroundBlue);
 }
 
-p {
-    font-size: 1.3rem;
-}
-
 .main-container {
     /* border: 1px solid red; */
     display: flex;
@@ -60,6 +56,9 @@ footer {
     display: flex;
     gap: 10px;
     justify-content: center;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 100;
 }
 
 .new {
@@ -191,20 +190,15 @@ footer {
 	/* text-shadow:0px 1px 0px #2f6627; */
 }
 
-/* .ldButton:hover {
-	background-color:#2a7cbf;
-    transition: 0.3s;
-} */
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
 
-
-
-
-
-
-
-
-
-
+[hidden],
+template {
+    display: none
+}
 
 a {
     background-color: transparent;
@@ -217,6 +211,9 @@ a:hover {
     transition: ease-in 0.2s;
 }
 
+/* .w3-third :nth-child(5) a {
+    color: #f6c700;
+} */
 .w3-third :nth-child(5) a:hover {
     color: #0f4a89;
 }
@@ -1081,11 +1078,6 @@ a {
         color: #007acc;
         font-size: 10rem;
         line-height: 7rem;
-    }
-    
-    footer {
-        display: inline;
-        text-align: center;
     }
 
     .quoteWrap {

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/paintings.css">
-    <title>Select Paintings</title>
-</head>
-    <body>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./css/paintings.css">
+            <title>Select Paintings</title>
+        </head>
+        <body>
         <header>
             <h1 class="title">Select Paintings</h1>
             <a href="http://www.decommer.com">Home</a>
             <a href="https://github.com/DeCommer">GitHub</a>
             <a href="mailto:decommer@icloud.com">Contact</a>
         </header>
+        <button id="mode-btn" class="theme-btn">☁️ Dark theme</button>
         <div class="container">
             <img src="./img/paintings/conmet.jpg" alt="">
             <img src="./img/paintings/ermine.jpg" alt="">
@@ -25,26 +26,33 @@
             <img src="./img/paintings/forever.jpg" alt="">
             <img class="container-col-2" src="./img/paintings/endlesslyending.jpg" alt="">
         </div>
-
         <footer>
-            <p>Made by Joseph DeComer</p><p class="year"></p> <p> Hosted by GitHub <i class="fa-brands fa-github w3-xlarge"></i></p>
+            <p>🫀 Made by Joseph DeComer</p><p class="year"></p> <p> Hosted by GitHub</p>
           </footer>
+        <script data-name="BMC-Widget" 
+            data-cfasync="false" 
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+            data-id="JosephDeCommer" 
+            data-description="Support me on Buy me a coffee!" 
+            data-message="If you like these paintings you can show your appreciation with a coffee!" 
+            data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18">
+        </script>
 
-          <script> 
-            function toggleTheme() { 
-                let theme = document.getElementsByTagName('link')[0]; 
-                if (theme.getAttribute('href') == './css/main.css') { 
-                    theme.setAttribute('href', './css/dark.css');
-                    document.querySelector('#mode').innerHTML = 'Light theme';
+        <script> 
+            const modeBtn = document.querySelector('#mode-btn');
+                modeBtn.addEventListener('click', () => {
+                const theme = document.getElementsByTagName('link')[0]; 
+                if (theme.getAttribute('href') == './css/paintings.css') { 
+                    theme.setAttribute('href', './css/paintingsdark.css');
+                    modeBtn.innerHTML = '☀️ Light theme';
                 } else { 
-                    theme.setAttribute('href', './css/main.css');
-                    document.querySelector('#mode').innerHTML = 'Dark theme'; 
+                    theme.setAttribute('href', './css/paintings.css');
+                    modeBtn.innerHTML = '☁️ Dark theme'; 
                 } 
-            } 
+            });
             const year = document.querySelector('.year');
-          
             yearText = new Date().getFullYear();
             year.textContent = yearText;
-          </script> 
+        </script> 
     </body>
 </html>

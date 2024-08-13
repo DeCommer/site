@@ -4,12 +4,12 @@
     --darkBlue: #03346E;
     --barFgColor: #06D001;
     --barBgColor: #fff;
-    --leftGrad: #12C2E9;
-    --centerGrad: #c471ed;
-    --rightGrad: #f64f59;
+    --leftGrad: #05cff7;
+    --centerGrad: #a2faa7;
+    --rightGrad: #ff5900;
     --h2: #fff;
     --white: #fff;
-  }
+}
 
 html{
     font-family: Helvetica, sans-serif;
@@ -69,7 +69,7 @@ h2 {
 
 .elem-logo {
     border: 5px solid;
-    border-image: linear-gradient(45deg, var(--leftGrad) 0%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     position: relative;
     margin: 35px auto;
     padding: 0;
@@ -128,13 +128,12 @@ h2 {
 
 .title {
     color: var(--white); 
-    background-image: -webkit-linear-gradient(0deg, var(--leftGrad) 10%, var(--centerGrad) 55%, var(--rightGrad) 87%); 
+    background-image: -webkit-linear-gradient(0deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 90%); 
     background-clip: text; 
     -webkit-text-fill-color: transparent;
     margin:0;
     padding: 0;
 }
-
 
 .main-link-icon {
     font-size: 2rem;
@@ -234,5 +233,4 @@ footer {
     footer p {
         font-size: 1rem;
     }
-    
 }

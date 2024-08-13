@@ -101,7 +101,8 @@ section a {
 }
 
 .elem-logo {
-    border: 5px solid var(--lightBlue);
+    border: 5px solid;
+    border-image: linear-gradient(45deg, #99b0d0 23%, #745bd3 39%, #fcada4 86%) 1;        
     position: relative;
     color: var(--lightBlue);
     /* background-color: #fff; */
@@ -160,7 +161,12 @@ section a {
 }
 
 .title {
-    color: #b2a389;
+    color: #aebff1; 
+    background-image: -webkit-linear-gradient(0deg, #99b0d0 23%, #748bd3 39%, #fcada4 86%);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     margin:0;
     padding: 0;
 }
@@ -489,7 +495,7 @@ strong {
 p {
     font-size: 1.3rem;
     font-weight: lighter;
-    color: #f7efe0;
+    color: var(--lightBlue);
 }
 
 dfn {

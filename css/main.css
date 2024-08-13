@@ -21,6 +21,12 @@ body {
     background-color: var(--backgroundBlue);
 }
 
+p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: #f7efe0;
+}
+
 .main-container {
     /* border: 1px solid red; */
     display: flex;
@@ -105,7 +111,10 @@ footer {
 }
 
 .elem-logo {
-    border: 5px solid var(--white);
+    border: 5px solid;
+    border-image: linear-gradient(45deg, #12C2E9 0%, #c471ed 50%, #f64f59 100%) 1;        
+    position: relative;
+    /* border: 5px solid var(--white); */
     position: relative;
     /* background-color: #fff; */
     /* word-wrap: break-word;
@@ -160,7 +169,10 @@ footer {
 }
 
 .title {
-    color: var(--white);
+    color: #aebff1; 
+    background-image: -webkit-linear-gradient(0deg, #aebff9 11%, #f9ebca 20%, #e500c8 87%); 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
     margin:0;
     padding: 0;
 }

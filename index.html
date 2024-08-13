@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="main-container"><!-- Page Container -->
-    <button id="mode-btn" class="theme-btn" onclick="toggleTheme()">☁️ Dark theme</button> 
+    <button id="mode-btn" class="theme-btn">☁️ Dark theme</button> 
   <div class="left-container"><!-- Left Column -->
     <div class="elem-logo">
       <p class="logo-upper-left">45</p>
@@ -135,22 +135,20 @@ data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"
 </script>
 
 <script> 
-  function toggleTheme() { 
+  const modeBtn = document.querySelector('#mode-btn');
+  modeBtn.addEventListener('click', () => {
       const theme = document.getElementsByTagName('link')[0]; 
       if (theme.getAttribute('href') == './css/main.css') { 
           theme.setAttribute('href', './css/dark.css');
-          document.querySelector('#mode-btn').innerHTML = '☀️ Light theme';
+          modeBtn.innerHTML = '☀️ Light theme';
       } else { 
           theme.setAttribute('href', './css/main.css');
-          document.querySelector('#mode-btn').innerHTML = '☁️ Dark theme'; 
+          modeBtn.innerHTML = '☁️ Dark theme'; 
       } 
-  } 
+  });
   const year = document.querySelector('.year');
-
   yearText = new Date().getFullYear();
   year.textContent = yearText;
-
-  console.log("Site Loaded")
 </script> 
 </body>
 </html>

@@ -1,9 +1,13 @@
 :root {
     --darkbackgroundBlue: #021526;
     --lightBlue: #6EACDA;
+    --darkBlue: #03346E;
     --headerTextDark: #D6BD98;
-    --barFgColorDark: #03C988;
-    --barBgColorDark: #2C3333;
+    --barFgColorDark: #126E82;
+    --barBgColorDark: #51C4D3;
+    --leftGrad: #99b0d0;
+    --centerGrad: #745bd3;
+    --rightGrad: #fcada4;
   }
 
   html{
@@ -64,7 +68,7 @@ h2 {
 
 .elem-logo {
     border: 5px solid;
-    border-image: linear-gradient(45deg, #99b0d0 23%, #745bd3 39%, #fcada4 86%) 1;
+    border-image: linear-gradient(45deg, var(--leftGrad) 23%, var(--centerGrad) 39%, var(--rightGrad) 86%) 1;
     position: relative;
     margin: 35px auto;
     padding: 0;
@@ -123,13 +127,12 @@ h2 {
 
 .title {
     color: #aebff1; 
-    background-image: -webkit-linear-gradient(0deg, #99b0d0 23%, #748bd3 39%, #fcada4 86%);
+    background-image: -webkit-linear-gradient(0deg, var(--leftGrad) 23%, var(--centerGrad) 39%, var(--rightGrad) 86%);
     background-clip: text; 
     -webkit-text-fill-color: transparent;
     margin:0;
     padding: 0;
 }
-
 
 .main-link-icon {
     font-size: 2rem;
@@ -220,14 +223,13 @@ footer {
         display: block;
     }
 
-footer {
-    /* border: 1px solid wheat; */
-    display: flex;
-    text-align: center;
-}
+    footer {
+        /* border: 1px solid wheat; */
+        display: flex;
+        text-align: center;
+    }
 
-footer p {
-    font-size: 1rem;
-}
-    
+    footer p {
+        font-size: 1rem;
+    }
 }

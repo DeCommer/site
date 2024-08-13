@@ -4,13 +4,13 @@
 }
 
 .blog-container {
-    background-color: rgba(240, 248, 255, 0.451);
+    background-color: rgba(240, 248, 255, 0.2);
     border-radius: 10px;
     margin: 25px 0;
 }
 
 .blog-container p {
-    color: #282828;
+    color: #fff;
 }
 
 .rm {

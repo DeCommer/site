@@ -13,19 +13,7 @@
 <meta property="og:name" content="DeCommer.com">
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./css/blog-style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-<script> 
-  function toggleTheme() { 
-      const theme = document.getElementsByTagName('link')[0]; 
-      if (theme.getAttribute('href') == './css/main.css') { 
-          theme.setAttribute('href', './css/dark.css');
-          document.querySelector('#mode-btn').innerHTML = 'Light theme';
-      } else { 
-          theme.setAttribute('href', './css/main.css');
-          document.querySelector('#mode-btn').innerHTML = 'Dark theme'; 
-      } 
-  } 
-</script> 
+
 </head>
 <body>
 <!-- Page Container -->
@@ -111,7 +99,7 @@
     <!-- End Left Column -->
     </div>
     <div class="button">
-      <button id="mode-btn" class="ldButton" onclick="toggleTheme()">Dark Mode</button> 
+      <button id="mode-btn" class="ldButton" onclick="toggleTheme()">☁️ Dark Theme</button> 
      </div>
     <!-- Right Column -->
     <div class="w3-twothird main-blog-container">
@@ -147,5 +135,18 @@
 <footer class="w3-container w3-text-grey w3-center w3-margin-top">
   <p>© Joseph DeComer 2023 | Hosted by GitHub</p>
 </footer>
+
+<script> 
+  function toggleTheme() { 
+      const theme = document.getElementsByTagName('link')[0]; 
+      if (theme.getAttribute('href') == './css/main.css') { 
+          theme.setAttribute('href', './css/dark.css');
+          document.querySelector('#mode-btn').innerHTML = '☀️ Light theme';
+      } else { 
+          theme.setAttribute('href', './css/main.css');
+          document.querySelector('#mode-btn').innerHTML = '☁️ Dark theme'; 
+      } 
+  } 
+</script> 
 </body>
 </html>

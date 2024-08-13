@@ -1,22 +1,28 @@
 :root {
-    --darkPurple: #5D0E41;
-    --darkRed: #A0153E;
-    --darkBlue: #00224D;
+    /* Light theme */
+    --backgroundBlue: #007acc;
+    --darkBlue: #0c3f5f;
     --white: #fff;
-    --btnRed: #c1121f;
-    --lightBlue: #164b9e;;
-    --darkBlue: #00224D;
-    --darkText: #b2a389;
+    --buttonred: #c1121f;
   }
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
 
 html{
     font-family: Helvetica, sans-serif;
-
-    /* font-family: 'Lora', serif;  */
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #007acc;
+    background-color: var(--backgroundBlue);
+}
+
+p {
+    font-size: 1.3rem;
 }
 
 .main-container {
@@ -45,9 +51,9 @@ section h2 {
 hr.style-one {
     border: none;
     height: 1px;
-    color: #fff;
+    color: var(--white);
     /* background-image: linear-gradient(to right, #007acc, #c7d3e5, #007acc); */
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 footer {
@@ -71,7 +77,7 @@ footer {
     /* text-decoration: underline; */
     text-align: center;
     margin: 0;
-    color: #fff;
+    color: var(--white);
 }
 
 .links{
@@ -87,7 +93,7 @@ footer {
     margin-top: 100px;
     margin-left: 45px;
     text-align: right;
-    color: #fff;
+    color: var(--white);
     gap: 2rem;
     font-size: 1.5rem;
     font-weight: 100;
@@ -100,7 +106,7 @@ footer {
 }
 
 .elem-logo {
-    border: 5px solid #fff;
+    border: 5px solid var(--white);
     position: relative;
     /* background-color: #fff; */
     /* word-wrap: break-word;
@@ -155,7 +161,7 @@ footer {
 }
 
 .title {
-    color: #f7efe0;
+    color: var(--white);
     margin:0;
     padding: 0;
 }
@@ -163,51 +169,6 @@ footer {
 .description-text {
     margin:0;
     padding: 0;
-}
-
-.quoteWrap {
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    /* position: relative; */
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto -25px auto;
-    width: 90%;
-    height: 175px;
-    min-width: 90%;
-    min-height: 110px;
-}
-
-#q-Btn {
-    position: absolute;
-    right: 15px;
-    bottom: 10px;
-    font-size: 1.3rem;
-    background: none;
-    border: none;
-    color: #0c3f5f;
-    cursor: pointer;
-}
-
-#q-Btn:hover {
-    color:#0f4a89;
-    transition: ease-in 0.1s;
-}
-
-.quote p {
-    text-align: right;
-    padding: 0;
-    margin: 0;
-}
-
-q {
-    font-size: 1.5rem;
-    font-weight: 100;
-    color: #fff;
 }
 
 /* Light dark button */
@@ -230,237 +191,20 @@ q {
 	/* text-shadow:0px 1px 0px #2f6627; */
 }
 
-.ldButton:hover {
+/* .ldButton:hover {
 	background-color:#2a7cbf;
     transition: 0.3s;
-}
-
-.w3-2021-marigold
-{color:#fff!important;background-color:#FDAC53!important}
-.w3-2021-cerulean
-{color:#000!important;background-color:#9BB7D4!important}
-.w3-2021-rust
-{color:#fff!important;background-color:#B55A30!important}
-.w3-2021-illuminating
-{color:#000!important;background-color:#F5DF4D!important}
-.w3-2021-french-blue
-{color:#fff!important;background-color:#0072B5!important}
-.w3-2021-green-ash
-{color:#000!important;background-color:#A0DAA9!important}
-.w3-2021-burnt-coral
-{color:#fff!important;background-color:#E9897E!important}
-.w3-2021-mint
-{color:#fff!important;background-color:#00A170!important}
-.w3-2021-amethyst-orchid
-{color:#fff!important;background-color:#926AA6!important}
-.w3-2021-raspberry-sorbet
-{color:#fff!important;background-color:#D2386C!important}
-.w3-2021-inkwell
-{color:#fff!important;background-color:#363945!important}
-.w3-2021-ultimate-gray
-{color:#fff!important;background-color:#939597!important}
-.w3-2021-buttercream
-{color:#000!important;background-color:#EFE1CE!important}
-.w3-2021-desert-mist
-{color:#000!important;background-color:#E0B589!important}
-.w3-2021-willow
-{color:#fff!important;background-color:#9A8B4F!important}
-
-/* 2018 colors */
-.w3-2018-red-pear
-{color:#fff!important;background-color:#7F4145!important}
-.w3-2018-valiant-poppy
-{color:#fff!important;background-color:#BD3D3A!important}
-.w3-2018-nebulas-blue
-{color:#fff!important;background-color:#3F69AA!important}
-.w3-2018-ceylon-yellow
-{color:#000!important;background-color:#D5AE41!important}
-.w3-2018-martini-olive
-{color:#fff!important;background-color:#766F57!important}
-.w3-2018-russet-orange
-{color:#fff!important;background-color:#E47A2E!important}
-.w3-2018-crocus-petal
-{color:#000!important;background-color:#BE9EC9!important}
-.w3-2018-limelight
-{color:#000!important;background-color:#F1EA7F!important}
-.w3-2018-quetzal-green
-{color:#fff!important;background-color:#006E6D!important}
-.w3-2018-sargasso-sea
-{color:#fff!important;background-color:#485167!important}
-.w3-2018-tofu
-{color:#000!important;background-color:#EAE6DA!important}
-.w3-2018-almond-buff
-{color:#000!important;background-color:#D1B894!important}
-.w3-2018-quiet-gray,.w3-2018-quiet-grey
-{color:#000!important;background-color:#BCBCBE!important}
-.w3-2018-meerkat
-{color:#000!important;background-color:#95dee3!important}
-.w3-2018-meadowlark
-{color:#000!important;background-color:#ECDB54!important}
-.w3-2018-cherry-tomato
-{color:#fff!important;background-color:#E94B3C!important}
-.w3-2018-little-boy-blue
-{color:#000!important;background-color:#6F9FD8!important}
-.w3-2018-chili-oil
-{color:#fff!important;background-color:#944743!important}
-.w3-2018-pink-lavender
-{color:#000!important;background-color:#DBB1CD!important}
-.w3-2018-blooming-dahlia
-{color:#000!important;background-color:#EC9787!important}
-.w3-2018-arcadia
-{color:#fff!important;background-color:#00A591!important}
-.w3-2018-emperador
-{color:#fff!important;background-color:#6C4F3D!important}
-.w3-2018-ultra-violet
-{color:#fff!important;background-color:#6B5B95!important}
-.w3-2018-almost-mauve
-{color:#000!important;background-color:#EADEDB!important}
-.w3-2018-spring-crocus
-{color:#fff!important;background-color:#BC70A4!important}
-.w3-2018-lime-punch
-{color:#000!important;background-color:#BFD641!important}
-.w3-2018-sailor-blue
-{color:#fff!important;background-color:#2E4A62!important}
-.w3-2018-harbor-mist
-{color:#000!important;background-color:#B4B7BA!important}
-.w3-2018-warm-sand
-{color:#000!important;background-color:#C0AB8E!important}
-.w3-2018-coconut-milk
-{color:#000!important;background-color:#F0EDE5!important}
-
-/* 2018 colors */
-.w3-2017-greenery
-{color:#fff!important;background-color:#92B558!important}
-.w3-2017-grenadine
-{color:#fff!important;background-color:#DC4C46!important}
-.w3-2017-tawny-port
-{color:#fff!important;background-color:#672e3b!important}
-.w3-2017-ballet-slipper
-{color:#000!important;background-color:#f3d6e4!important}
-.w3-2017-butterum
-{color:#fff!important;background-color:#c48f65!important}
-.w3-2017-navy-peony
-{color:#fff!important;background-color:#223a5e!important}
-.w3-2017-neutral-gray,.w3-2017-neutral-grey
-{color:#fff!important;background-color:#898e8c!important}
-.w3-2017-shaded-spruce
-{color:#fff!important;background-color:#005960!important}
-.w3-2017-golden-lime
-{color:#fff!important;background-color:#9c9a40!important}
-.w3-2017-marina
-{color:#fff!important;background-color:#4F84C4!important}
-.w3-2017-autumn-maple
-{color:#fff!important;background-color:#d2691e!important}
-.w3-2017-niagara
-{color:#fff!important;background-color:#578CA9!important}
-.w3-2017-primrose-yellow
-{color:#000!important;background-color:#f6d155!important}
-.w3-2017-lapis-blue
-{color:#fff!important;background-color:#004b8d!important}
-.w3-2017-flame
-{color:#fff!important;background-color:#f2552c!important}
-.w3-2017-island-paradise
-{color:#000!important;background-color:#95dee3!important}
-.w3-2017-pale-dogwood
-{color:#000!important;background-color:#edcdc2!important}
-.w3-2017-pink-yarrow
-{color:#fff!important;background-color:#ce3175!important}
-.w3-2017-kale
-{color:#fff!important;background-color:#5a7247!important}
-.w3-2017-hazelnut
-{color:#000!important;background-color:#cfb095!important}
-
-.w3-safety-red
-{color:#fff!important;background-color:#bd1e24!important}
-.w3-text-safety-red
-{color:#bd1e24!important}
-
-.w3-safety-orange
-{color:#fff!important;background-color:#e97600!important}
-
-.w3-safety-yellow
-{color:#fff!important;background-color:#f6c700!important}
-.w3-text-safety-yellow
-{color:#f6c700!important}
-
-.w3-safety-green
-{color:#fff!important;background-color:#007256!important}
-
-.w3-safety-blue
-{color:#fff!important;background-color:#0067a7!important}
-.w3-text-safety-blue
-{color:#0f4a89!important}
-
-.w3-safety-purple
-{color:#fff!important;background-color:#964f8e!important}
+} */
 
 
-/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
-html {
-    box-sizing: border-box
-}
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit
-}
 
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
-}
 
-p {
-    font-size: 1.3rem;
-    font-weight: lighter;
-    color: #f7efe0;
-}
 
-ul li {
-    font-size: 1.2rem;
-    color: #f7efe0;
-    font-weight: lighter;
-}
 
-article,
-aside,
-details,
-figcaption,
-figure,
-header,
-main,
-menu,
-nav,
-section {
-    display: block;
-}
 
-summary {
-    display: list-item
-}
 
-audio,
-canvas,
-progress,
-video {
-    display: inline-block
-}
 
-progress {
-    vertical-align: baseline
-}
-
-audio:not([controls]) {
-    display: none;
-    height: 0
-}
-
-[hidden],
-template {
-    display: none
-}
 
 a {
     background-color: transparent;
@@ -473,9 +217,6 @@ a:hover {
     transition: ease-in 0.2s;
 }
 
-/* .w3-third :nth-child(5) a {
-    color: #f6c700;
-} */
 .w3-third :nth-child(5) a:hover {
     color: #0f4a89;
 }

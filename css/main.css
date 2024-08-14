@@ -242,4 +242,8 @@ footer {
     footer p {
         font-size: .9rem;
     }
+
+    #bmc-wbtn {
+        margin-bottom: 25px;
+    }
 }

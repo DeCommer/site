@@ -8,7 +8,7 @@
     --centerGrad: #a2faa7;
     --rightGrad: #ff5900;
     --hover: #ff5900;
-    --h2: #a2faa7;
+    --h2: #fff;
     --white: #fff;
 }
 
@@ -65,6 +65,7 @@ h2 {
 }
 
 .left-container {
+    /* border: 1px solid red; */
     width: 350px;
 }
 
@@ -172,8 +173,7 @@ h2 {
     margin-left: 45px;
     text-align: right;
     color: var(--white);
-    gap: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 100;
     width: 45%;
 }
@@ -187,6 +187,7 @@ h2 {
 }
 
 footer {
+    /* border: 1px solid red; */
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -233,10 +234,12 @@ footer {
     footer {
         /* border: 1px solid wheat; */
         display: flex;
-        text-align: center;
+        align-items: center;
+        margin: 10px 0;
+        padding: 0;
     }
 
     footer p {
-        font-size: 1rem;
+        font-size: .9rem;
     }
 }

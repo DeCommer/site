@@ -68,7 +68,7 @@ h2 {
 }
 
 .elem-logo {
-    border: 5px solid;
+    border: 3px solid;
     border-image: linear-gradient(45deg, var(--leftGrad) 23%, var(--centerGrad) 39%, var(--rightGrad) 86%) 1;
     position: relative;
     margin: 35px auto;
@@ -92,7 +92,7 @@ h2 {
 .logo-center {
     position: absolute;
     color: var(--lightBlue);
-    top: 20px;
+    top: 15px;
     left: 50px;
     margin: 0px;
     padding: 0px;
@@ -109,7 +109,7 @@ h2 {
 .logo-bottom-center-name {
     position: absolute;
     font-size: 1.5rem;
-    bottom: 20px;
+    bottom: 30px;
     left: 60px;
 }
 
@@ -118,7 +118,7 @@ h2 {
     padding: 0px;
     font-size: 2rem;
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
     left: 75px;
 }
 

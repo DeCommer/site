@@ -156,6 +156,7 @@ h2 {
 }
 
 .bar-bg {
+    height: 7px;
     background-color: var(--barBgColor);
 }
 
@@ -179,6 +180,10 @@ h2 {
 
 .right-container h2 {
     border-bottom: 1px solid var(--white);
+}
+
+.app-link-icon {
+    margin-right: 10px;
 }
 
 footer {

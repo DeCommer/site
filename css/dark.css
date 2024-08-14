@@ -39,7 +39,14 @@ p {
 
 h2 {
     color: var(--h2Dark);
+    margin: 25px 0;
+    padding: 0;
 }
+
+span {
+    margin-right: 10px;
+}
+
 
 .main-container {
     /* border: 1px solid red; */
@@ -170,8 +177,7 @@ h2 {
     margin-left: 45px;
     text-align: right;
     color: var(--lightBlue);
-    gap: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 100;
     width: 45%;
 }
@@ -179,6 +185,15 @@ h2 {
 .right-container h2 {
     border-bottom: 1px solid var(--lightBlue);
 }
+
+.calc-app-txt {
+    border-bottom: 1px solid var(--white);
+    float: left;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
 
 footer {
     display: flex;

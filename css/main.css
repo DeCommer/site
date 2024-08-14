@@ -7,7 +7,8 @@
     --leftGrad: #05cff7;
     --centerGrad: #a2faa7;
     --rightGrad: #ff5900;
-    --h2: #fff;
+    --hover: #ff5900;
+    --h2: #a2faa7;
     --white: #fff;
 }
 
@@ -27,8 +28,8 @@ a {
 
 a:active,
 a:hover {
-    color:var(--darkBlue);
-    transition: ease-in 0.2s;
+    color:var(--hover);
+    transition: ease-in 0.3s;
 }
 
 p {
@@ -68,7 +69,7 @@ h2 {
 }
 
 .elem-logo {
-    border: 5px solid;
+    border: 3px solid;
     border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     position: relative;
     margin: 35px auto;
@@ -92,7 +93,7 @@ h2 {
 .logo-center {
     position: absolute;
     color: var(--white);
-    top: 20px;
+    top: 15px;
     left: 50px;
     margin: 0px;
     padding: 0px;
@@ -109,7 +110,7 @@ h2 {
 .logo-bottom-center-name {
     position: absolute;
     font-size: 1.5rem;
-    bottom: 20px;
+    bottom: 30px;
     left: 60px;
 }
 
@@ -118,7 +119,7 @@ h2 {
     padding: 0px;
     font-size: 2rem;
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
     left: 75px;
 }
 

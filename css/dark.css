@@ -2,12 +2,13 @@
     --darkbackgroundBlue: #021526;
     --lightBlue: #6EACDA;
     --darkBlue: #03346E;
-    --headerTextDark: #D6BD98;
+    --h2Dark: #D6BD98;
     --barFgColorDark: #126E82;
     --barBgColorDark: #51C4D3;
-    --leftGrad: #99b0d0;
+    --leftGrad: #8fbeff;
     --centerGrad: #745bd3;
     --rightGrad: #fcada4;
+    --hover: #fcada4;
   }
 
 html{
@@ -26,7 +27,7 @@ a {
 
 a:active,
 a:hover {
-    color:var(--darkBlue);
+    color:var(--hover);
     transition: ease-in 0.2s;
 }
 
@@ -37,7 +38,7 @@ p {
 }
 
 h2 {
-    color: var(--headerTextDark);
+    color: var(--h2Dark);
 }
 
 .main-container {

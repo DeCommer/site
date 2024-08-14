@@ -187,11 +187,11 @@ span {
 }
 
 .calc-app-txt {
-    border-bottom: 1px solid var(--white);
+    border: 1px solid var(--lightBlue);
     float: left;
     font-size: 1rem;
-    margin: 0;
-    padding: 0;
+    margin-top: -26px;
+    padding: 2px 10px;
 }
 
 
@@ -237,6 +237,17 @@ footer {
 
     .to-apps-link {
         display: block;
+    }
+
+    .calc-app-txt {
+        /* border-bottom: 1px solid var(--white); */
+        clear: all;
+        margin-top: -26px;
+        padding: 2px 3px;
+    }
+
+    .calculators p, .tools p, .fun p {
+        font-size: .7rem;
     }
 
     footer {

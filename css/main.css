@@ -26,7 +26,6 @@ a {
     color: var(--white);
 }
 
-a:active,
 a:hover {
     color:var(--hover);
     transition: ease-in 0.3s;
@@ -208,6 +207,10 @@ footer {
 }
 /*************************** Mobile *******************************************/
 @media(max-width: 600px) {
+    
+    .theme-btn {
+        right: 10px;
+    }
 
     .main-container {
         /* border: 1px solid red; */

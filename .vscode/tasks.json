@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "Live Preview",
+			"workspacePath": "/Users/josephdecommer/Documents/coding2024/html/mySite",
+			"problemMatcher": [],
+			"label": "Live Preview: Run Server"
+		}
+	]
+}

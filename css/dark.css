@@ -8,7 +8,7 @@
     --leftGrad: #8fbeff;
     --centerGrad: #745bd3;
     --rightGrad: #fcada4;
-    --hover: #fcada4;
+    --hover: #D6BD98;
   }
 
 html{
@@ -46,7 +46,6 @@ h2 {
 span {
     margin-right: 10px;
 }
-
 
 .main-container {
     /* border: 1px solid red; */
@@ -187,7 +186,7 @@ span {
     border-bottom: 1px solid var(--lightBlue);
 }
 
-.calc-app-txt {
+.count-app-txt {
     border: 1px solid var(--lightBlue);
     float: left;
     font-size: .6rem;

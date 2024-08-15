@@ -190,7 +190,7 @@ span {
 .calc-app-txt {
     border: 1px solid var(--lightBlue);
     float: left;
-    font-size: 1rem;
+    font-size: .6rem;
     margin-top: -26px;
     padding: 2px 10px;
 }

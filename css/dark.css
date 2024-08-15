@@ -134,7 +134,8 @@ span {
 }
 
 .title {
-    color: #aebff1; 
+    color: #aebff1;
+    font-size: 2rem;
     background-image: -webkit-linear-gradient(0deg, var(--leftGrad) 23%, var(--centerGrad) 39%, var(--rightGrad) 86%);
     background-clip: text; 
     -webkit-text-fill-color: transparent;

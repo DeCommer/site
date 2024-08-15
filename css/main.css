@@ -26,6 +26,7 @@ a {
     color: var(--white);
 }
 
+a:active,
 a:hover {
     color:var(--hover);
     transition: ease-in 0.3s;
@@ -134,7 +135,8 @@ span {
 }
 
 .title {
-    color: var(--white); 
+    color: var(--white);
+    font-size: 2rem;
     background-image: -webkit-linear-gradient(0deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 90%); 
     background-clip: text; 
     -webkit-text-fill-color: transparent;
@@ -207,10 +209,6 @@ footer {
 }
 /*************************** Mobile *******************************************/
 @media(max-width: 600px) {
-    
-    .theme-btn {
-        right: 10px;
-    }
 
     .main-container {
         /* border: 1px solid red; */

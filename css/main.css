@@ -210,6 +210,10 @@ footer {
 /*************************** Mobile *******************************************/
 @media(max-width: 600px) {
 
+    .theme-btn {
+        right: 10px;
+    }
+
     .main-container {
         /* border: 1px solid red; */
         display: flex;

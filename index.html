@@ -11,63 +11,40 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:name" content="DeCommer.com">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/appCounter.js" defer></script>
+    <!-- <script src="./js/appCounter.js" defer></script> -->
     <noscript>If you are seeing this message JavaScript is disabled on your device.</noscript>
   </head>
   <body>
     <div class="main-container">
-      <button id="mode-btn" class="theme-btn">☁️ Dark theme</button>
-      <div class="left-container">
-        <div class="elem-logo">
-          <p class="logo-upper-left">45</p>
-          <h1 class="logo-center">D<span>e</span></h1>
-          <p class="logo-bottom-center-name">DeCommer</p>
-          <p class="logo-bottom-center">19.79</p>
-        </div>
-        <div class="title-container">
-          <h2 class="title">Joseph DeCommer</h2>
-          <p class="description-text">Developer</p>
-        </div>
-        <section class="main">
-          <div class="to-apps-link">
-            <p><a href="#apps"><span class="main-link-icon">📱</span>Apps</p></a>
+      <!-- <button id="mode-btn" class="theme-btn">☁️ Dark theme</button> -->
+       <header>
+          <nav class="nav-bar">
+              <div class="to-apps-link">
+                <p><a href="#apps"><span class="main-link-icon">📱</span>Apps</p></a>
+              </div>
+              <p><a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</p></a>
+              <!-- <p><a href="https://en.wikipedia.org/wiki/Michigan" target="_blank"><span class="main-link-icon">🗺️</span>Location</a></p></a>
+              <p><a href="paintings.html"><span class="main-link-icon">🎨</span>Paintings</p></a>
+              <p><a href="mailto:decommer@icloud.com"><span class="main-link-icon">📬</span>Contact</p></a> -->
+          </nav>
+          <div class="hero">
+            <div class="elem-logo">
+              <p class="logo-upper-left">45</p>
+              <h1 class="logo-center">D<span>e</span></h1>
+              <p class="logo-bottom-center-name">DeCommer</p>
+              <p class="logo-bottom-center">19.79</p>
+            </div>
+            <div class="title-container">
+              <h2 class="title">Joseph DeCommer</h2>
+              <p class="description-text">Developer</p>
+            </div>
           </div>
-          <p><a href="https://en.wikipedia.org/wiki/Michigan" target="_blank"><span class="main-link-icon">🗺️</span>Location</a></p></a>
-          <p><a href="https://github.com/DeCommer?tab=repositories" target="_blank"><span class="main-link-icon">💻</span>GitHub</p></a>
-          <p><a href="paintings.html"><span class="main-link-icon">🎨</span>Paintings</p></a>
-          <p><a href="mailto:decommer@icloud.com"><span class="main-link-icon">📬</span>Contact</p></a>
-        </section>
-        <section class="skills">
-          <h2><span class="header-icon">🏭</span>Skills</h2>
-          <p>Mac/Lin/Win</p>
-          <div class="bar-bg"><div class="bar-fg" style="width:95%"></div></div>
-          <p>MS Office</p>
-          <div class="bar-bg"><div class=" bar-fg" style="width:90%"></div></div>
-          <p>Statistics</p>
-          <div class="bar-bg"><div class="bar-fg" style="width:90%"></div></div>
-          <p>Database platforms</p>
-          <div class="bar-bg"><div class="bar-fg" style="width:90%"></div></div>
-        </section>
-        <section class="languages">
-          <h2><span class="header-icon">📕</span>Languages</h2>
-          <p>HTML / CSS / JS</p>
-          <div class="bar-bg"><div class="bar-fg" style="width:90%"></div></div>
-          <p>SQL</p>
-          <div class="bar-bg"><div class="bar-fg" style="width:85%"></div></div>
-          <p>Java</p>
-          <div class="bar-bg"><div class="bar-fg" style="width:85%"></div></div>
-          <p>Python</p>
-          <div class="bar-bg"><div class="bar-fg" style="width:75%"></div></div>
-        </section>
-        <section class="codewars">
-          <h2><span class="header-icon">🖥️</span>Codewars</h2>
-          <a href="https://www.codewars.com/users/JDeCo" target="_blank"><img src="https://www.codewars.com/users/JDeCo/badges/large"  width="100%" ></a>
-        </section>
-      </div>
-      <div class="right-container" id="apps">
-        <section class="calculators">
-          <h2>🚀 Calculators</h2>
-          <p id="cal-apps" class="count-app-txt">##</p>
+        </header>
+
+      <div class="apps-main-container" id="apps">
+        <section class="calculators app-card">
+          <h2><span class="h2-icon">🚀</span> Calculators</h2>
+          <!-- <p id="cal-apps" class="count-app-txt">##</p> -->
           <div><span class="app-link-icon">🔗</span><a href="https://decommer.github.io/practiceNetwork/oe.html">Odd / Even Calculator</a></div>
           <div><span class="app-link-icon">⏳</span><a href="https://decommer.github.io/practiceNetwork/timecalc.html">Hours Calculator</a></div>
           <div><span class="app-link-icon">🔋</span><a href="https://decommer.github.io/practiceNetwork/percentcalc.html">Percent Calculator</a></div>
@@ -76,9 +53,9 @@
           <div><span class="app-link-icon">👴</span><a href="https://decommer.github.io/practiceNetwork/agecalc.html">Age Calculator</a></div>
           <div><span class="app-link-icon">💳</span><a href="https://decommer.github.io/practiceNetwork/tipclac.html">Tip Calculator</a></div>
         </section>
-        <section class="tools">
-          <h2>🧰 Tools</h2>
-          <p id="tools-apps" class="count-app-txt">##</p>
+        <section class="tools app-card">
+          <h2><span class="h2-icon">🧰</span> Tools</h2>
+          <!-- <p id="tools-apps" class="count-app-txt">##</p> -->
           <div><span class="app-link-icon">🗳️</span><a href="https://decommer.github.io/practiceNetwork/clickcount.html">Counter</a></div>
           <div><span class="app-link-icon">📊</span><a href="https://decommer.github.io/practiceNetwork/progressbartest.html">Progress Bar</a></div>
           <div><span class="app-link-icon">🍅</span><a href="https://decommer.github.io/practiceNetwork/tomatotime.html">Tomato Timer</a></div>
@@ -88,9 +65,9 @@
           <div><span class="app-link-icon">⚖️</span><a href="https://decommer.github.io/practiceNetwork/weightconverter.html">Weight Converter</a></div>
           <div><span class="app-link-icon">📐</span><a href="https://decommer.github.io/practiceNetwork/raddegconverter.html">Radians/Degrees</a></div>
         </section>
-        <section class="api">
-          <h2>🎛️ API</h2>
-          <p id="api-apps" class="count-app-txt">##</p>
+        <section class="api app-card">
+          <h2><span class="h2-icon">🎛️</span> API</h2>
+          <!-- <p id="api-apps" class="count-app-txt">##</p> -->
           <div><span class="app-link-icon">📖</span><a href="https://decommer.github.io/practiceNetwork/runapi/paging.html">Pagination API</a></div>
           <div><span class="app-link-icon">🔬</span><a href="https://decommer.github.io/practiceNetwork/periodic-project/periodic.html">Periodic Table API</a></div>
           <div><span class="app-link-icon">🗺️</span><a href="https://decommer.github.io/practiceNetwork/map/map.html">State Facts Map API</a></div>
@@ -99,9 +76,9 @@
           <div><span class="app-link-icon">👫</span><a href="https://decommer.github.io/practiceNetwork/population.html">Population Counter API</a></div>
           <div><span class="app-link-icon">🎢</span><a href="https://decommer.github.io/practiceNetwork/quadratic-solver.html">Quadratic Solver API</a></div>
         </section>
-        <section class="fun">
-          <h2>🎊 Fun</h2>
-          <p id="fun-apps" class="count-app-txt">##</p>
+        <section class="fun app-card">
+          <h2><span class="h2-icon">🎊</span> Fun</h2>
+          <!-- <p id="fun-apps" class="count-app-txt">##</p> -->
           <div><span class="app-link-icon">🪙</span><a href="https://decommer.github.io/practiceNetwork/coinflip.html">Coin Flipper</a></div>
           <div><span class="app-link-icon">🃏</span><a href="https://decommer.github.io/practiceNetwork/blackjack/blackjack.html">Blackjack</a></div>
           <div><span class="app-link-icon">🧮</span><a href="https://decommer.github.io/practiceNetwork/mathquiz/mathQuiz.html">Math Quiz</a></div>
@@ -111,9 +88,42 @@
         </section>
       </div>
     </div>
+    
+    <!-- <div class="info">
+      <section class="skills">
+        <h2><span class="header-icon">🏭</span>Skills</h2>
+        <p>Mac/Lin/Win</p>
+        <div class="bar-bg"><div class="bar-fg" style="width:95%"></div></div>
+        <p>MS Office</p>
+        <div class="bar-bg"><div class=" bar-fg" style="width:90%"></div></div>
+        <p>Statistics</p>
+        <div class="bar-bg"><div class="bar-fg" style="width:90%"></div></div>
+        <p>Database platforms</p>
+        <div class="bar-bg"><div class="bar-fg" style="width:90%"></div></div>
+      </section>
+      <section class="languages">
+        <h2><span class="header-icon">📕</span>Languages</h2>
+        <p>HTML / CSS / JS</p>
+        <div class="bar-bg"><div class="bar-fg" style="width:90%"></div></div>
+        <p>SQL</p>
+        <div class="bar-bg"><div class="bar-fg" style="width:85%"></div></div>
+        <p>Java</p>
+        <div class="bar-bg"><div class="bar-fg" style="width:85%"></div></div>
+        <p>Python</p>
+        <div class="bar-bg"><div class="bar-fg" style="width:75%"></div></div>
+      </section>
+      <section class="codewars">
+        <h2><span class="header-icon">🖥️</span>Codewars</h2>
+        <a href="https://www.codewars.com/users/JDeCo" target="_blank"><img src="https://www.codewars.com/users/JDeCo/badges/large"  width="20%" ></a>
+      </section>
+    </div> -->
+    
     <footer>
-      <p>🫀 Made by Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
+      <p>Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
     </footer>
+
+
+
     <script data-name="BMC-Widget" 
       data-cfasync="false" 
       data-id="JosephDeCommer" 
@@ -122,22 +132,26 @@
       data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"
       data-message="If you like these tools you can show your appreciation with a coffee!">
     </script>
+
     <script> 
+
+      const year = document.querySelector('.year');
+      yearText = new Date().getFullYear();
+      year.textContent = yearText;
+      console.log('Site loaded');
+
       const modeBtn = document.querySelector('#mode-btn');
       modeBtn.addEventListener('click', () => {
           const theme = document.getElementsByTagName('link')[0]; 
           if (theme.getAttribute('href') == './css/main.css') { 
               theme.setAttribute('href', './css/dark.css');
-              modeBtn.innerHTML = '☀️ Light theme';
+              modeBtn.innerHTML = '☀️';
           } else { 
               theme.setAttribute('href', './css/main.css');
-              modeBtn.innerHTML = '☁️ Dark theme'; 
+              modeBtn.innerHTML = '☁️'; 
           } 
       });
-      const year = document.querySelector('.year');
-      yearText = new Date().getFullYear();
-      year.textContent = yearText;
-      console.log('Site loaded');
+
     </script> 
   </body>
 </html>

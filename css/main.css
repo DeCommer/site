@@ -3,13 +3,18 @@
     --buttonRed: #c1121f;
     --darkBlue: #03346E;
     --barFgColor: #06D001;
-    --barBgColor: #fff;
+    --barBgColor: #05cff7;
     --leftGrad: #05cff7;
     --centerGrad: #a2faa7;
-    --rightGrad: #ff5900;
+    --rightGrad: #0077ff;
     --hover: #ff5900;
     --h2: #fff;
     --white: #fff;
+}
+
+*{
+    margin:0px;
+    padding: 0;
 }
 
 html{
@@ -17,69 +22,66 @@ html{
 }
 
 body {
-    background-color: var(--backgroundBlue);
+    /* border: 1px solid red; */
+    background-color: var(--white);
 }
 
 a {
-    background-color: transparent;
     text-decoration: none;
-    color: var(--white);
-}
-
-a:active,
-a:hover {
-    color:var(--hover);
-    transition: ease-in 0.3s;
-}
-
-p {
+    color: var(--backgroundBlue);
     font-size: 1.3rem;
-    font-weight: lighter;
-    color: var(--white);
+    font-weight: 100;
 }
 
-h2 {
-    color: var(--h2);
-    margin: 25px 0;
-    padding: 0;
+a:hover {
+    color: #ff5900;
+    opacity: 1;
+    transition: all 0.3s ease;
 }
 
-span {
+.to-apps-link {
+    display: none;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    width: fit-content;
+    height: 50px;
+}
+
+.main-link-icon {
     margin-right: 10px;
 }
 
-.main-container {
-    /* border: 1px solid red; */
+.hero {
+    border-bottom: 1px solid #ddd;
     display: flex;
-    flex-direction: row;
+    padding: 50px;
+    align-items: center;
     justify-content: center;
-    justify-content: space-evenly;
-    width: 90%;
-    margin: 0 auto;
+    gap: 10px;
 }
 
-.theme-btn {
-    position: absolute;
-    background: none;
-    top: 0px;
-    right: 40px;
-    border: none;
-	cursor:pointer;
-	color:var(--white);
-	font-size: 1.3rem;
-	text-decoration:none;
+.title-container {
+    text-align: center;
 }
 
-.left-container {
-    /* border: 1px solid red; */
-    width: 350px;
+.title {
+    color: var(--backgroundBlue);
+}
+
+.description-text {
+    color: var(--hover)
 }
 
 .elem-logo {
     border: 3px solid;
     border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    color: var(--backgroundBlue);
     position: relative;
-    margin: 35px auto;
     padding: 0;
     height: 240px;
     width: 250px;
@@ -99,7 +101,6 @@ span {
 
 .logo-center {
     position: absolute;
-    color: var(--white);
     top: 15px;
     left: 50px;
     margin: 0px;
@@ -117,7 +118,7 @@ span {
 .logo-bottom-center-name {
     position: absolute;
     font-size: 1.5rem;
-    bottom: 30px;
+    bottom: 55px;
     left: 60px;
 }
 
@@ -130,146 +131,89 @@ span {
     left: 75px;
 }
 
-.title-container {
-    text-align: center;
+.apps-main-container {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+    padding: 10px;
 }
 
-.title {
-    color: var(--white);
-    font-size: 2rem;
-    background-image: -webkit-linear-gradient(0deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 90%); 
-    background-clip: text; 
-    -webkit-text-fill-color: transparent;
-    margin:0;
-    padding: 0;
+.app-card {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    /* border-radius: 10px; */
+    padding: 25px;
 }
 
-.main-link-icon {
-    font-size: 2rem;
-    margin-right: 15px;
+.app-link-icon {
+    margin-right: 10px;
 }
 
-.to-apps-link {
-    display: none;
+.app-card h2 {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #999;
+    color: var(--backgroundBlue);
 }
 
-.main, .skills, .languages, .codewars{
-    margin: 25px 0;
-    border-top: 1px solid var(--white);
+.h2-icon {
+    margin-right: 5px;
 }
 
-.header-icon {
-    font-size: 2rem;
-    margin-right: 15px;
+.app-card a {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.info {
+    /* border: 1px solid fuchsia; */
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 .bar-bg {
-    height: 7px;
     background-color: var(--barBgColor);
 }
 
 .bar-fg {
-    color: var(--white);
+    color: #fff;
     background-color: var(--barFgColor);
     height:7px; 
 }
 
-.right-container {
-    /* border: 1px solid red; */
-    margin-top: 100px;
-    margin-left: 45px;
-    text-align: right;
-    color: var(--white);
-    font-size: 1.7rem;
-    font-weight: 100;
-    width: 45%;
-}
-
-.count-app-txt {
-    border: 1px solid var(--white);
-    float: left;
-    font-size: .6rem;
-    margin-top: -26px;
-    padding: 2px 10px;
-}
-
-.right-container h2 {
-    border-bottom: 1px solid var(--white);
-}
-
 footer {
-    /* border: 1px solid red; */
+    /* border: 1px solid #ff5900; */
+    color: var(--backgroundBlue);
+    position: absolute;
     display: flex;
-    gap: 10px;
     justify-content: center;
-    color: var(--white);
-    font-size: 1.2rem;
-    font-weight: 100;
-    margin-top: 20px;
+    align-items: center;
+    gap: 5px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
 }
+
 /*************************** Mobile *******************************************/
-@media(max-width: 600px) {
+@media(max-width: 900px) {
 
-    .theme-btn {
-        right: 10px;
-    }
-
-    .main-container {
-        /* border: 1px solid red; */
-        display: flex;
+    .hero {
         flex-direction: column;
-        align-items: center;
+    }
+
+    .apps-main-container {
+        flex-direction: column;
         justify-content: center;
-        width: 90%;
-        margin: 0 auto;
+        align-items: center;
     }
 
-    .left-container {
-        /* border: 1px solid yellow; */
-        width: 90%;
-    }
-
-    .right-container {
-        /* border: 1px solid blue; */
-        margin: 0;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: 100;
-        width: 90%;
-    }
-
-    .main {
-        text-align: center;
-    }
-
-    .to-apps-link {
-        display: block;
-    }
-
-    .calc-app-txt {
-        /* border-bottom: 1px solid var(--white); */
-        clear: all;
-        margin-top: -26px;
-        padding: 2px 3px;
-    }
-
-    .calculators p, .tools p, .fun p {
-        font-size: .7rem;
+    .app-card {
+        width: 55%;
     }
 
     footer {
-        /* border: 1px solid wheat; */
-        display: flex;
-        align-items: center;
-        margin: 10px 0;
-        padding: 0;
+        position: relative;
     }
 
-    footer p {
-        font-size: .9rem;
-    }
-
-    #bmc-wbtn {
-        margin-bottom: 25px;
-    }
 }

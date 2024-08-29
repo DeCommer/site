@@ -16,17 +16,13 @@
   </head>
   <body>
     <div class="main-container">
-      <!-- <button id="mode-btn" class="theme-btn">☁️ Dark theme</button> -->
-       <header>
-          <nav class="nav-bar">
-              <!-- <div class="to-apps-link">
-                <p><a href="#apps"><span class="main-link-icon">📱</span>Apps</p></a>
-              </div> -->
-              <p><a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</p></a>
-              <!-- <p><a href="https://en.wikipedia.org/wiki/Michigan" target="_blank"><span class="main-link-icon">🗺️</span>Location</a></p></a>
-              <p><a href="paintings.html"><span class="main-link-icon">🎨</span>Paintings</p></a>
-              <p><a href="mailto:decommer@icloud.com"><span class="main-link-icon">📬</span>Contact</p></a> -->
-          </nav>
+      <header>
+        <nav class="nav-bar">
+          <div class="header-links">
+            <a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</a>
+            <button id="mode-btn" class="theme-btn">🌑</button>
+          </div>
+        </nav>
           <div class="hero">
             <div class="elem-logo">
               <p class="logo-upper-left randNum">00</p>
@@ -40,7 +36,6 @@
             </div>
           </div>
         </header>
-
       <div class="apps-main-container" id="apps">
         <section class="calculators app-card">
           <h2><span class="h2-icon">🚀</span> Calculators</h2>
@@ -88,41 +83,9 @@
         </section>
       </div>
     </div>
-    
-    <!-- <div class="info">
-      <section class="skills">
-        <h2><span class="header-icon">🏭</span>Skills</h2>
-        <p>Mac/Lin/Win</p>
-        <div class="bar-bg"><div class="bar-fg" style="width:95%"></div></div>
-        <p>MS Office</p>
-        <div class="bar-bg"><div class=" bar-fg" style="width:90%"></div></div>
-        <p>Statistics</p>
-        <div class="bar-bg"><div class="bar-fg" style="width:90%"></div></div>
-        <p>Database platforms</p>
-        <div class="bar-bg"><div class="bar-fg" style="width:90%"></div></div>
-      </section>
-      <section class="languages">
-        <h2><span class="header-icon">📕</span>Languages</h2>
-        <p>HTML / CSS / JS</p>
-        <div class="bar-bg"><div class="bar-fg" style="width:90%"></div></div>
-        <p>SQL</p>
-        <div class="bar-bg"><div class="bar-fg" style="width:85%"></div></div>
-        <p>Java</p>
-        <div class="bar-bg"><div class="bar-fg" style="width:85%"></div></div>
-        <p>Python</p>
-        <div class="bar-bg"><div class="bar-fg" style="width:75%"></div></div>
-      </section>
-      <section class="codewars">
-        <h2><span class="header-icon">🖥️</span>Codewars</h2>
-        <a href="https://www.codewars.com/users/JDeCo" target="_blank"><img src="https://www.codewars.com/users/JDeCo/badges/large"  width="20%" ></a>
-      </section>
-    </div> -->
-    
     <footer>
       <p>Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
     </footer>
-
-
 
     <script data-name="BMC-Widget" 
       data-cfasync="false" 
@@ -134,7 +97,6 @@
     </script>
 
     <script> 
-
       const year = document.querySelectorAll('.year');
       year.forEach(year => {
         yearText = new Date().getFullYear();
@@ -142,7 +104,6 @@
       })
 
       const randNum = document.querySelectorAll(".randNum");
-
       setInterval(() =>{
         randNum.forEach(randNum => {
         let num = Math.floor(Math.random() * 90 + 10);
@@ -155,10 +116,10 @@
           const theme = document.getElementsByTagName('link')[0]; 
           if (theme.getAttribute('href') == './css/main.css') { 
               theme.setAttribute('href', './css/dark.css');
-              modeBtn.innerHTML = '☀️';
+              modeBtn.innerHTML = '🌕';
           } else { 
               theme.setAttribute('href', './css/main.css');
-              modeBtn.innerHTML = '☁️'; 
+              modeBtn.innerHTML = '🌑'; 
           } 
       });
 

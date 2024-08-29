@@ -39,22 +39,33 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.to-apps-link {
-    display: none;
-}
-
 .nav-bar {
+    /* border: 1px solid red; */
     display: flex;
-    align-items: center;
-    padding: 10px;
-    gap: 20px;
-    width: fit-content;
-    height: 50px;
+    justify-content: center;
+    width: 100%;
 }
 
-.main-link-icon {
-    margin-right: 10px;
+.header-links {
+    /* border: 1px solid green; */
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.theme-btn {
+    background: none;
+    border: none;
+	cursor:pointer;
+	color:#fff;
+	font-size: 2rem;
+	text-decoration:none;
+}
+
+/* .main-link-icon {
+    margin-right: 10px;
+} */
 
 .hero {
     border-bottom: 1px solid #ddd;
@@ -141,6 +152,8 @@ a:hover {
 }
 
 .app-card {
+    border: 1px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
     /* border-radius: 10px; */
     padding: 25px;

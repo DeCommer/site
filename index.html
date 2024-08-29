@@ -19,9 +19,9 @@
       <!-- <button id="mode-btn" class="theme-btn">☁️ Dark theme</button> -->
        <header>
           <nav class="nav-bar">
-              <div class="to-apps-link">
+              <!-- <div class="to-apps-link">
                 <p><a href="#apps"><span class="main-link-icon">📱</span>Apps</p></a>
-              </div>
+              </div> -->
               <p><a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</p></a>
               <!-- <p><a href="https://en.wikipedia.org/wiki/Michigan" target="_blank"><span class="main-link-icon">🗺️</span>Location</a></p></a>
               <p><a href="paintings.html"><span class="main-link-icon">🎨</span>Paintings</p></a>
@@ -29,10 +29,10 @@
           </nav>
           <div class="hero">
             <div class="elem-logo">
-              <p class="logo-upper-left">45</p>
+              <p class="logo-upper-left randNum"></p>
               <h1 class="logo-center">D<span>e</span></h1>
               <p class="logo-bottom-center-name">DeCommer</p>
-              <p class="logo-bottom-center">19.79</p>
+              <p class="logo-bottom-center"><span class="randNum"></span>.<span class="randNum"></span></p>
             </div>
             <div class="title-container">
               <h2 class="title">Joseph DeCommer</h2>
@@ -135,10 +135,23 @@
 
     <script> 
 
-      const year = document.querySelector('.year');
-      yearText = new Date().getFullYear();
-      year.textContent = yearText;
-      console.log('Site loaded');
+      const year = document.querySelectorAll('.year');
+      year.forEach(year => {
+        yearText = new Date().getFullYear();
+        year.textContent = yearText;
+      })
+
+      const randNum = document.querySelectorAll(".randNum");
+
+      setInterval(() =>{
+        randNum.forEach(randNum => {
+        let num = Math.floor(Math.random() * 90 + 10);
+        randNum.innerHTML = `${num}`;
+      });
+      }, 500)
+
+
+
 
       const modeBtn = document.querySelector('#mode-btn');
       modeBtn.addEventListener('click', () => {

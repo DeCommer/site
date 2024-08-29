@@ -1,13 +1,11 @@
 :root {
-    --bgDark: #0A2647;
-    --textDark: #3287d1;
-    --red: #c1121f;
-    --darkBlue: #03346E;
-    --leftGrad: #8fbeff;
-    --centerGrad: #745bd3;
-    --rightGrad: #fcada4;
-    --hover: #ff5900;
-    --h2: #fff;
+    --bgDark: #222831;
+    --textDark: #eee;
+    --highlightDark: #76ABAE;
+    --slate: #31363F;
+    --leftGrad: #229799;
+    --centerGrad: #48CFCB;
+    --rightGrad: #F5F5F5;
 }
 
 *{
@@ -82,7 +80,7 @@ a:hover {
 }
 
 .description-text {
-    color: var(--red)
+    color: var(--highlightDark)
 }
 
 .elem-logo {
@@ -152,7 +150,7 @@ a:hover {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
     border: 1px solid;
     border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
-    background-color: var(--darkBlue);
+    background-color: var(--slate);
     /* border-radius: 10px; */
     padding: 25px;
 }

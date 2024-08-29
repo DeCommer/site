@@ -1,15 +1,11 @@
 :root {
-    --backgroundBlue: #007acc;
-    --buttonRed: #c1121f;
-    --darkBlue: #03346E;
-    --barFgColor: #06D001;
-    --barBgColor: #05cff7;
+    --bg: #fff;
+    --text: #007acc;
+    --highlight: #FF6969;
+    --slate: #b6c5e0;
     --leftGrad: #05cff7;
     --centerGrad: #a2faa7;
-    --rightGrad: #0077ff;
-    --hover: #ff5900;
-    --h2: #fff;
-    --white: #fff;
+    --rightGrad: #007acc;
 }
 
 *{
@@ -23,18 +19,18 @@ html{
 
 body {
     /* border: 1px solid red; */
-    background-color: var(--white);
+    background-color: var(--bg);
 }
 
 a {
     text-decoration: none;
-    color: var(--backgroundBlue);
+    color: var(--text);
     font-size: 1.3rem;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 a:hover {
-    color: #ff5900;
+    color: var(--highlight);
     opacity: 1;
     transition: all 0.3s ease;
 }
@@ -58,7 +54,6 @@ a:hover {
     background: none;
     border: none;
 	cursor:pointer;
-	color:#fff;
 	font-size: 2rem;
 	text-decoration:none;
 }
@@ -68,7 +63,8 @@ a:hover {
 } */
 
 .hero {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--slate);
+    color: var(--text);
     display: flex;
     padding: 50px;
     align-items: center;
@@ -81,17 +77,16 @@ a:hover {
 }
 
 .title {
-    color: var(--backgroundBlue);
+    color: var(--blue);
 }
 
 .description-text {
-    color: var(--hover)
+    color: var(--highlight)
 }
 
 .elem-logo {
     border: 3px solid;
     border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
-    color: var(--backgroundBlue);
     position: relative;
     padding: 0;
     height: 240px;
@@ -165,8 +160,8 @@ a:hover {
 
 .app-card h2 {
     margin-bottom: 15px;
-    border-bottom: 1px solid #999;
-    color: var(--backgroundBlue);
+    border-bottom: 1px solid var(--slate);
+    color: var(--text);
 }
 
 .h2-icon {
@@ -185,19 +180,9 @@ a:hover {
     margin: 20px 0;
 }
 
-.bar-bg {
-    background-color: var(--barBgColor);
-}
-
-.bar-fg {
-    color: #fff;
-    background-color: var(--barFgColor);
-    height:7px; 
-}
-
 footer {
     /* border: 1px solid #ff5900; */
-    color: var(--backgroundBlue);
+    color: var(--text);
     position: absolute;
     display: flex;
     justify-content: center;

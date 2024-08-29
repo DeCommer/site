@@ -30,7 +30,7 @@ a {
 }
 
 a:hover {
-    color: var(--red);
+    color: var(--highlightDark);
     opacity: 1;
     transition: all 0.3s ease;
 }
@@ -40,6 +40,7 @@ a:hover {
     display: flex;
     justify-content: center;
     width: 100%;
+    padding-top: 30px;
 }
 
 .header-links {
@@ -63,6 +64,7 @@ a:hover {
 } */
 
 .hero {
+    /* border: 1px solid red; */
     border-bottom: 1px solid var(--highlightDark);
     display: flex;
     padding: 50px;

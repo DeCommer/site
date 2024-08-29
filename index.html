@@ -10,7 +10,7 @@
     <meta property="og:description" content="This site serves as an example of JavaScript work by Joseph DeCommer">
     <meta property="og:locale" content="en_US">
     <meta property="og:name" content="DeCommer.com">
-    <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="./css/main.css">
     <!-- <script src="./js/appCounter.js" defer></script> -->
     <noscript>If you are seeing this message JavaScript is disabled on your device.</noscript>
   </head>
@@ -92,7 +92,7 @@
       data-id="JosephDeCommer" 
       data-description="Support me on Buy me a coffee!" 
       src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
-      data-color="#76ABAE" data-position="Right" data-x_margin="18" data-y_margin="18"
+      data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"
       data-message="If you like these tools you can show your appreciation with a coffee!">
     </script>
 
@@ -114,11 +114,11 @@
       const modeBtn = document.querySelector('#mode-btn');
       modeBtn.addEventListener('click', () => {
           const theme = document.getElementsByTagName('link')[0]; 
-          if (theme.getAttribute('href') == './css/dark.css') { 
-              theme.setAttribute('href', './css/main.css');
+          if (theme.getAttribute('href') == './css/main.css') { 
+              theme.setAttribute('href', './css/dark.css');
               modeBtn.innerHTML = '🌕';
           } else { 
-              theme.setAttribute('href', './css/dark.css');
+              theme.setAttribute('href', './css/main.css');
               modeBtn.innerHTML = '🌑'; 
           } 
       });

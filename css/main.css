@@ -161,11 +161,11 @@ a:hover {
 .app-card h2 {
     margin-bottom: 15px;
     border-bottom: 1px solid var(--slate);
-    color: var(--text);
+    color: var(--highlight);
 }
 
 .h2-icon {
-    margin-right: 5px;
+    margin-right: 2px;
 }
 
 .app-card a {

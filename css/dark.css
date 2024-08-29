@@ -162,7 +162,7 @@ a:hover {
 .app-card h2 {
     margin-bottom: 15px;
     border-bottom: 1px solid var(--textDark);
-    color: var(--textDark);
+    color: var(--highlightDark);
 }
 
 .h2-icon {

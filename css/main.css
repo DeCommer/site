@@ -200,6 +200,8 @@ footer {
 
 .paintings-main-container {
     /* border: 1px solid fuchsia; */
+    max-width: 1500px;
+    margin: 0 auto;
     --gap: 16px;
     --num-cols: 4;
     --row-height: 300px;

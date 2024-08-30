@@ -20,7 +20,7 @@
         <nav class="nav-bar">
           <div class="header-links">
             <a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</a>
-            <button id="mode-btn" class="theme-btn">🌑</button>
+            <a id="mode-btn" class="theme-btn">🌑</a>
           </div>
         </nav>
           <div class="hero">
@@ -106,9 +106,9 @@
       const randNum = document.querySelectorAll(".randNum");
       setInterval(() =>{
         randNum.forEach(randNum => {
-        let num = Math.floor(Math.random() * 90 + 10);
-        randNum.innerHTML = `${num}`;
-      });
+          let num = Math.floor(Math.random() * 90 + 10);
+          randNum.innerHTML = `${num}`;
+        });
       }, 500)
 
       const modeBtn = document.querySelector('#mode-btn');

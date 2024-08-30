@@ -51,6 +51,10 @@ a:hover {
     align-items: center;
 }
 
+.left-header-links a{
+    margin-right: 25px;
+  }
+
 .theme-btn {
     background: none;
     border: none;
@@ -184,7 +188,7 @@ a:hover {
 footer {
     /* border: 1px solid #ff5900; */
     color: var(--text);
-    position: absolute;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,6 +197,35 @@ footer {
     width: 100%;
     height: 50px;
 }
+
+.paintings-main-container {
+    /* border: 1px solid fuchsia; */
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    gap: var(--gap);
+}
+
+.paintings-main-container-col-2 {
+    grid-column:  span 2;
+  }
+  
+  .paintings-main-container-row-2 {
+    grid-row:  span 2;
+  }
+
+  .paintings-main-container > img {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 /*************************** Mobile *******************************************/
 @media(max-width: 900px) {
@@ -211,8 +244,12 @@ footer {
         width: 55%;
     }
 
-    footer {
-        position: relative;
-    }
+    .paintings-main-container {
+        --num-cols: 2;
+        --row-height: 200px;
+      }
 
 }
+
+/***************************  end Mobile *******************************************/
+

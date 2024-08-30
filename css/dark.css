@@ -201,7 +201,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    bottom: 0;
     width: 100%;
     height: 50px;
 }
@@ -223,8 +222,33 @@ footer {
         width: 55%;
     }
 
-    footer {
-        position: relative;
-    }
-
 }
+/*************************** End Mobile *******************************************/
+
+.paintings-main-container {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    gap: var(--gap);
+}
+
+.paintings-main-container-col-2 {
+    grid-column:  span 2;
+  }
+  
+  .paintings-main-container-row-2 {
+    grid-row:  span 2;
+  }
+
+  .paintings-main-container > img {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

@@ -5,9 +5,16 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="./css/main.css">
+            <link rel="stylesheet" href="./css/paintings.css">
+            <script src="./js/scripts.js" defer></script>
+            <script src="./js/img-modal.js" defer></script>
             <title>Select Paintings</title>
         </head>
-        <body>
+          <body>
+
+            <div class="overlay"></div>
+            <div class="image-modal hidden"></div>
+            
             <header>
                 <nav class="nav-bar">
                   <div class="header-links">
@@ -45,63 +52,27 @@
                       <p class="description-text">Oil Painter (Mobile)</p>
                   </div>
               </div>
+              <p class="message app-hidden">Tap image to enlarge</p>
                 <div class="paintings-main-container">
-                    <img src="./img/paintings/conmet.jpg" alt="">
-                    <img src="./img/paintings/ermine.jpg" alt="">
-                    <img class="container-col-2" src="./img/paintings/onwall.jpg" alt="">
-                    <img class="container-col-2" src="./img/paintings/saintasimo.jpg" alt="">
-                    <img src="./img/paintings/realismstudy2.jpg" alt="">
-                    <img src="./img/paintings/egg.jpg" alt="">
-                    <img src="./img/paintings/eva.jpg" alt="">
-                    <img src="./img/paintings/forever.jpg" alt="">
+                  <a class="open-image"><img id="1" src="./img/paintings/conmet.jpg" alt="">       </a>
+                  <a class="open-image"><img id="2" src="./img/paintings/ermine.jpg" alt="">       </a>
+                  <a class="open-image"><img id="3" src="./img/paintings/onwall.jpg" alt="">       </a>
+                  <a class="open-image"><img id="4" src="./img/paintings/saintasimo.jpg" alt="">   </a>
+                  <a class="open-image"><img id="5" src="./img/paintings/realismstudy2.jpg" alt=""></a>
+                  <a class="open-image"><img id="6" src="./img/paintings/egg.jpg" alt="">          </a>
+                  <a class="open-image"><img id="7" src="./img/paintings/eva.jpg" alt="">          </a>
+                  <a class="open-image"><img id="8" src="./img/paintings/forever.jpg" alt="">      </a>
                 </div>
                 <footer>
                     <p>Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
                 </footer>
+                <script data-name="BMC-Widget" 
+                data-cfasync="false" 
+                data-id="JosephDeCommer" 
+                data-description="Support me on Buy me a coffee!" 
+                src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+                data-color="#a2faa7" data-position="Right" data-x_margin="18" data-y_margin="18">
+              </script>
       
-          <script data-name="BMC-Widget" 
-            data-cfasync="false" 
-            data-id="JosephDeCommer" 
-            data-description="Support me on Buy me a coffee!" 
-            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
-            data-color="#229799" data-position="Right" data-x_margin="18" data-y_margin="18"
-            data-message="If you enjoy these paintings you can show your appreciation with a coffee!">
-          </script>
-      
-          <script> 
-            const year = document.querySelectorAll('.year');
-            year.forEach(year => {
-              yearText = new Date().getFullYear();
-              year.textContent = yearText;
-            })
-      
-            const randNum = document.querySelectorAll(".randNum");
-            setInterval(() =>{
-              randNum.forEach(randNum => {
-                let num = Math.floor(Math.random() * 90 + 10);
-                randNum.innerHTML = `${num}`;
-              });
-            }, 500)
-      
-            var toggle = document.getElementById("theme-toggle");
-        const icon = document.querySelector(".theme-icon");
-
-        var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-        if (storedTheme)
-            document.documentElement.setAttribute('data-theme', storedTheme)
-
-        toggle.onclick = function() {
-            var currentTheme = document.documentElement.getAttribute("data-theme");
-            var targetTheme = "light";
-            icon.innerHTML = `🌑` ;
-            if (currentTheme === "light") {
-                targetTheme = "dark";
-                icon.innerHTML = `🌕` ;
-            }
-            document.documentElement.setAttribute('data-theme', targetTheme)
-            localStorage.setItem('theme', targetTheme);
-        };
-          </script> 
-
     </body>
 </html>

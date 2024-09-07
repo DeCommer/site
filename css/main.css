@@ -90,6 +90,7 @@ a {
     color: var(--text);
     font-size: 1.3rem;
     font-weight: 200;
+    cursor: pointer;
 }
 
 a:hover {

@@ -5,7 +5,7 @@ const overlay = document.querySelector(".overlay");
 openImage.forEach((image) => {
     image.addEventListener('click', e => {
         let imageId = e.target.id;
-        // console.log(imageId);
+        console.log(imageId);
         imageModal.classList.remove('hidden');
         overlay.style.display = "block";
 

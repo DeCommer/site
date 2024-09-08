@@ -17,7 +17,7 @@ console.log(url)
 
 if(url.includes("10.0.0") || url.includes("127.0.0.1")) {
     document.querySelector(".title").innerHTML = `Joseph DeCommer (Local)`;
-    console.log("local url");
+    console.log("local");
 }else {
     console.log('online');
 }

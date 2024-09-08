@@ -15,10 +15,11 @@ setInterval(() =>{
 let url = window.location.href;
 console.log(url)
 
-console.log("local url");
-
 if(url.includes("10.0.0") || url.includes("127.0.0.1")) {
-  document.querySelector(".title").innerHTML = `Joseph DeCommer (Local)`;
+    document.querySelector(".title").innerHTML = `Joseph DeCommer (Local)`;
+    console.log("local url");
+}else {
+    console.log('online');
 }
 
 var toggle = document.getElementById("theme-toggle");

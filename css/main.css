@@ -37,7 +37,6 @@ html[data-theme='dark'] {
         --rightGrad: #F5F5F5;
 }
 
-
 .hide {
     display: none;
 }
@@ -458,4 +457,17 @@ footer {
     }
 
 }
+
+@media(max-width: 1024px) {
+    .app-card a {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 932px) {
+    .app-card a {
+        font-size: .8rem;
+    }
+}
+
 /***************************  End Mobile *******************************************/

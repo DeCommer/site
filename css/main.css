@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --bg: #fff;
     --text: #007acc;
     --orange: #ff5500;
@@ -9,19 +9,19 @@
     --leftGrad: #05cff7;
     --centerGrad: #a2faa7;
     --rightGrad: #007acc;
-}
+} */
 
 html[data-theme='light'] {
-    --bg: #fff;
-    --text: #007acc;
-    --orange: #ff5500;
+    --bg: #f3f8f9;
+    --text: #1a8fbe;
+    --orange: #e24a54;
     --orangeHi: #ff7b00;
-    --slate: #b6c5e0;
+    --slate: #a5abb9;
     --activeGreen: #2cdb00;
     --activeGreenHi: #00e650;
-    --leftGrad: #05cff7;
-    --centerGrad: #a2faa7;
-    --rightGrad: #007acc;
+    --leftGrad: #e24a54;
+    --centerGrad: #b7becf;
+    --rightGrad: #1a8fbe;
 }
 
 html[data-theme='dark'] {
@@ -195,6 +195,7 @@ input::placeholder {
 
 .logo-center {
     position: absolute;
+    color: var(--orange);
     top: 30px;
     left: 55px;
     margin: 0px;

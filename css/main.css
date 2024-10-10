@@ -15,14 +15,19 @@ html[data-theme='light'] {
     --bg: #f3f8f9;
     --text: #1a8fbe;
     --orange: #e24a54;
-    --orangeHi: #ff7b00;
+    --orangeHi: #f7616b;
     --slate: #a5abb9;
-    --activeGreen: #2cdb00;
-    --activeGreenHi: #00e650;
+    --activeGreen: #42d72b;
+    --activeGreenHi: #4ae632;
     --leftGrad: #e24a54;
     --centerGrad: #b7becf;
     --rightGrad: #1a8fbe;
+    --labelTxt: #1a8fbe;
+    --tomato: #fff;
+    --short: #42f5a1;
+    --long: #009dff;
 }
+
 
 html[data-theme='dark'] {
         --bg: #222831;

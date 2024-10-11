@@ -422,7 +422,7 @@ footer {
 }
 
 /*************************** Mobile *******************************************/
-@media(max-width: 900px) {
+@media(max-width: 800px) {
 
     input {
         width: 75px;
@@ -435,6 +435,7 @@ footer {
     }
 
     .apps-container {
+        border: 1px solid red;
         max-width: 350px;
     }
 
@@ -449,7 +450,7 @@ footer {
     }
 
     .app-card {
-        width: 90%;
+        width: 100%;
     }
 
     .paintings-main-container {
@@ -478,6 +479,7 @@ footer {
     .app-card a {
         font-size: .8rem;
     }
+    
 }
 
 /***************************  End Mobile *******************************************/

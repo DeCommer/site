@@ -301,7 +301,17 @@ input::placeholder {
     padding: 25px;
 }
 
+.app-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--slate);
+    padding: 0;
+    margin-bottom: 10px;
+}
+
 .count-app-txt {
+    font-size: .8rem;
     color: var(--text);
 }
 
@@ -310,8 +320,6 @@ input::placeholder {
 }
 
 .app-card h2 {
-    margin-bottom: 15px;
-    border-bottom: 1px solid var(--slate);
     color: var(--orange);
 }
 

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mathquiz.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="./js/mathQuiz.js" defer></script>
+    <script src="../js/scripts.js" defer></script>
+    <title>Math Quiz</title>
+</head>
+<body>
+    <header>
+    <nav class="nav-bar">
+        <div class="header-links">
+          <div class="left-header-links">
+            <a href="https://github.com/DeCommer/practiceNetwork/tree/master/mathquiz" target="_blank">GitHub</a>
+            <a href="https://www.decommer.com/">Home</a>
+            <button id="settings-btn" class="settings-btn">Settings</button>
+        </div>
+        <button id="theme-toggle" class="theme-btn" type="button">
+            <span class="theme-icon">🌕</span>
+        </button>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="elem-logo">
+          <!-- <p class="logo-upper-left randNum">00</p> -->
+          <p class="logo-upper-left" id="seconds">00</p>
+          <h1 class="logo-center">D<span>e</span></h1>
+          <p class="logo-bottom-center-name">DeCommer</p>
+          <!-- <p class="logo-bottom-center"><span class="randNum">00</span>.<span class="randNum">00</span></p> -->
+          <p class="logo-bottom-center"><span id="time">00:00</span></p>
+        </div>
+        <div class="title-container">
+          <div>
+          <h2 class="title">Joseph DeCommer</h2>
+          <p class="description-text">+ - x ÷ Quiz</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-title-container app-hidden">
+      <div class="sm-elem-logo">
+          <p class="sm-logo-upper-left" id="mobile-seconds">00</p>
+          <h1 class="sm-logo-center">D<span class="sm-logo-sm-txt">e</span></h1>
+          <p class="sm-logo-bottom-center-name">DeCommer</p>
+          <p class="sm-logo-bottom-center"><span id="mobile-time">00.00</span></p>
+      </div>
+      <div>
+          <h2 class="title">DeCommer.com</h2>
+          <p class="description-text">+ - x ÷ Quiz (Mobile)</p>
+      </div>
+  </div>
+<div class="apps-container">
+    <!-- SETTINGS Section -->
+    <div class="settings-modal hidden">
+        <button class="close-settings-modal">&times</button>
+        <h3>Select mode</h3>
+        <div class="mode-area">
+            <button id="all-ops-btn" class="modeBtn active">+ - x ÷</button>
+            <button id="add-btn" class="modeBtn">Addition</button>
+            <button id="sub-btn"class="modeBtn">Subtraction</button>
+            <button id="mult-btn" class="modeBtn">Multiplication</button>
+            <button  id="div-btn"class="modeBtn">Division</button>
+        </div>
+        <p id="q-in-title"></p>
+        <input id="q-in" type="number">
+        <button id="q-in-enter-btn">Enter</button>
+    </div>
+    <!-- Main App Section -->
+    <div id="mQMain">
+        <div id="messageArea"></div>
+        <div id="qArea">
+            <p id="leftNum" class="mathText"></p>
+            <p id="operator" class="mathText op"></p>
+            <p id="rightNum" class="mathText"></p>
+            <!-- <p class="mathText">=</p> -->
+        </div>  
+        <div id="ansArea">
+            <input id="usrIn" placeholder="=">
+            <button class="btn" id="answer-btn">Enter</button>
+        </div>
+        <p class="question-info-text">0/0</p>
+        <div class="progess-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+        <div id="scoreArea">
+            <div class="time-container">
+                <p><span></span> Time:</p>
+                <p id="time-display">00:00:000</p>
+            </div>
+            <div class="scoreText">
+                <p><span></span> Score:</p>
+                <p id="score">0</p>
+            </div>
+        </div>
+        <nav class="tmNav">
+            <label for="touch"><span>Time Controls</span></label>
+            <input type="checkbox" id="touch">
+            <ul class="slide">
+                <li><button id="time-start-btn" class="modeBtn">Start</button></li>
+                <li><button id="time-pause-btn" class="modeBtn">Pause</button></li>
+                <li><button id="time-reset-btn" class="modeBtn">Reset</button></li>
+            </ul>
+        </nav>
+        <div id="pts-area">
+            <h2>Scoring</h2>
+            <p>1 pt for addition</p>
+            <p>2 pts for subtraction</p>
+            <p>5 pts for multiplication</p>
+            <p>10 pts for division*</p>
+            <p>*Round to nearest 100</p>
+        </div>
+    </div>
+</div>
+<!-- Modals ---------------->
+<div class="winModal hidden">
+    <button class="closeWinModal">&times</button>
+    <h1>Stats</h1>
+    <div class="stats-area">
+        <div>
+            <h2 class="stat-title">Correct:</h2>
+            <p id="correctStat">0</p>
+        </div>
+        <div>
+            <h2 class="stat-title">Incorrect:</h2>
+            <p id="inCorrectStat">0</p>
+        </div>
+        <div>
+            <h2 class="stat-title">Percent:</h2>
+            <p id="percentStat">0</p>
+        </div>
+        <div>
+            <h2 class="stat-title">Total Score:</h2>
+            <p id="scoreStat">0</p>
+        </div>
+        <div>
+            <h2 class="stat-title">Time: </h2>
+            <p id="timeStat">0</p>
+        </div>
+    </div>
+    <div class="questions">
+        <h2>Questions:</h2>
+        <ul id="questions"></ul>
+    </div>
+    <div class="winOverlay hidden"></div>
+</body>
+<script data-name="BMC-Widget" 
+    data-cfasync="false" 
+    data-id="JosephDeCommer" 
+    data-description="Support me on Buy me a coffee!" 
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+    data-color="#a2faa7" data-position="Right" data-x_margin="18" data-y_margin="18">
+</script>
+</html>

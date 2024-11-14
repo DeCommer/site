@@ -1,0 +1,245 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.hide {
+    display: none !important;
+}
+
+.balance-txt {
+color: var(--orange);
+}
+
+input {
+    width: 145px !important;
+}
+
+.text-link:hover {
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.login-apps-container {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.title-area {
+    position: relative;
+    width: 100%;
+    text-align: right;
+}
+
+.left {
+    /* border: 1px solid red; */
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    float: left;
+    gap: 10px;
+}
+
+.account-info {
+    border-top: 1px solid var(--text);
+    border-bottom: 1px solid var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0 10px 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.account-info p {
+    padding: 5px;
+}
+
+.total-balance-txt {
+    font-size: 1.5rem;
+}
+
+.accounts-title-container {
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.account-number-txt {
+   /* border: 1px solid red; */
+   margin-bottom: -40px;
+}
+
+.account-area {
+    display: flex;
+    align-items: center;
+}
+
+.account-card {
+    position: relative;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 5px 20px;
+    border-top: 5px solid var(--orange);
+    height: 100px;
+    width: 250px;
+}
+
+.account-card:nth-child(2) {
+    border-top: 7px solid var(--text);
+}
+
+.debit-account-name {
+    font-size: 1.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .input-modal {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    background-color: var(--bg);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    padding: 0px 20px 20px 20px;
+    z-index: 1;
+  }
+
+  .transfer-modal {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    background-color: var(--bg);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    padding: 0px 20px 20px 20px;
+    z-index: 1;
+  }
+
+  .debit-transfer-container {
+    margin-top: 20px;
+  }
+
+  .savings-transfer-container {
+    margin: 25px 40px;
+  }
+  
+  .select {
+    border: 1px solid var(--text);
+    width: 100%;
+    margin: 10px 0;
+    padding-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .close-input-modal {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 1px;
+    right: 1px;
+    font-size: 1.4rem;
+    color: #9d9d9d;
+    cursor: pointer;
+  }
+
+  .close-transfer-modal {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 1px;
+    right: 1px;
+    font-size: 1.4rem;
+    color: #9d9d9d;
+    cursor: pointer;
+  }
+
+  @media (max-width: 700px) {
+
+    .apps-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95% !important;
+    }
+
+    .title-area {
+        /* border: 1px solid red; */
+        height: 75px;
+        display: flex;
+    }
+
+    .left {
+        /* border: 1px solid green; */
+        display: flex;
+        justify-content: left;
+    }
+
+    .right {
+        /* border: 1px solid blue; */
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: right;
+    }
+
+    .title-area h2 {
+        font-size: 1.3rem;
+    }
+
+    .account-area {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .account-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        gap: 0px;
+        padding: 10px 0;
+    }
+    .input-modal {
+        width: 75%;
+    }
+
+    .transfer-modal {
+        width: 55%;
+    }
+  }

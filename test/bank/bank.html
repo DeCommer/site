@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./bank.css">
+        <link rel="icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml,
+        <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+        <text y=%22.9em%22 font-size=%2290%22>💰</text></svg>"/>
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="./bank.js" defer></script>
+        <script src="../js/scripts.js" defer></script>
+        <title>Bank</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+              <div class="header-links">
+                <div class="left-header-links">
+                  <a href="https://github.com/DeCommer/practiceNetwork/tree/master/bank" target="_blank">GitHub</a>
+                  <a href="https://www.decommer.com/">Home</a>
+              </div>
+              <button id="theme-toggle" class="theme-btn" type="button">
+                <span class="theme-icon">🌕</span>
+               </button>
+              </div>
+            </nav>
+            <div class="hero">
+                <div class="elem-logo">
+                  <!-- <p class="logo-upper-left randNum">00</p> -->
+                  <p class="logo-upper-left" id="seconds">00</p>
+                  <h1 class="logo-center">D<span>e</span></h1>
+                  <p class="logo-bottom-center-name">DeCommer</p>
+                  <!-- <p class="logo-bottom-center"><span class="randNum">00</span>.<span class="randNum">00</span></p> -->
+                  <p class="logo-bottom-center"><span id="time">00:00</span></p>
+                </div>
+                <div class="title-container">
+                  <div>
+                  <h2 class="title">Joseph DeCommer</h2>
+                  <p class="description-text">Bank Simulator</p>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="mobile-title-container app-hidden">
+              <div class="sm-elem-logo">
+                  <p class="sm-logo-upper-left" id="mobile-seconds">00</p>
+                  <h1 class="sm-logo-center">D<span class="sm-logo-sm-txt">e</span></h1>
+                  <p class="sm-logo-bottom-center-name">DeCommer</p>
+                  <p class="sm-logo-bottom-center"><span id="mobile-time">00.00</span></p>
+              </div>
+              <div>
+                  <h2 class="title">DeCommer.com</h2>
+                  <p class="description-text">Bank Simulator (Mobile)</p>
+              </div>
+          </div>
+        <div class="overlay"></div>
+        <div class="input-modal hidden"></div>
+        <div class="transfer-modal hidden"></div>
+
+        <div class="login-apps-container">
+            <h2>Login</h2>
+            <div class="login-container">
+                <label for="user-in">Username: </label>
+                <input id="user-in">
+            </div>
+            <div class="login-container">
+                <label for="pass-in">Password: </label>
+                <input type="password" id="pass-in">
+            </div>
+            <p id="message"></p>
+            <button id="login-btn" class="sm-btn btn">Submit</button>
+            *username: demo, password: 1111
+        </div>
+        <div class="apps-container hide">
+            <div class="title-area">
+                <div class="left">
+                   <p class="text-link" id="logout">Logout</P>|
+                    <p class="text-link" id="transfer">transfer funds</p>
+                </div>
+                <div class="right">
+                    <h2>Welcome, <span id="greeting-txt"></span></h2>
+                    <p id="date-time" class="date-time-txt"></p>
+                </div>
+            </div>
+            <div class="account-info">
+                <p class="account-number-txt">Account Number: <span id="account-number" class="balance-txt"></span></p>
+                <p class="total-balance-txt">Total balance<sup>*</sup>: <span class="balance-txt" id="total-balance">$0.00</span></p>
+            </div>
+            <div class="accounts-title-container">
+                <h2>Accounts<sup>*</sup></h2>
+            </div>
+            <div class="account-area">
+                <div class="account-card">
+                    <p class="debit-account-name">Debit</p>
+                    <p>Account balance: <span class="balance-txt"id="debit-balance">$0.00</span></p>
+                    <!-- <p class="debit-available-txt">Available amount</p> -->
+                    <button id="debit-withdraw-btn" class="sm-btn btn">withdraw</button>
+                    <button id="debit-btn" class="sm-btn btn">Deposit</button>
+                </div>
+                <div class="account-card">
+                    <p class="debit-account-name">Savings</p>
+                    <p>Account balance: <span class="balance-txt" id="savings-balance">$0.00</span></p>
+                    <!-- <p class="debit-available-txt">Available amount</p> -->
+                    <button id="savings-withdraw-btn" class="sm-btn btn">withdraw</button>
+                    <button id="savings-btn" class="sm-btn btn">Deposit</button>
+                </div>
+            </div>
+            <div style="font-size: .6rem; width: 100%; text-align: right;">
+                <p><sup>*</sup>Not real money</p>
+            </div>
+        </div>
+        <footer>
+            <p>Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
+        </footer>
+          
+    </body>
+</html>

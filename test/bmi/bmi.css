@@ -1,0 +1,165 @@
+
+.app-hidden {
+    display: none;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    color: #09396c; 
+}
+
+.btn-area{
+    margin: 10px;
+}
+
+.active {
+    background-color: #42e31aff;
+    color: #235311;
+}
+
+.active:hover {
+    background-color: rgb(159, 232, 141);
+}
+
+.hide {
+    display: none;
+}
+
+.results-area {
+    /* border: 1px solid #454545; */
+    text-align: center;
+    margin-bottom: 5px;
+    height: fit-content;
+    width: 85%;
+}
+.status-txt {
+    font-size: 1rem;
+}
+
+#results-txt{
+    font-size: 5rem;
+    color: #007acc;
+}
+
+.underweight-color {
+    color: #06d6ff;
+}
+.normal-color {
+    color: #27ff06;
+}
+.overweight-color {
+    color: #bfbc13;
+}
+.obese-color {
+    color: #c1121f;
+}
+
+.indicators-area {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 25px;
+    position: relative;
+}
+
+#ind-1 {
+    /* border: 1px solid blue; */
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    left: 60px;
+}
+#ind-2 {
+    /* border: 1px solid yellowgreen; */
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    left: 170px;
+}
+#ind-3 {
+    /* border: 1px solid magenta; */
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    left: 280px;
+}
+#ind-4 {
+    /* border: 1px solid yellow; */
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    right: 30px;
+}
+
+.info-area {
+    /* border: 1px solid red; */
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    width: 100%;
+    height: 90px;
+    font-size: 1.1rem;
+}
+
+.info-area p {
+    text-align: center;
+}
+
+.category-txt {
+    margin: 10px 15px 2px;
+    font-weight: bold;
+    
+}
+
+#underweight{
+    border-top: 4px solid #06d6ff;
+}
+
+.normal{
+
+    border-top: 4px solid #27ff06;
+}
+
+.overweight{
+    border-top: 4px solid #bfbc13;
+}
+
+.obese{
+    border-top: 4px solid #c1121f;
+}
+
+@media(max-width: 900px) {
+    .app-hidden {
+        display: block;
+    }
+    .hero {
+        display: none !important;
+    }
+
+    .info-area {
+        height: 50px;
+        font-size: .7rem;
+    }
+    
+    .info-area p {
+        text-align: center;
+    }
+
+    #ind-1 {
+        left: 37px;
+    }
+    #ind-2 {
+        left: 120px;
+    }
+    #ind-3 {
+        left: 200px;
+    }
+    #ind-4 {
+        right: 15px;
+    }
+}

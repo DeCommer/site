@@ -1,0 +1,170 @@
+:root {
+    --bg: #fff;
+    --text: #007acc;
+    --highlight: #FF6969;
+    --slate: #b6c5e0;
+    --leftGrad: #05cff7;
+    --centerGrad: #a2faa7;
+    --rightGrad: #007acc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #007acc;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 5px;
+}
+
+main {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 0 auto;
+    padding: 15px;
+    width: 475px;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .homeColor {
+    font-size: 1.2rem;
+    color: #007acc;
+}
+
+.homeColor:hover {
+    color:#FF6969;
+    transition: ease-in 0.2s;
+}
+
+a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(9, 75, 97);
+}
+
+h2 span {
+    color:#FF6969;
+}
+
+.dealer-container {
+    margin-bottom: 25px;
+}
+
+#dealer-cards img {
+    height: 175px;
+    margin: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.bet-info-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bet-dialog {
+    border-bottom: 1px solid #282828;
+    width: 450px;
+}
+
+.bet-btns {
+    margin: 20px;
+}
+
+.bet-btn {
+    border: none;
+    padding: 5px 10px;
+    color: #007acc;
+    background-color: #1a4663;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.player-container {
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+
+#player-cards img {
+    height: 175px;
+    margin: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.btn-container {
+    margin-top: 25px;
+}
+
+.btn {
+    background-color: #c1121f;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 45px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d82e2e;
+}
+
+dialog {
+    border: none !important;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 5px 20px rgba(0, 0, 0, 0.25);
+    padding: 1.6rem;
+    width: 300px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#results {
+    font-size: 2rem;
+}
+
+.play-again-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #FF6969;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

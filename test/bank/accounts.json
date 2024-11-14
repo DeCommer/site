@@ -1,0 +1,24 @@
+{"accounts": [
+        {
+            "username": "demo",
+            "password": "1111",
+            "accountNumber": "0000-demo",
+            "debitBalance": 500.99,
+            "savingsBalance": 1000.50
+        },
+        {
+            "username": "Constance",
+            "password": "password",
+            "accountNumber": "0001",
+            "debitBalance": 500.00,
+            "savingsBalance": 100000.00
+        },
+        {
+            "username": "Joseph",
+            "password": "pass",
+            "accountNumber": "0002",
+            "debitBalance": 5000.00,
+            "savingsBalance": 10000.00
+        }
+    ]
+}

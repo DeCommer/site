@@ -1,0 +1,236 @@
+.app-hidden {
+    display: none;
+}
+
+.outer-container {
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.right-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    height: fit-content;
+    width: 425px;
+}
+
+.main-container-2 {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    height: fit-content;
+    width: 425px;
+}
+
+.span {
+    color: var(--text);
+    font-size: 2.5rem;
+    padding: 30px;
+}
+
+.coin img {
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+
+.coin.flip { 
+	animation: spin 1s 
+		cubic-bezier(0.4, 2.5, 0.6, 0.5); 
+} 
+
+@keyframes spin { 
+	0% { 
+		transform: rotateY(0deg); 
+	} 
+	100% { 
+		transform: rotateY(360deg); 
+	} 
+} 
+
+.buttons-area {
+    text-align: center;
+}
+
+.results-area { 
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+	font-size: 1.2rem; 
+	color: var(--text);
+} 
+
+.percent-area { 
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    display: flex;
+	font-size: 1.2rem; 
+    text-align: center;
+	color: var(--text);
+} 
+
+.array-area {
+    /* border: 1px solid red; */
+    margin: 0px;
+    text-align: center;
+    width: 90%;
+    max-height: 250px;
+    overflow: scroll;
+    color: var(--text);
+    font-size: 1.2rem;
+}
+
+.array-area p {
+    margin: 0;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* binomial distribution css */
+
+.stat-results {
+    position: relative;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    margin: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 425px;
+    height: fit-content;
+}
+
+.size-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.5rem;
+    transform: rotate(140deg);
+    cursor: pointer;
+}
+
+.size-btn:hover {
+    color:var(--orange);
+}
+
+.hidden {
+    display: none;
+}
+
+.dist-flips-entry-area {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.binom-data-area {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.binom-results-area {
+    margin: 10px;
+    width: auto;
+}
+
+.big {
+    width: 800px;
+    font-size: 2.5rem;
+}
+
+.big-graph {
+    width: 750px;
+    height: 900px;
+}
+
+@media (max-width: 900px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .main-container {
+        width: 80%;
+    }
+
+    .main-container-2 {
+        /* border: 1px solid red; */
+        margin: 15px auto;
+        width: fit-content;
+        padding: 5px;
+    }
+
+    .stat-results {
+        /* border: 1px solid red; */
+        margin: 15px auto;
+        width: fit-content;
+        padding: 20px;
+    }
+
+    .size-btn {
+        display: none;
+    }
+
+    .outer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .coin img {
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        margin: 5px;
+    }
+
+    .results-area {
+        font-size: 1rem;
+        margin: 5px;
+    }
+
+    .array-area {
+        font-size: 1rem;
+    }
+
+    .app-hidden {
+        display: block;
+    }
+    .hero {
+        display: none !important;
+    }
+    .title-container {
+        color: var(--text);
+    }
+}

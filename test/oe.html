@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/oe.css">
+    <script src="./js/oe.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+    <title>Odd Even</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+          <div class="header-links">
+            <div class="left-header-links">
+              <a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</a>
+              <a href="https://www.decommer.com/">Home</a>
+          </div>
+          <button id="theme-toggle" class="theme-btn" type="button">
+            <span class="theme-icon">🌕</span>
+           </button>
+          </div>
+        </nav>
+        <div class="hero">
+            <div class="elem-logo">
+              <!-- <p class="logo-upper-left randNum">00</p> -->
+              <p class="logo-upper-left" id="seconds">00</p>
+              <h1 class="logo-center">D<span>e</span></h1>
+              <p class="logo-bottom-center-name">DeCommer</p>
+              <!-- <p class="logo-bottom-center"><span class="randNum">00</span>.<span class="randNum">00</span></p> -->
+              <p class="logo-bottom-center"><span id="time">00:00</span></p>
+            </div>
+            <div class="title-container">
+              <div>
+              <h2 class="title">Joseph DeCommer</h2>
+              <p class="description-text">Odd Even Calculator</p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="mobile-title-container app-hidden">
+          <div class="sm-elem-logo">
+              <p class="sm-logo-upper-left" id="mobile-seconds">00</p>
+              <h1 class="sm-logo-center">D<span class="sm-logo-sm-txt">e</span></h1>
+              <p class="sm-logo-bottom-center-name">DeCommer</p>
+              <p class="sm-logo-bottom-center"><span id="mobile-time">00.00</span></p>
+          </div>
+          <div>
+              <h2 class="title">DeCommer.com</h2>
+              <p class="description-text">Odd Even Calculator (Mobile)</p>
+          </div>
+      </div>
+    <div class="apps-container">
+        <div class="numCard">
+            <h2>Num 1</h2>
+                <input class="num" type="number" id="num1" placeholder="0" autocomplete="off">
+            <h4 id="num1OE">Even</h4>
+        </div>
+        <div class="numCard">
+            <h2>Num 2</h2>
+                <input class="num" type="number" id="num2" placeholder="0" autocomplete="off">
+            <h4 id="num2OE">Even</h4>
+        </div>
+        <div class="buttons">
+            <button id="calc-btn" class="btn">Enter</button>
+            <button id="reset-btn" class="btn">Reset</button>
+        </div>
+        <h2 class="results-txt">Results</h2>
+        <div id="resCardContainer">
+            <div class="resNumCard">
+                <h2 class="operator">+</h2>
+                <div class="results-text" id="plusResult">0</div>
+                <h4 id="res1OE">even</h4>
+            </div>
+            <div class="resNumCard">
+                <h2 class="operator">-</h2>
+                <div class="results-text" id="minResult">0</div>
+                <h4 id="res2OE">even</h4>
+            </div>
+            <div class="resNumCard">
+                <h2 class="operator">x</h2>
+                <div class="results-text" id="timesResult">0</div>
+                <h4 id="res3OE">even</h4>
+            </div>
+            <div class="resNumCard">
+                <h2 class="operator">÷</h2>
+                <div class="results-text" id="divResult">0</div>
+                <h4 id="res4OE">even</h4>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
+    </footer>
+      
+    <script data-name="BMC-Widget" 
+    data-cfasync="false" 
+    data-id="JosephDeCommer" 
+    data-description="Support me on Buy me a coffee!" 
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+    data-color="#a2faa7" data-position="Right" data-x_margin="18" data-y_margin="18">
+</script>
+</body>
+</html>

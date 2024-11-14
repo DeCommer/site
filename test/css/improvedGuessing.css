@@ -1,0 +1,112 @@
+.app-hidden {
+  display: none;
+}
+  .top {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 19px;
+  }
+  
+  .bottom {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .number {
+    background: var(--slate);
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 15px;
+    font-size: 6rem;
+    width: 150px;
+    padding: 1rem 0rem;
+    text-align: center;
+    position: relative;
+    margin: 5px auto 25px auto;
+  }
+  
+  .between {
+    color: var(--text);
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0 auto;
+  }
+  
+  .reset {
+    display: flex;  
+  }
+  
+  input::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  .btn {
+    background-color: var(--orange);
+    color: var(--bg);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--orange);
+}
+  
+  .btn:active {
+    transform: translateY(2px);
+  }
+  
+  .message {
+    color: var(--text);
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    height: 3rem;
+  }
+  
+  .label-score {
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+
+  .label-highscore {
+    color: var(--text);
+  }
+
+
+@media(max-width: 900px) {
+
+  .apps-container {
+    width: 80% !important;
+  }
+
+  .btn {
+    font-size: 1rem !important;
+    padding: 10px 20px !important;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .app-title {
+    font-size: 1.6rem;
+  }
+
+  .message {
+    font-size: 1.6rem;
+  }
+
+  .app-hidden {
+      display: block;
+  }
+  .hero {
+      display: none !important;
+  }
+  .title-container {
+      color: var(--text);
+  }
+}

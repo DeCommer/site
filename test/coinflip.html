@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="./css/coinflip.css"/>
+		<link rel="stylesheet" href="./css/main.css"/>
+        <script src="./js/coinflip.js" defer></script>
+        <script src="./js/scripts.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+		<title>Coin Filp Lab</title> 
+	</head> 
+	<body> 
+        <header>
+            <nav class="nav-bar">
+              <div class="header-links">
+                <div class="left-header-links">
+                  <a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</a>
+                  <a href="https://www.decommer.com/">Home</a>
+              </div>
+              <button id="theme-toggle" class="theme-btn" type="button">
+                <span class="theme-icon">🌕</span>
+               </button>
+              </div>
+            </nav>
+            <div class="hero">
+                <div class="elem-logo">
+                  <!-- <p class="logo-upper-left randNum">00</p> -->
+                  <p class="logo-upper-left" id="seconds">00</p>
+                  <h1 class="logo-center">D<span>e</span></h1>
+                  <p class="logo-bottom-center-name">DeCommer</p>
+                  <!-- <p class="logo-bottom-center"><span class="randNum">00</span>.<span class="randNum">00</span></p> -->
+                  <p class="logo-bottom-center"><span id="time">00:00</span></p>
+                </div>
+                <div class="title-container">
+                  <div>
+                  <h2 class="title">Joseph DeCommer</h2>
+                  <p class="description-text">Coin Flip Lab</p>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="mobile-title-container app-hidden">
+              <div class="sm-elem-logo">
+                  <p class="sm-logo-upper-left" id="mobile-seconds">00</p>
+                  <h1 class="sm-logo-center">D<span class="sm-logo-sm-txt">e</span></h1>
+                  <p class="sm-logo-bottom-center-name">DeCommer</p>
+                  <p class="sm-logo-bottom-center"><span id="mobile-time">00.00</span></p>
+              </div>
+              <div>
+                  <h2 class="title">DeCommer.com</h2>
+                  <p class="description-text">Coin Flip Lab (Mobile)</p>
+              </div>
+            </div>
+        <div class="outer-container">        
+		<div class="main-container"> 
+            <h1>Coin Flip</h1>
+			<div class="coin-area coin" id="coin"> 
+				<img src="./assets/img/heads.png"alt="Heads" /> 
+			</div> 
+            <div class="buttons-area">
+                <button id="flip-button" class="btn">Flip</button>
+                <button id="reset-button" class="btn">Reset</button>
+            </div>
+            <div class="array-area">
+                <p id="array-txt"></p>
+            </div>
+            <div class="results-area">
+                <p id="result"><span class="span">H</span><br>Result</p>
+                <p id="flip-count"><span class="span">0</span><br>Flips</p>
+                <p id="heads-count"><span class="span">0</span><br>Heads</p>
+                <p id="tails-count"><span class="span">0</span><br>Tails</p>
+            </div>
+            <div class="percent-area">
+                <p id="heads-percent"><span class="span">0.00%</span><br>Heads</p>
+                <p id="tails-percent"><span class="span">0.00%</span><br>Tails</p>
+            </div>
+		</div> 
+        <div class="right-area">
+            <div class="main-container-2 n-flips">
+                    <h1 class="title margin-top">n Flips Simulator</h1>
+                <div class="input-area">
+                    <label>Number of flips: </label>
+                    <input id="number-of-flips-in" type="number" min="0" max="1000" step="10" placeholder="0">
+                </div>
+                <div class="buttons-area">
+                    <button id="flip-sim-btn" class="btn">Flip</button>
+                    <button id="reset-sim-btn" class="btn">Reset</button>
+                    <p id="message"></p>
+                </div>
+                <div class="array-area">
+                    <p id="sim-array-txt"></p>
+                </div>
+                <div class="results-area">
+                    <p id="sim-flip-count"><span class="span">0</span><br>Flips</p>
+                    <p id="sim-heads-count"><span class="span"n>0</span><br>Heads</p>
+                    <p id="sim-tails-count"><span class="span">0</span><br>Tails</p>
+                </div>
+                <div class="percent-area">
+                    <p id="sim-heads-percent"><span class="span">0.00%</span><br>Heads</p>
+                    <p id="sim-tails-percent"><span class="span">0.00%</span><br>Tails</p>
+                </div>
+            </div>
+            <div class="stat-results">
+                <button id="enlarge-btn" class="size-btn">↔</button>
+                    <h1 class="title margin-top">Binomial Distribution</h1>
+                    <div class="dist-flips-entry-area">
+                        <div class="binom-data-area">
+                            <label for="binomFlips">Flips per trial:</label>
+                            <input type="number" id="binomFlips" min="0" max="50" value="10" step="10">
+                        </div>
+                        <div class="binom-data-area">
+                            <label for="trials">Trials:</label>
+                            <input type="number" id="trials" min="0" value="100" step="100">
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn" id="binom-btn"">Flip</button>
+                        <button class="btn" id="binom-reset-btn"">Reset</button>
+                    </div>
+                    <div class="binom-results-area">
+                        <canvas class="hidden graph" id="myChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
+        </footer>
+          
+        <script data-name="BMC-Widget" 
+        data-cfasync="false" 
+        data-id="JosephDeCommer" 
+        data-description="Support me on Buy me a coffee!" 
+        src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+        data-color="#a2faa7" data-position="Right" data-x_margin="18" data-y_margin="18">
+    </script>
+	</body> 
+</html> 

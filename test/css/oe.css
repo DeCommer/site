@@ -1,0 +1,57 @@
+.app-hidden {
+    display: none;
+}
+
+.apps-container h2 {
+    color: var(--text);
+}
+
+.numCard {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+.results-txt {
+    border-top: 1px solid var(--text);
+    border-bottom: 1px solid var(--text);
+    width: 90%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px;
+    padding: 20px 0;
+}
+
+#resCardContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.apps-container .operator {
+    color: var(--orange);
+}
+
+.resNumCard {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.resNum {
+    margin: 10px;
+}
+
+@media(max-width: 900px) {
+    .app-hidden {
+        display: flex;
+    }
+    .hero {
+        display: none !important;
+    }
+
+}

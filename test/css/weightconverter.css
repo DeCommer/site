@@ -1,0 +1,44 @@
+.app-hidden {
+    display: none;
+}
+
+.type-selection-area {
+    display: flex;
+}
+
+#disp-type {
+    font-size: 1.2rem;
+    color: var(--orange);
+}
+
+#kg-btn {
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+#lb-btn {
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+.results-area {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#formula {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+@media(max-width: 900px) {
+    .app-hidden {
+        display: block;
+    }
+    .hero {
+        display: none !important;
+    }
+    .title-container {
+        color: var(--text);
+    }
+}

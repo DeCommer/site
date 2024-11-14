@@ -1,0 +1,129 @@
+:root {
+    --leftGrad: #05cff7;
+    --centerGrad: #a2faa7;
+    --rightGrad: #007acc;
+}
+
+.app-hidden {
+    display: none;
+}
+
+.main-container {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    background-color: var(--tomato);
+    padding: 25px;
+  }
+
+#timer {
+    margin: 25px 0;
+    font-size: 5rem;
+    font-weight:  bold;
+    user-select: none;
+}
+
+.mode {
+    border: none;
+    background-color: var(--orange);
+    cursor: pointer;
+    color: #fff;
+    padding: 15px;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.mode.active {
+    color: #fff;
+}
+
+.mode.active:hover {
+    color: #fff;
+}
+
+.mode:hover {
+    color: #f76666;
+}
+
+.timer-control {
+    border: none;
+    background-color: #ffffff86;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #0000009b;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+
+.timer-control:disabled {
+    background-color: #94949459;
+    color:#676565;
+}
+
+.timer-control:disabled:hover {
+    background-color: #676565;
+}
+
+.timer-control:hover {
+    background-color: #0093E9;
+    color: #fff;
+}
+
+#controls {
+    border-bottom: 1px solid var(--rightGrad)
+}
+
+#duration-control {
+    margin-top: 25px;
+    user-select:  none;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    /* border: 1px solid blue; */
+}
+
+#duration-control .duration {
+    /* background-color: #bebebe; */
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+    margin: 5px;
+    font-size: 1rem;
+    text-align: center;
+    width: 45px;
+    max-width: fit-content;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+    margin: 0;
+}
+
+input::placeholder {
+    color: rgba(46, 5, 5, 0.9);
+}
+
+@media(max-width: 900px) {
+    .app-hidden {
+        display: block;
+    }
+    .hero {
+        display: none !important;
+    }
+    .title-container {
+        color: var(--text);
+    }
+
+    .main-container {
+        width: 350px;
+    }
+}

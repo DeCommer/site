@@ -1,0 +1,90 @@
+
+.app-hidden {
+    display: none;
+}
+
+.betweenText {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.jsHidden {
+    text-align: left;
+}
+
+h2 {
+    color: var(--text);
+}
+
+#remaining {
+    text-align: center;
+    padding: 10px;
+}
+
+#result {
+    text-align: center;
+    padding: 4px;
+    font-size: 1.5em;
+    color: var(--text);
+}
+
+.reset_btn {
+    display: flex;
+    font-size: 1.4rem;
+    background-color: var(--orange);
+    margin: 0px;
+    padding: 5px 10px;
+    color: var(--bg);
+    border: none;
+    cursor: pointer;
+}
+
+.reset_btn:hover {
+    color: var(--orangeHi);
+}
+
+@media screen and (max-width: 900px) {
+
+    .mainContain {
+        height: auto;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        margin-top: 20px;
+        width: 150px;
+    }
+
+    h4 {
+        padding: 0;
+        margin: 0;
+    }
+
+    #resCardContainer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .operator {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .app-hidden {
+        display: block;
+    }
+    .hero {
+        display: none !important;
+    }
+    .title-container {
+        color: var(--text);
+    }
+    
+}

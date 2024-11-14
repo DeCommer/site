@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tomatotimer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/tomatotimer.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+    <title>🍅 Tomato Time</title>
+</head>
+<body>
+<header>
+    <nav class="nav-bar">
+        <div class="header-links">
+        <div class="left-header-links">
+            <a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</a>
+            <a href="https://www.decommer.com/">Home</a>
+        </div>
+        <button id="theme-toggle" class="theme-btn" type="button">
+            <span class="theme-icon">🌕</span>
+           </button>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="elem-logo">
+          <!-- <p class="logo-upper-left randNum">00</p> -->
+          <p class="logo-upper-left" id="seconds">00</p>
+          <h1 class="logo-center">D<span>e</span></h1>
+          <p class="logo-bottom-center-name">DeCommer</p>
+          <!-- <p class="logo-bottom-center"><span class="randNum">00</span>.<span class="randNum">00</span></p> -->
+          <p class="logo-bottom-center"><span id="time">00:00</span></p>
+        </div>
+        <div class="title-container">
+          <div>
+          <h2 class="title">Joseph DeCommer</h2>
+          <p class="description-text">🍅 Tomato Time! ⏲️</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-title-container app-hidden">
+      <div class="sm-elem-logo">
+          <p class="sm-logo-upper-left" id="mobile-seconds">00</p>
+          <h1 class="sm-logo-center">D<span class="sm-logo-sm-txt">e</span></h1>
+          <p class="sm-logo-bottom-center-name">DeCommer</p>
+          <p class="sm-logo-bottom-center"><span id="mobile-time">00.00</span></p>
+      </div>
+      <div>
+          <h2 class="title">DeCommer.com</h2>
+          <p class="description-text">🍅 Tomato Time! ⏲️ (Mobile)</p>
+      </div>
+  </div>
+    <div class="main-container">
+        <div class="right-container">
+            <div id="modes">
+                <button data-mode-id="tomato" class="mode active">Tomato Mode</button>
+                <button data-mode-id="short" class="mode">Short Break</button>
+                <button data-mode-id="long" class="mode">Long Break</button>
+            </div>
+            <div id="timer">25:00</div>
+            <div id="controls">
+                <button onclick="startTimer()" class="timer-control start">Start</button>
+                <button onclick="pauseTimer()" class="timer-control pause">Pause</button>
+                <button onclick="nextMode()" class="timer-control">Skip</button>
+            </div>
+        </div>
+        <div id="duration-control">
+            <p>Want different tomato times?</p>
+            Work Time:<input type="number" placeholder="00" class="duration" data-duration-id="tomato">
+            Short Break:<input type="number" placeholder="00" class="duration" data-duration-id="short">
+            Long Break:<input type="number" placeholder="00" class="duration" data-duration-id="long">
+        </div>
+    </div>
+        <footer>
+            <p>Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
+        </footer>
+      
+        <script data-name="BMC-Widget" 
+        data-cfasync="false" 
+        data-id="JosephDeCommer" 
+        data-description="Support me on Buy me a coffee!" 
+        src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+        data-color="#a2faa7" data-position="Right" data-x_margin="18" data-y_margin="18">
+    </script>
+    </body>
+</html>

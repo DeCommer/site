@@ -1,0 +1,38 @@
+.app-hidden {
+    display: none;
+}
+
+.type-selection-area {
+    display: flex;
+}
+
+#disp-type {
+    font-size: 1.2rem;
+    color: var(--orange);
+}
+
+.results-area {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.results-area p {
+    padding: 5px;
+}
+
+#formula {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+@media(max-width: 900px) {
+    .app-hidden {
+        display: block;
+    }
+    .hero {
+        display: none !important;
+    }
+    .title-container {
+        color: var(--text);
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ingredientsub.css">
+    <link rel="stylesheet" href="./css/logo.css">
+    <link rel="stylesheet" href="./css/showhide.css">
+    <script src="./js/ingredientsub.js" defer></script>
+    <script src="./js/showhide.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="main-wrapper">
+        <header>
+            <div class="links">
+                <a href="https://www.decommer.com/"><span class="homeColor">Home</span></a>
+                <a class="aboutBtn" href="#"><span class="homeColor">About</span></a>
+            </div>
+            <h1 class="title">Ingredient Subber <sup>Alpha</sup></h1>
+        </header>
+        <input id="input">
+        <button class="btn">Enter</button>
+        <p class="try-text">Try eggs, milk, cheese</p>
+        <p class="directions">Enter missing ingredient</p>
+    </section>
+        <section id="hidden" class="results-wrapper hide">
+            <div id="display-data"></div>
+        </section>
+        <div class="aboutModal hidden">
+            <button class="closeAboutModal">&times</button>
+            <h1>Ingredient Substitute Finder</h1>
+            <p>This is a functional but incomple substitute 
+                finder for cooking ingredients</p><p>
+                I will be adding ingredients here and there,
+                but mostly this is a proof of concept.
+                </p>
+        </div><div class="aboutOverlay hidden"></div>
+
+        <div class="code">
+            <button class="jsBtn" >See the Javascript.</button>
+            <p><pre><code class="jsHidden hidden">
+                <button class="closeJsModal">&times</button>
+Main functiona
+let displayIngSub = () => {
+    let search = input.value;
+    
+    let dataDisplay = Object.values(data).filter((eventData) => {
+        if(search === '') {
+            return '';
+        }else if (eventData.name.toLowerCase().includes(search.toLowerCase())) {
+            return eventData;
+        }
+    }).map((object) => {
+        const {name, amount, substitute1, substitute2, substitute3} = object;
+        if (substitute3 === undefined) {
+            return`
+            <div class="container">
+            <p class="close">x</p>
+            <h3>Ingredient: <span class="ingredient-span">${name}</span></h3>
+            <p><span>Amount: </span> ${amount}</p>
+            <p><span>You can substitute with: </span> ${substitute1}</p>
+            <p><span>or with: </span> ${substitute2}</p>
+            </div>
+            `
+        }else {
+            return`
+            <div class="container">
+            <p class="close">x</p>
+            <h3>Ingredient: <span class="ingredient-span">${name}</span></h3>
+            <p><span>Amount: </span> ${amount}</p>
+            <p><span>You can substitute with:  </span> ${substitute1}</p>
+            <p><span>or with: </span> ${substitute2}</p>
+            <p><span>or with: </span> ${substitute3}</p>
+            </div>
+            `
+        }
+    }).join('');
+
+    display.innerHTML = dataDisplay;
+}
+</body>
+</html>

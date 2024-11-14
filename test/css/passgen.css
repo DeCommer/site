@@ -1,0 +1,60 @@
+.app-hidden {
+    display: none;
+}
+
+.input-area {
+    color: var(--text);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.progress-bar-container {
+    border: 1px solid var(--slate);
+    background-color: var(--inputBg);
+    margin: 15px 0;
+    text-align: center;
+    width: 350px;
+    height: 5px;
+}
+
+.progress-bar {
+    background-color: var(--activeGreen);
+    width: 0%;
+    height: 100%
+}
+
+.btn-area {
+    margin-top: 25px;
+}
+
+.results-area {
+    /* border: 1px solid #454545; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 400px;
+    font-size: 1.2rem;
+    color: var(--text)
+}
+
+#result-txt {
+    overflow: hidden;
+    word-break: break-all;
+    color: var(--activeGreen)
+}
+
+.hide {
+    display: none;
+}
+
+@media(max-width: 900px) {
+    .app-hidden {
+        display: block;
+    }
+    .hero {
+        display: none !important;
+    }
+    .title-container {
+        color: var(--text);
+    }
+}

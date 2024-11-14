@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bmrcalc.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/bmrcalc.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+    <title>Basal Metabolic Rate Calculator</title>
+</head>
+    <body>
+      <header>
+        <nav class="nav-bar">
+          <div class="header-links">
+            <div class="left-header-links">
+              <a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</a>
+              <a href="https://www.decommer.com">Home</a>
+          </div>
+          <button id="theme-toggle" class="theme-btn" type="button">
+            <span class="theme-icon">🌕</span>
+           </button>
+          </div>
+        </nav>
+        <div class="hero">
+          <div class="elem-logo">
+            <!-- <p class="logo-upper-left randNum">00</p> -->
+            <p class="logo-upper-left" id="seconds">00</p>
+            <h1 class="logo-center">D<span>e</span></h1>
+            <p class="logo-bottom-center-name">DeCommer</p>
+            <!-- <p class="logo-bottom-center"><span class="randNum">00</span>.<span class="randNum">00</span></p> -->
+            <p class="logo-bottom-center"><span id="time">00:00</span></p>
+          </div>
+          <div class="title-container">
+            <div>
+            <h2 class="title">Joseph DeCommer</h2>
+            <p class="description-text">BMR Calculator</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-title-container app-hidden">
+        <div class="sm-elem-logo">
+            <p class="sm-logo-upper-left" id="mobile-seconds">00</p>
+            <h1 class="sm-logo-center">D<span class="sm-logo-sm-txt">e</span></h1>
+            <p class="sm-logo-bottom-center-name">DeCommer</p>
+            <p class="sm-logo-bottom-center"><span id="mobile-time">00.00</span></p>
+        </div>
+        <div>
+            <h2 class="title">DeCommer.com</h2>
+            <p class="description-text">BMR Calculator (Mobile)</p>
+        </div>
+      </div>
+        <main class="apps-container">
+            <div class="type-selection-area">
+                <div class="left">
+                    <label>Unit:</label>
+                    <button class="sm-btn btn active" id="us-btn">US</button>
+                    <button class="sm-btn btn" id="metric-btn">Metric</button>
+                </div>
+                <div class="right">
+                    <label>Gender:</label>
+                    <button class="sm-btn btn active" id="m-btn">Male</button>
+                    <button class="sm-btn btn" id="f-btn">Female</button>
+                </div>
+            </div>
+            <div id="us" class="field-container">
+                <div class="left">
+                    <label id="ft-lab">ft:<input id="feet-input" type="number" min="0" max="12"class="feet-input" value="" placeholder="0"></label>
+                    <label id="in-lab">in:<input id="inch-input" type="number" min="0" max="12" class="inches-input" value="" placeholder="0"></label>
+                </div>
+                <div class="right">
+                    <label id="age-lab">Age:<input id="age-input" type="number" min="15" max="100"class="age-input" value="" placeholder="0"></label>
+                    <label id="pounds-lab">lbs:<input id="pounds-input" type="number" min="0" value="" placeholder="0"></label>
+                </div>
+            </div>
+            <div id="metric" class="field-container hide">
+                <label id="in-lab">cm:<input id="cm-input" type="number" class="inches-input" placeholder="0"></label>
+                <label id="age-lab">Age:<input id="met-age-input" type="number" min="0" max="100"class="age-input" placeholder="0"></label>
+                <label id="lb-lab">Kg:<input id="kg-input" type="number" placeholder="0"></label>
+            </div>
+            <div class="btn-area">
+                <button id="calc-btn" class="calc-btn btn">Calculate</button>
+                <button id="reset-btn" class="reset-btn btn">reset</button>
+            </div>
+            <div class="results-area">
+                <p id="message-txt"></p>
+                <p id="results-txt" class="results-text">0</p>
+                <p id="formula-txt"></p>
+            </div>
+        </main>  
+        <footer>
+            <p>Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
+          </footer>
+          <script data-name="BMC-Widget" 
+          data-cfasync="false" 
+          data-id="JosephDeCommer" 
+          data-description="Support me on Buy me a coffee!" 
+          src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+          data-color="#a2faa7" data-position="Right" data-x_margin="18" data-y_margin="18">
+      </script>
+    </body>
+</html>

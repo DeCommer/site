@@ -1,0 +1,54 @@
+.app-hidden {
+    display: none;
+}
+
+.outside-p {
+    padding: 5px;
+}
+
+.est-txt {
+    margin-top: 10px;
+    color: var(--text);
+}
+
+.converter-container {
+    margin-top: 50px;
+    max-width: 550px;
+    width: fit-content;
+    border: 2px solid;
+    padding: 25px;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.world-pop-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--text);
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 5px;
+    color: var(--orange);
+}
+
+label {
+    font-size: 1.5rem;
+    color: var(--text);
+}
+
+.pop-txt {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+@media(max-width: 900px) {
+    .app-hidden {
+        display: block;
+    }
+    .hero {
+        display: none !important;
+    }
+    .title-container {
+        color: var(--text);
+    }
+}

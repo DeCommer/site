@@ -1,0 +1,77 @@
+.app-hidden {
+    display: none;
+}
+
+.apps-container h2 {
+    color: var(--text);
+}
+
+.calculator-container {
+    /* border: 1px solid red; */
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 20px 10px;
+    height: auto;
+    width: 420px;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+}
+
+.phrases-container .input-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+
+input {
+    width: 25%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.results-area {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--text);
+}
+
+.formula {
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+@media(max-width: 900px) {
+    .app-hidden {
+        display: block;
+    }
+    .hero {
+        display: none !important;
+    }
+    .title-container {
+        color: var(--text);
+    }
+
+    .container {
+        width: 350px;
+    }
+}

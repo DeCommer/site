@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Calculator</title>
+    <link rel="stylesheet" href="./css/timecalc.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="#">
+    <script src="./js/timecalc.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+    <nav class="nav-bar">
+      <div class="header-links">
+        <div class="left-header-links">
+          <a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</a>
+          <a href="https://www.decommer.com">Home</a>
+      </div>
+      <button id="theme-toggle" class="theme-btn" type="button">
+        <span class="theme-icon">🌕</span>
+       </button>
+      </div>
+    </nav>
+    <div class="hero">
+        <div class="elem-logo">
+          <!-- <p class="logo-upper-left randNum">00</p> -->
+          <p class="logo-upper-left" id="seconds">00</p>
+          <h1 class="logo-center">D<span>e</span></h1>
+          <p class="logo-bottom-center-name">DeCommer</p>
+          <!-- <p class="logo-bottom-center"><span class="randNum">00</span>.<span class="randNum">00</span></p> -->
+          <p class="logo-bottom-center"><span id="time">00:00</span></p>
+        </div>
+        <div class="title-container">
+          <div>
+          <h2 class="title">Joseph DeCommer</h2>
+          <p class="description-text">Time Converter</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-title-container app-hidden">
+      <div class="sm-elem-logo">
+          <p class="sm-logo-upper-left" id="mobile-seconds">00</p>
+          <h1 class="sm-logo-center">D<span class="sm-logo-sm-txt">e</span></h1>
+          <p class="sm-logo-bottom-center-name">DeCommer</p>
+          <p class="sm-logo-bottom-center"><span id="mobile-time">00.00</span></p>
+      </div>
+      <div>
+          <h2 class="title">DeCommer.com</h2>
+          <p class="description-text">Time Converter (Mobile)</p>
+      </div>
+  </div>
+    <div class="apps-container" id="add-sub-container">
+        <button class="sm-btn active" id="diff-switch-btn" type="button">Difference Mode</button>
+        <h1>[+ -] Calculator</h1>
+        <div class="results-area hide">
+            <p id="start-time"></p>
+            <p id="original-time"></p>
+            <p class="added-minutes-text" id="added-minutes"></p>
+            <p id="add-message"></p>
+            <p class="result" id="time-after-addition"></p>
+        </div>
+        <div class="input-area">
+            <label for="add-time1">Start Time:</label>
+            <div class="hour-1">
+                <input type="number" id="hours1-add" min="1" max="12" placeholder="HH"><h2>:</h2>
+                <input type="number" id="minutes1-add" min="0" max="59" placeholder="MM">
+                <select class="ampm" id="ampm3">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <div class="add-area">
+                <label for="addMins">Number of Minutes</label>
+                <input type="number" id="add-minutes1-add" min="0" max="59" placeholder="MM">
+            </div>
+            <div class="add-btn-area">
+                <button class="sm-btn btn" id="add-btn" type="button">+ Time</button>
+                <button class="sm-btn btn" id="sub-btn" type="button">- Time</button>
+                <button class="sm-btn btn" id="as-clear-btn" type="button">Clear</button>
+            </div>
+        </div>
+    </div>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <div class="apps-container apps-container-hidden" id="diff-container">
+
+            <button class="sm-btn btn-sm active" id="addsub-switch-btn" type="button">[ + - ] Mode</button>
+            <h1>Difference Calculator</h1>
+            <div class="diff-results-area hide">
+                <p id="message"></p>
+                <p class="result" id="result"></p>
+                <p id="total-mins"></p>
+            </div>
+            <div class="input-area">
+                <label for="time1">Start Time:</label>
+                <div class="hour-1">
+                    <input type="number" id="hours1" min="1" max="12" placeholder="HH"><h2>:</h2>
+                    <input type="number" id="minutes1" min="0" max="59" placeholder="MM">
+                    <select class="ampm" id="ampm1">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <label for="time2">End Time:</label>
+                <div class="hour-2">
+                    <input type="number" id="hours2" min="1" max="12" placeholder="HH"><h2>:</h2>
+                    <input type="number" id="minutes2" min="0" max="59" placeholder="MM">
+                    <select class="ampm" id="ampm2">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+            </div>
+            <div class="calc-btn-area">
+                <button class="sm-btn btn" id="enter-btn" type="button">Enter</button>
+                <button class="sm-btn btn" id="clear-btn" type="button">Clear</button>
+            </div>
+        </div>
+        <footer>
+            <p>Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
+        </footer>
+        <script data-name="BMC-Widget" 
+        data-cfasync="false" 
+        data-id="JosephDeCommer" 
+        data-description="Support me on Buy me a coffee!" 
+        src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+        data-color="#a2faa7" data-position="Right" data-x_margin="18" data-y_margin="18">
+    </script>
+</body>
+</html>
+
+

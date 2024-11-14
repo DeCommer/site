@@ -1,0 +1,124 @@
+.app-hidden {
+    display: none;
+}
+
+.converter-container {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
+    margin-top: 0px;
+    max-width: 550px;
+    width: fit-content;
+    padding: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.converter-container h2 {
+    color: var(--text);
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: lighter;
+    position: relative;
+}
+
+h2 span {
+    margin-left: 40px;
+    font-size: 2rem;
+    
+}
+
+.content .input-amount {
+    width: 90%;
+}
+
+.converter-container h2::after {
+    position:absolute;
+    content: "";
+    height: 2px;
+    width: 130px;
+    left: 0;
+    bottom: -6px;
+    background-color: var(--text);
+}
+
+.converter-container .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.converter-container select {
+    width: 100%;
+    padding: 0px 10px;
+    background-color: var(--inputBg);
+    border: 1px solid var(--text);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    appearance: none;
+}
+
+.converter-container .select-container {
+    display: flex;
+    gap: 10px;
+}
+
+.converter-container .select-container select {
+    width: 100%;
+    margin-block: 4px;
+}
+
+.swap-btn p {
+    /* color: #000; */
+    margin: 20% auto;
+    font-size: 15px;
+    text-align: center;
+}
+
+.converter-container .swap-btn {
+    width: 75px;
+    padding: 0 5px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 8px;
+}
+
+.converter-container .result {
+    margin-top: 10px;
+    border-top: 1px solid var(--text);
+    border-bottom: 1px solid var(--text);
+    font-size: 3rem;
+    color: var(--text);
+    text-align: center;
+    padding-block: 20px;
+}
+
+.converter-container .result-currency {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+@media(max-width: 900px) {
+
+    h2 span {
+        margin-left: 4px;
+        font-size: 1.5rem;
+    }
+
+    .converter-container h2::after {
+        display: none;
+    }
+
+    .app-hidden {
+        display: block;
+    }
+    .hero {
+        display: none !important;
+    }
+    .title-container {
+        color: var(--text);
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tipcalc.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/tipcalc.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+          <div class="header-links">
+            <div class="left-header-links">
+              <a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</a>
+              <a href="https://www.decommer.com">Home</a>
+          </div>
+          <button id="theme-toggle" class="theme-btn" type="button">
+            <span class="theme-icon">🌕</span>
+           </button>
+          </div>
+        </nav>
+        <div class="hero">
+          <div class="elem-logo">
+            <!-- <p class="logo-upper-left randNum">00</p> -->
+            <p class="logo-upper-left" id="seconds">00</p>
+            <h1 class="logo-center">D<span>e</span></h1>
+            <p class="logo-bottom-center-name">DeCommer</p>
+            <!-- <p class="logo-bottom-center"><span class="randNum">00</span>.<span class="randNum">00</span></p> -->
+            <p class="logo-bottom-center"><span id="time">00:00</span></p>
+          </div>
+          <div class="title-container">
+            <div>
+            <h2 class="title">Joseph DeCommer</h2>
+            <p class="description-text">Tip Calculator</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-title-container app-hidden">
+        <div class="sm-elem-logo">
+            <p class="sm-logo-upper-left" id="mobile-seconds">00</p>
+            <h1 class="sm-logo-center">D<span class="sm-logo-sm-txt">e</span></h1>
+            <p class="sm-logo-bottom-center-name">DeCommer</p>
+            <p class="sm-logo-bottom-center"><span id="mobile-time">00.00</span></p>
+        </div>
+        <div>
+            <h2 class="title">DeCommer.com</h2>
+            <p class="description-text">Tip Calculator (Mobile)</p>
+        </div>
+    </div>
+    <div class="apps-container">
+         <div class="input-area">
+            <label>Bill Total $<input id="bill-total-input" class="field" type="number" autocomplete="off" placeholder="0"></label>
+            <label>Tip %<input id="percent-input" class="field" type="number" autocomplete="off" placeholder="0"></label>
+            <label>Tippers<input id="tippers-input" class="field" type="number" value="1" autocomplete="off"></label>
+        </div>
+        <div class="buttons-area">
+            <button id="calc-btn" class="btn">Calculate</button>
+            <button id="reset-btn" class="btn">Reset</button>
+         </div>
+        <div class="results-area">
+            <div class="results-area-left">
+                <p>Tip Amount:</p>
+                <p>Per Person</p>
+                <p>Per Person Total:</p>
+            </div>
+            <div class="results-area-right">
+                <div class="amount-txt"><p id="tip-amount">$0</p></div>
+                <div class="amount-txt"><p id="per-person-amount">$0</p></div>
+                <div class="amount-txt"><p id="per-person-total-amount">$0</p></div>
+            </div>
+        </div>
+        <div class="total-area">
+            <div class="total-area-left">
+                <p>Total:</p>
+            </div>
+            <div class="total-area-right">
+                <div class="amount-txt"><p id="total-amount">$0</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
+</footer>
+<script data-name="BMC-Widget" 
+data-cfasync="false" 
+data-id="JosephDeCommer" 
+data-description="Support me on Buy me a coffee!" 
+src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+data-color="#a2faa7" data-position="Right" data-x_margin="18" data-y_margin="18">
+</script>
+</body>
+</html>

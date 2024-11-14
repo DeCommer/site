@@ -6,7 +6,7 @@ const additional = document.getElementById('additional');
 const days = document.getElementById('days');
 const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
-const seconds = document.getElementById('seconds');
+const aCSeconds = document.getElementById('aCSeconds');
 const enterBtn = document.getElementById('enter-btn');
 const clearBtn = document.getElementById('clear-btn');
 
@@ -63,10 +63,10 @@ const calculateAge = () => {
             minutes.innerHTML = `${formatNumber(bdMinutes)} <span class="span">minutes and</span>`;
         }setInterval(updateMinutes, 60000);
 
-        seconds.innerHTML = `${formatNumber(bdSeconds)} <span class="span">seconds</span">`;
+        aCSeconds.innerHTML = `${formatNumber(bdSeconds)} <span class="span">seconds</span">`;
         function updateSeconds() {
             bdSeconds++;
-            seconds.innerHTML = `${formatNumber(bdSeconds)} <span class="span">seconds</span">`;
+            aCSeconds.innerHTML = `${formatNumber(bdSeconds)} <span class="span">seconds</span">`;
         }setInterval(updateSeconds, 1000);
     }
  }; 

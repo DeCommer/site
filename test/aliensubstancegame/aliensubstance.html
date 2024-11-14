@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Substance Wars</title>
+    <link rel="stylesheet" href="./css/aliensubstance.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="./js/main.js" type="module" defer></script>
+    <!-- <script src="../js/scripts.js" defer></script> -->
+</head>
+<body>
+    <div class="overlay"></div>
+    <div id="space-ship-modal" class="modal space-ship-modal hide">
+        <h1>Welcome to Space Port 9000</h1>
+        <div class="btns-container">
+            <div class="btn-card">
+                <p id="glurgon-loc-text" class="location-text">You are here</p>
+                <button class="planet-btn glurgon-btn" id="planet0">Glurgon 9</button>
+            </div>
+            <div class="btn-card">
+                <p id="sklee-loc-text" class="location-text">5 time units away</p>
+                <button class="planet-btn sklee-btn" id="planet1">Sklee</button>
+            </div>
+            <div class="btn-card">
+                <p id="meebles-loc-text" class="location-text">2 time units away</p>
+                <button class="planet-btn meebles-btn" id="planet2">Meebles</button>
+            </div>
+        </div>
+        <h1>Choose your destination</h1>
+        <a class="close-input-modal">x</a>
+    </div>
+
+    <div id="store-modal" class="modal store-modal hide">
+        <h1>Store</h1>
+        <div class="store-item-card">
+            <img src="assets/img/pistol.png">
+            <h4>Space Pistol</h4>
+            <p>⛢1500</p>
+        </div>
+        <a id="store-close-btn" class="close-input-modal">x</a>
+    </div>
+
+    <div id="bank-modal" class="modal bank-modal hide">
+        <h1>Bank</h1>
+        <button class="action-btn">Repay debt</button>
+        <button class="action-btn">Get loan</button>
+        <a id="bank-close-btn" class="close-input-modal">x</a>
+    </div>
+
+    <p style="color: #fff">Alien Substance Wars - © Joseph DeCommer 2024</p>
+    <p style="color: #fff">Status: INOP / in progress</p>
+    <nav class="left-header-links"><a href="https://www.decommer.com">DeCommer.com</a><a>Two</a><a>Three</a></nav>
+    <div class="as-main-container">
+        <div class="as-top">
+            <div class="as-game-info">
+                <h1 class="as-title"><span class="logo">🪐</span>Alien Substance Wars</h1>
+                <div class="as-info-contents">
+                    <div class="as-info-text">Time Units: <span class="as-info-span">/30</span><span id="time-units-text" class="as-info-span"></span></div>
+                    <div class="as-info-text">Space Credits:  <span id="money-text" class="as-info-span"></span><span class="as-info-span">⛢</span></div>
+                    <div class="as-info-text">Bank:   <span id="bank-text" class="as-info-span"></span><span class="as-info-span">⛢</span></div>
+                    <div class="as-info-text">Debt:   <span id="debt-text" class="as-info-span"></span><span class="as-info-span">⛢</span></div>
+                    <div class="as-info-text">Weapon: <span class="as-info-span">Lazer</span></div>
+                    <div class="as-info-text">Health: <span class="as-info-span">100/100</span></div>
+                </div>
+            </div>
+
+            <div class="as-planets-areas">
+                <div class="as-areas-contents">
+                    <div class="as-travel-info">
+                        <h2>Planet: <span id="planet-name-txt" class="as-areas-span"></span></h2>
+                        <h3>Sector: <span id="sector-name-txt" class="as-areas-span"></span></h3>
+                    </div>
+                    <div class="as-btns-area">
+                        <p>Travel to: </p>
+                        <button id="place-btn-0" class="place-btn active"></button>
+                        <button id="place-btn-1" class="place-btn"></button>
+                        <button id="place-btn-2" class="place-btn"></button>
+                        <button id="place-btn-3" class="place-btn"></button>
+                        <button id="place-btn-ship" class="space-ship-btn">Go to Space Port</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="as-middle">
+            <div class="as-message-container">
+                <p>Galactic Communications Unit</p>
+                <div id="message-text" class="as-message-contents">
+                    <p>Turns out aliens are real! They have a lot of mysterious 
+                        substances that are valuable to humans. You are an alien 
+                        substance dealer traveling from planet to planet, 
+                        sector to sector, buying and selling substances for profit.</p><br>
+                    <p>But watch it! The Intergalactic Federation of Alien Substance 
+                        Control is hot on your trail. If they catch you with alien 
+                        substances, they will confiscate them and throw you in space jail!</p><br>
+                    <p>Right now you are in Sector Xylonia on Glurgon 9. </p>
+                </div>
+            </div>
+        </div>
+        <div class="as-bottom">
+            <div class="as-available-substances">
+                <p>Available Substances</p>
+                <div class="as-substances-contents">
+                    <table>
+                        <tr>
+                            <th>Substance</th>
+                            <th>Cost</th>
+                        </tr>
+                        <tr>
+                            <td>Bleem</td>
+                            <td>9.99</td>
+                        </tr>
+                        <tr>
+                            <td>Flaglurg</td>
+                            <td>123.50</td>
+                        </tr>
+                        <tr>
+                            <td>Sklerm</td>
+                            <td>15.99</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="as-game-action-btns">
+                <button id="store-btn" class="action-btn">Store</button>
+                <button id="bank-btn" class="action-btn">Bank</button>
+                <button id="buy-btn" class="action-btn">Buy >></button>
+                <button id="sell-btn" class="action-btn"><< Sell</button>
+                <button id="new-game-btn" class="action-btn">New Game</button>
+            </div>
+            <div class="as-inventory">
+                <p>Inventory 0/100</p>
+                <div class="as-inventory-contents">
+                    <table>
+                        <tr>
+                            <th>Item</th>
+                            <th>Qty</th>
+                            <th>Cost / use</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

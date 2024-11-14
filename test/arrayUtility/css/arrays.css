@@ -1,0 +1,53 @@
+.array-area {
+    /* border: 1px solid var(--text);
+    border-radius: 10px;
+    background-color: var(--slate);
+    font-family: monospace; */
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 550px;
+    max-height: 150px;
+    margin: 20px 0;
+    padding: 10px;
+    overflow: scroll;
+}
+
+.message {
+    font-size: .8rem;
+}
+
+.apps-container p {
+    font-size: 1.4rem;
+}
+
+.input-area {
+    display: flex;
+    gap: 20px;
+}
+
+.in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-area {   
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 5px 0;
+    width: 350px;
+}
+
+.stats-area p {
+    padding: 5px 10px;
+}
+
+.stats-area p:nth-child(even) {
+    background-color: var(--lightslate);
+}
+
+.num-text{
+    color: var(--orange);
+    margin-left: 25px;
+    float: right;
+}

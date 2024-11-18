@@ -8,71 +8,12 @@
     --rightGrad: #007acc;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: sans-serif;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #007acc;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin: 5px;
-}
-
-main {
-    border: 2px solid;
-    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px auto 0 auto;
-    padding: 15px;
-    width: 475px;
-}
-
-header {
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .homeColor {
-    font-size: 1.2rem;
-    color: #007acc;
-}
-
-.homeColor:hover {
-    color:#FF6969;
-    transition: ease-in 0.2s;
-}
-
-a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: rgb(9, 75, 97);
-}
-
-h2 span {
-    color:#FF6969;
-}
-
 .dealer-container {
     margin-bottom: 25px;
 }
 
 #dealer-cards img {
-    height: 175px;
+    height: 200px;
     margin: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -110,7 +51,7 @@ h2 span {
 }
 
 #player-cards img {
-    height: 175px;
+    height: 200px;
     margin: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -118,21 +59,6 @@ h2 span {
 
 .btn-container {
     margin-top: 25px;
-}
-
-.btn {
-    background-color: #c1121f;
-    color: #fff;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px 45px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #d82e2e;
 }
 
 dialog {
@@ -143,7 +69,7 @@ dialog {
     padding: 1.6rem;
     width: 300px;
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -162,9 +88,12 @@ dialog {
 .play-again-btn {
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #FF6969;
+    background-color: var(--orange);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.play-again-btn:hover {
+    background-color: var(--orangeHi);
 }

@@ -137,9 +137,23 @@ const displayRuns = (data) => {
     yearSelect.addEventListener('change', () => {
         const selectedYear = yearSelect.value;
         const filteredRuns = selectedYear ? runs.filter(run => run.year == selectedYear) : runs;
+        
+        let filteredRunSum = 0;
+        let filteredDistSum = 0;
+        let filteredCalSum = 0;
+
+        filteredRuns.forEach(filteredRun => {
+            filteredRunSum = filteredRuns.length;
+            filteredDistSum += filteredRun.distance;
+            filteredCalSum += (filteredRun.calories);
+        }); 
+        totalRuns.innerHTML = `<p>Total Runs: <span>${formatNumber(Math.round(filteredRunSum))}</span>`;
+        totalDist.innerHTML = `<p>Distance: <span>${filteredDistSum.toFixed(2)}</span> mi`;
+        totalCal.innerHTML = `<p>Calories: <span>${formatNumber(Math.round(filteredCalSum))}</span>`;
+
         displayList(filteredRuns, wrapper, rowsPerPage, initialPage);
+        console.log(filteredRuns)
     });
-    
     displayList(runs, wrapper, rowsPerPage, initialPage);
 
     //Metrics
@@ -166,5 +180,5 @@ const displayRuns = (data) => {
 
     const milesToVolt = VOLT - (distSum - 35);
     // document.getElementById('countdown').innerHTML = `<p><span style="color: var(--orange);">${Math.round(milesToVolt)}</span> miles until Nike+ Volt Level</p>`
-    console.log(`${Math.round(milesToVolt)} miles until Nike+ Volt Level`);
+    console.log(`${formatNumber(Math.round(milesToVolt))} miles until Nike+ Volt Level`);
 }

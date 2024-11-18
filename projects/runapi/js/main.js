@@ -148,7 +148,7 @@ const displayRuns = (data) => {
             filteredCalSum += (filteredRun.calories);
         }); 
         totalRuns.innerHTML = `<p>Total Runs: <span>${formatNumber(Math.round(filteredRunSum))}</span>`;
-        totalDist.innerHTML = `<p>Distance: <span>${filteredDistSum.toFixed(2)}</span> mi`;
+        totalDist.innerHTML = `<p>Distance: <span>${filteredDistSum.toFixed(2) - 35}</span> mi`;
         totalCal.innerHTML = `<p>Calories: <span>${formatNumber(Math.round(filteredCalSum))}</span>`;
 
         displayList(filteredRuns, wrapper, rowsPerPage, initialPage);

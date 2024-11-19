@@ -15,11 +15,11 @@
   }
   
 .front p {
-    font-size: 6.5rem;
+    font-size: 3.5rem;
 }
 
 .back p {
-    font-size: 6.5rem;
+    font-size: 5.5rem;
 }
 
 .mainContain {
@@ -33,8 +33,8 @@
 }
 
 .game {
-    height: 940px;
-    width: 940px;
+    height: 640px;
+    width: 640px;
     margin: 0 auto;
     padding: 20px;
     display: flex;

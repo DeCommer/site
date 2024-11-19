@@ -1,7 +1,6 @@
 fetch("./data/rundata-exp.json")
 .then(response => response.json())
 .then(data => displayRuns(data));
-
 // Data Handler
 const displayRuns = (data) => {
     const runs = data.runs;
@@ -9,7 +8,6 @@ const displayRuns = (data) => {
     const yearSelect = document.getElementById("year-selector");
     const rowsPerPage = 10;
     const initialPage = 1;
-
     // Populate year selector
     const years = [...new Set(runs.map(run => run.year))];
     years.forEach(year => {
@@ -18,14 +16,11 @@ const displayRuns = (data) => {
         option.textContent = year;
         yearSelect.appendChild(option);
     });
-
     displayList = (items, wrapper, rowsPerPage, page) => {
         page--;
-
         const start = rowsPerPage * page;
         const end = start + rowsPerPage;
         const pageItems = items.slice(start, end);
-
         wrapper.innerHTML = `
         <div class="data-title-container">
             <div class="data-title">#       </div>
@@ -42,7 +37,6 @@ const displayRuns = (data) => {
         for (let i = 0; i < pageItems.length; i++) {
             const item = pageItems[i];
             const div = document.createElement('div');
-            
             div.innerHTML =
                 `<div class="data-container">
                      <div class="data-item" data-label="#">       ${formatNumber(item.id)}      </div>
@@ -57,13 +51,10 @@ const displayRuns = (data) => {
                 </div>`;
             wrapper.appendChild(div);
         }
-
 //Controls
         const pagination = document.getElementById('pagination');
         const totalPages = Math.ceil(items.length / rowsPerPage);
-
         pagination.innerHTML = ``;
-
         const firstButton = document.createElement('button');
         firstButton.innerText = 'First';
         firstButton.className = 'first-button';
@@ -72,7 +63,6 @@ const displayRuns = (data) => {
             displayList(items, wrapper, rowsPerPage, 1);
         });
         pagination.appendChild(firstButton);
-
         const prev10Button = document.createElement('button');
         prev10Button.innerText = '<<';
         prev10Button.className = 'prev10-button';
@@ -81,7 +71,6 @@ const displayRuns = (data) => {
             displayList(items, wrapper, rowsPerPage, Math.max(1, page - 10));
         });
         pagination.appendChild(prev10Button);
-
         const prevButton = document.createElement('button');
         prevButton.innerText = 'Previous';
         prevButton.className = 'prev-button';
@@ -90,11 +79,9 @@ const displayRuns = (data) => {
             displayList(items, wrapper, rowsPerPage, page);
         });
         pagination.appendChild(prevButton);
-
 //Page Number Buttons
         const startPage = Math.max(1, page - 1); 
         const endPage = Math.min(totalPages, startPage + 4);
-
         for (let i = startPage; i <= endPage; i++) {
             const button = document.createElement('button');
             button.innerText = i;
@@ -105,7 +92,6 @@ const displayRuns = (data) => {
             });
             pagination.appendChild(button);
         }
-
         const nextButton = document.createElement('button');
         nextButton.innerText = 'Next';
         nextButton.className = 'next-button';
@@ -114,7 +100,6 @@ const displayRuns = (data) => {
             displayList(items, wrapper, rowsPerPage, page + 2);
         });
         pagination.appendChild(nextButton);
-
         const next10Button = document.createElement('button');
         next10Button.innerText = '>>';
         next10Button.className = 'next10-button';
@@ -123,7 +108,6 @@ const displayRuns = (data) => {
             displayList(items, wrapper, rowsPerPage, Math.min(totalPages, page + 10));
         });
         pagination.appendChild(next10Button);
-
         const lastButton = document.createElement('button');
         lastButton.innerText = 'Last';
         lastButton.className = 'last-button';
@@ -133,11 +117,9 @@ const displayRuns = (data) => {
         });
         pagination.appendChild(lastButton);
     }
-
     yearSelect.addEventListener('change', () => {
         const selectedYear = yearSelect.value;
-        const filteredRuns = selectedYear ? runs.filter(run => run.year == selectedYear) : runs;
-        
+        const filteredRuns = selectedYear ? runs.filter(run => run.year == selectedYear) : runs; 
         let filteredRunSum = 0;
         let filteredDistSum = 0;
         let filteredCalSum = 0;
@@ -152,7 +134,6 @@ const displayRuns = (data) => {
         totalCal.innerHTML = `<p>Calories: <span>${formatNumber(Math.round(filteredCalSum))}</span>`;
 
         displayList(filteredRuns, wrapper, rowsPerPage, initialPage);
-        console.log(filteredRuns)
     });
     displayList(runs, wrapper, rowsPerPage, initialPage);
 
@@ -161,7 +142,6 @@ const displayRuns = (data) => {
     function formatNumber(num) {
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-
     const totalRuns = document.querySelector('.total-runs');
     const totalDist = document.querySelector('.total-distance');
     const totalCal = document.querySelector('.total-cal');

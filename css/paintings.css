@@ -13,6 +13,7 @@
   --tomato: #fff;
   --short: #42f5a1;
   --long: #009dff;
+  --panelBg: #f3f8f9;
 }
 
 html[data-theme='light'] {
@@ -30,8 +31,8 @@ html[data-theme='light'] {
   --tomato: #fff;
   --short: #42f5a1;
   --long: #009dff;
+  --panelBg: #f3f8f9;
 }
-
 
 html[data-theme='dark'] {
       --bg: #222831;
@@ -44,6 +45,7 @@ html[data-theme='dark'] {
       --leftGrad: #229799;
       --centerGrad: #48CFCB;
       --rightGrad: #F5F5F5;
+      --panelBg: #222831;
 }
 
 img {

@@ -172,8 +172,8 @@ const simulate = () => {
         datasets: [{
             label: 'Number of Heads',
             data: results,
-            backgroundColor: '#42e31aff',
-            borderColor: '#27830f',
+            backgroundColor: '#f7616b',
+            borderColor: '#e24a54',
             borderWidth: 1
         }]
     };
@@ -186,7 +186,7 @@ const simulate = () => {
                 legend: {
                     display: true,
                     labels: {
-                        color: '#fff',
+                        color: '#1a8fbe',
                         font: {
                             size: 20
                           }

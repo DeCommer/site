@@ -14,7 +14,6 @@ let state = 'degrees';
 function degToRad() {
     if(input.value === '') {
         resultTempTxt.textContent = `0`;
-
     }else {
         let deg = input.value
         toRad = ((deg * Math.PI) / 180).toFixed(3);

@@ -11,11 +11,32 @@ const resultTempTxt = document.getElementById('result-temp-txt');
 
 let state = 'miles';
 
+function miToKm() {
+    let mi = input.value
+    toKm = mi * 1.609;
+    message.textContent = `${input.value} miles equals`
+    resultTempTxt.innerHTML = `${toKm.toFixed(2)}<span>km</span>`;
+    formula.textContent = `Formula: miles x 1.609 = kilometers`;
+}
+
+function kmToMi() {
+    let km = input.value
+    toMi = km / 1.609;
+    message.textContent = `${input.value} kilometers equals`
+    resultTempTxt.innerHTML = `${toMi.toFixed(2)}<span>mi</span>`;
+    formula.textContent = `Formula: kilometers / 1.609 = miles`;
+}
+
 miBtn.addEventListener('click', () => {
     state = 'miles';
     dispType.textContent = 'mi - km'
     miBtn.classList.add('active');
     kmBtn.classList.remove('active');
+    if(input.value === '') {
+        resultTempTxt.textContent = `0`;
+    }else {
+        miToKm();
+    }
 });
 
 kmBtn.addEventListener('click', () => {
@@ -23,6 +44,11 @@ kmBtn.addEventListener('click', () => {
     state = 'kilometers';
     kmBtn.classList.add('active');
     miBtn.classList.remove('active');
+    if(input.value === '') {
+        resultTempTxt.textContent = `0`;
+    }else {
+        kmToMi();
+    }
 })
 
 enterBtn.addEventListener('click', () => {
@@ -32,17 +58,9 @@ enterBtn.addEventListener('click', () => {
             formula.textContent = "";
         }, 1500);
     }else if(state === 'miles') {
-        let mi = input.value
-        toKm = mi * 1.609;
-        message.textContent = `${input.value} miles equals`
-        resultTempTxt.innerHTML = `${toKm.toFixed(2)}<span>km</span>`;
-        formula.textContent = `Formula: miles x 1.609 = kilometers`;
+        miToKm() 
     }else if (state === 'kilometers') {
-        let km = input.value
-        toMi = km / 1.609;
-        message.textContent = `${input.value} kilometers equals`
-        resultTempTxt.innerHTML = `${toMi.toFixed(2)}<span>mi</span>`;
-        formula.textContent = `Formula: kilometers / 1.609 = miles`;
+        kmToMi()
     }
 });
 
@@ -54,48 +72,3 @@ clearBtn.addEventListener('click', () => {
     resultTempTxt.textContent = `0`;
     formula.textContent = ``;
 });
-
-
-// let convertType = "miles";
-// const heading = document.querySelector('h1');
-// const intro = document.querySelector('p');
-// const answerDiv = document.getElementById('convert');
-// const form = document.getElementById('convert');
-// const instruct = document.getElementById('instructions');
-
-// document.addEventListener('keydown', function(e) {
-//     let key = e.code
-//     if(key == 'KeyK') {
-//         convertType = 'kilometers';
-//         heading.innerHTML = "Kilometers to Miles Converter"
-//         intro.innerHTML = "Type in a number to convert Km to Mi"
-        
-//     } else if( key == 'KeyM') {
-//         convertType = 'miles';
-//         heading.innerHTML = "Miles to Kilometer Converter"
-//         intro.innerHTML = "Type in a number to convert Mi to Km"
-//     }
-// });
-// form.addEventListener('submit', function(e){
-//     e.preventDefault();
-//     const distance = parseFloat(document.getElementById('distance').value);
-//     if(distance) {
-//         if(convertType == "miles") {
-//             const converted = (distance * 1.609344).toFixed(3);
-//             answer.innerHTML = `${distance} miles equals ${converted} kilometers`;
-//         }
-//         else {
-//             const converted = (distance * 0.621371192).toFixed(3);
-//             answer.innerHTML = `${distance} kilometers equals ${converted} miles`
-//         }
-//     }
-//     else {
-//         instruct.innerHTML = "<p>Enter a number</p>";
-//         answerDiv.reset();
-//         setTimeout(() => {
-//             const element = instruct.innerHTML = "<p>Press k for kilometer conversion or m for mile conversion</p>";
-//             element.remove();
-//         }, 1200);
-
-//     }
-// });

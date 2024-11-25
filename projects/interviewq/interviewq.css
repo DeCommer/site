@@ -34,6 +34,7 @@
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -58,3 +59,15 @@ textarea {
     background-color: var(--long);
 }
 
+@media (max-width: 700px) {
+    .app-container {
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+}

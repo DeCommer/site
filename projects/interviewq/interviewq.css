@@ -33,7 +33,12 @@
 .text-box-container {
     /* border: 1px solid red; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+textarea {
+    margin-bottom: 20px;
 }
 
 .newBtn {

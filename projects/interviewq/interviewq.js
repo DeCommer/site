@@ -18,12 +18,22 @@ function iq(data) {
 
     function getNextQuestion() {
         for(let q in data.questions) {
-            i = Math.floor(Math.random() * 40);
+            i = Math.floor(Math.random() * data.questions.length);
         }
+        
         question.innerHTML = `${data.questions[i].question}`
     }
+
+    function clearBoxes() {
+        let textBox = document.querySelectorAll('textarea');
+        for(let i = 0; i < textBox.length; i++) {
+            textBox[i].value = "";
+        }
+    }
+
     getNextQuestion();
     newQuestion.addEventListener('click', () => {
-        getNextQuestion()
+        getNextQuestion();
+        clearBoxes();
     })
 }

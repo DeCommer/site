@@ -1,63 +1,108 @@
 {"questions": [
     {
-      "question": "Tell me about a time when you had to work with a difficult team member."
-    },
-    {
-      "question": "Can you describe a project you led and the results you achieved?"
-    },
-    {
-      "question": "Tell me about a time when you had to adapt to a change in plans or priorities."
-    },
-    {
-      "question": "How do you handle stress and pressure in the workplace?"
-    },
-    {
-      "question": "Tell me about a time when you had to make a difficult decision and what was the outcome?"
-    },
-    {
-      "question": "Can you give an example of a goal you set and how you achieved it?"
-    },
-    {
-      "question": "Tell me about a time when you received feedback or criticism. How did you respond?"
-    },
-    {
-      "question": "Describe a situation where you had to work with someone who had a different work style or perspective."
-    },
-    {
-      "question": "Tell me about a time when you went above and beyond for a customer or client."
-    },
-    {
-      "question": "Can you tell me about a time when you identified a problem and implemented a solution?"
-    },
-    {
-      "question": "How do you prioritize tasks and manage your time?"
-    },
-    {
-      "question": "Tell me about a team you were part of and your role within it."
-    },
-    {
-      "question": "Can you describe a situation where you had to communicate complex information to someone?"
-    },
-    {
-      "question": "Tell me about a time when you received recognition or an award for your work."
-    },
-    {
-      "question": "How do you handle a heavy workload or multiple projects simultaneously?"
-    },
-    {
-      "question": "Tell me about a time when you had to negotiate or mediate a conflict."
-    },
-    {
-      "question": "Can you give an example of a creative solution you came up with to solve a problem?"
-    },
-    {
-      "question": "Describe a situation where you had to learn a new skill or technology quickly."
-    },
-    {
-      "question": "Tell me about a time when you took initiative on a project or task."
-    },
-    {
-      "question": "Can you tell me about a time when you received feedback that changed your approach to work?"
-    }
+        "question": "Tell me about a time when you overcame a difficult challenge."
+      },
+      {
+        "question": "Can you describe a situation where you had to work with a difficult team member?"
+      },
+      {
+        "question": "Tell me about a project you managed from start to finish. What were some of the challenges you faced?"
+      },
+      {
+        "question": "Describe a time when you had to communicate complex information to a non-technical audience."
+      },
+      {
+        "question": "Tell me about a goal you set and how you achieved it."
+      },
+      {
+        "question": "Can you describe a situation where you had to adapt to a change in plans or priorities?"
+      },
+      {
+        "question": "Tell me about a time when you received feedback or constructive criticism. How did you respond?"
+      },
+      {
+        "question": "Describe a situation where you had to make a difficult decision. What factors did you consider?"
+      },
+      {
+        "question": "Tell me about a time when you demonstrated initiative and took on additional responsibilities."
+      },
+      {
+        "question": "Can you describe a situation where you had to work with someone who had a different work style or perspective?"
+      },
+      {
+        "question": "Tell me about a project you led that resulted in significant improvements or results."
+      },
+      {
+        "question": "Describe a time when you had to handle multiple priorities or tasks simultaneously."
+      },
+      {
+        "question": "Tell me about a situation where you had to communicate effectively with a customer or client."
+      },
+      {
+        "question": "Can you describe a situation where you identified a problem and came up with a creative solution?"
+      },
+      {
+        "question": "Tell me about a time when you had to work with a cross-functional team to achieve a common goal."
+      },
+      {
+        "question": "Describe a situation where you had to make a presentation or pitch to a group of people."
+      },
+      {
+        "question": "Tell me about a time when you received recognition or an award for your work."
+      },
+      {
+        "question": "Can you describe a situation where you had to navigate a complex or bureaucratic system?"
+      },
+      {
+        "question": "Tell me about a time when you had to manage a team or project remotely."
+      },
+      {
+        "question": "Describe a situation where you had to handle a confidential or sensitive issue."
+      },
+      {
+        "question": "Tell me about a time when you identified a need for change and implemented a solution."
+      },
+      {
+        "question": "Can you describe a situation where you had to work with someone who had a different cultural background or perspective?"
+      },
+      {
+        "question": "Tell me about a time when you had to make a difficult decision with limited information."
+      },
+      {
+        "question": "Describe a situation where you had to manage multiple stakeholders with competing interests."
+      },
+      {
+        "question": "Tell me about a time when you identified a process improvement opportunity and implemented a solution."
+      },
+      {
+        "question": "Can you describe a situation where you had to communicate technical information to a non-technical audience?"
+      },
+      {
+        "question": "Tell me about a time when you had to manage a project with a tight deadline."
+      },
+      {
+        "question": "Describe a situation where you had to handle a crisis or emergency situation."
+      },
+      {
+        "question": "Tell me about a time when you identified a new business opportunity and pursued it."
+      },
+      {
+        "question": "Can you describe a situation where you had to work with a vendor or external partner?"
+      },
+      {
+        "question": "Tell me about a time when you had to negotiate with someone to achieve a mutually beneficial outcome."
+      },
+      {
+        "question": "Describe a situation where you had to analyze a complex problem and develop a solution."
+      },
+      {
+        "question": "Tell me about a time when you had to communicate a difficult message to someone."
+      },
+      {
+        "question": "Can you describe a situation where you had to adapt to a new technology or system?"
+      },
+      {
+        "question": "Tell me about a time when you had to work with a team to achieve a common goal."
+      }
   ]
 }

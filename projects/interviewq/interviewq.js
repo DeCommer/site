@@ -18,7 +18,7 @@ function iq(data) {
 
     function getNextQuestion() {
         for(let q in data.questions) {
-            i = Math.floor(Math.random() * 20);
+            i = Math.floor(Math.random() * 40);
         }
         question.innerHTML = `${data.questions[i].question}`
     }

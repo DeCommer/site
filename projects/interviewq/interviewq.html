@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./interviewq.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="./interviewq.js" defer></script>
+    <script src="../js/scripts.js" defer></script>
+    <title>Interview Questions</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+          <div class="header-links">
+            <div class="left-header-links">
+              <a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</a>
+              <a href="/">Home</a>
+          </div>
+          <button id="theme-toggle" class="theme-btn" type="button">
+            <span class="theme-icon">🌕</span>
+           </button>
+          </div>
+        </nav>
+        <div class="hero">
+            <div class="elem-logo">
+              <!-- <p class="logo-upper-left randNum">00</p> -->
+              <p class="logo-upper-left" id="seconds">00</p>
+              <h1 class="logo-center">D<span>e</span></h1>
+              <p class="logo-bottom-center-name">DeCommer</p>
+              <!-- <p class="logo-bottom-center"><span class="randNum">00</span>.<span class="randNum">00</span></p> -->
+              <p class="logo-bottom-center"><span id="time">00:00</span></p>
+            </div>
+            <div class="title-container">
+              <div>
+              <h2 class="title">Joseph DeCommer</h2>
+              <p class="description-text">Interview Questions</p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="mobile-title-container app-hidden">
+          <div class="sm-elem-logo">
+              <p class="sm-logo-upper-left" id="mobile-seconds">00</p>
+              <h1 class="sm-logo-center">D<span class="sm-logo-sm-txt">e</span></h1>
+              <p class="sm-logo-bottom-center-name">DeCommer</p>
+              <p class="sm-logo-bottom-center"><span id="mobile-time">00.00</span></p>
+          </div>
+          <div>
+              <h2 class="title">DeCommer.com</h2>
+              <p class="description-text">Interview Questions (Mobile)</p>
+          </div>
+      </div>
+    <div class="app-container">
+
+        <div class="iq-main">
+            <div class="app-header">
+                <h1 id="question-num-text">Interview Question Generator</h1>
+                <!-- <h2>Time: <span id="timer">00:00</span></h2> -->
+                <p>Days remaining until interview: <span class="span-days-remaining" id="span-days-remaining">00</span></p>
+            </div>
+            <div class="days-remaining-container">
+                
+            </div>
+            <div class="iq-questions-container">
+                <p class="iq-question" id="iq-question">Loading...</p>
+                <div class="text-box-container">
+                    <textarea type= class="text-box" id="answer-box" rows="15" cols="50" placeholder="Write answer here"></textarea>
+                </div>
+                <button class="newBtn" id="new-btn">New Question</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>🇺🇸 Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
+    </footer>
+    <script data-name="BMC-Widget" 
+      data-cfasync="false" 
+      data-id="JosephDeCommer" 
+      data-description="Support me on Buy me a coffee!" 
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+      data-color="#a2faa7" data-position="Right" data-x_margin="18" data-y_margin="18">
+    </script>
+</body>
+</html>

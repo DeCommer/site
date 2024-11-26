@@ -42,8 +42,8 @@ section p {
     color: var(--orange);
 }
 
-@media(max-width: 900px) {
-    .main-wrapper {
+@media(max-width: 700px) {
+    .row {
         flex-direction: column;
     }
     .math-props-title{

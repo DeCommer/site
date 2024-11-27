@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    align-items: baseline;
+    align-items: center;
     border-bottom: 1px solid var(--text);
     padding-bottom: 3px;
 }
@@ -30,12 +30,32 @@
     color: var(--orange);
 }
 
+.timer-container {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .text-box-container {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.date-picker-container {
+    width: 80%;
+}
+
+.date-picker-container::-webkit-calendar-picker-indicator {
+    filter: invert(1)
+            brightness(30%)
+            sepia(45%)
+            saturate(9980%)
+            hue-rotate(180deg)
 }
 
 textarea {

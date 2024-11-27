@@ -671,7 +671,6 @@ header {
     .row-9 {
         display: contents;
     }
-
     .closeModal {
         position: absolute;
         top: 1rem;
@@ -679,12 +678,10 @@ header {
       } 
 }
 @media(max-width: 700px) {
-
     .info-modal img {
         width: 85%;
         height: 45%;
     }
-
     .app-hidden {
         display: block;
     }

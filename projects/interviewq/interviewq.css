@@ -47,7 +47,7 @@
 }
 
 .date-picker-container {
-    width: 80%;
+    width: 178px;
 }
 
 .date-picker-container::-webkit-calendar-picker-indicator {
@@ -58,9 +58,15 @@
             hue-rotate(180deg)
 }
 
+.countdown-text-digits {
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
 textarea {
     margin-bottom: 20px;
 }
+
 
 .newBtn {
     background: var(--text);

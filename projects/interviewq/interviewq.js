@@ -2,39 +2,6 @@ fetch("./interviewq.json")
 .then(response => response.json())
 .then(data => iq(data))
 
-const datePicker = document.getElementById("date-picker");
-const countdownDisplay = document.getElementById("countdown");
-
-datePicker.addEventListener("change", () => {
-    const selectedDate = new Date(datePicker.value);
-    const now = new Date();
-
-    if (selectedDate <= now) {
-        countdownDisplay.textContent = "Please select a future date.";
-        return;
-    }
-    const updateCountdown = () => {
-        const currentTime = new Date();
-        const difference = selectedDate - currentTime;
-        console.log(selectedDate)
-        console.log(currentTime)
-        if (difference <= 0) {
-            countdownDisplay.textContent = "The selected date has arrived!";
-            clearInterval(intervalId);
-            return;
-        }
-        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        // const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-        // const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-        countdownDisplay.textContent = `Time remaining: ${days}d ${hours}h`;
-    };
-    updateCountdown();
-    // const intervalId = setInterval(updateCountdown, 1000);
-});
-
-
-
 function iq(data) {
     const question = document.getElementById('iq-question');
     const newQuestion = document.getElementById('new-btn');

@@ -19,8 +19,9 @@
 
 .app-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+
     align-items: center;
     border-bottom: 1px solid var(--text);
     padding-bottom: 3px;

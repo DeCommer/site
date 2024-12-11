@@ -17622,7 +17622,7 @@
       "calories": 540
     },
     {
-      "id": 1603,
+      "id": 1604,
       "weekday": "Saturday",
       "month": "December",
       "dom": 7,
@@ -17631,6 +17631,17 @@
       "distance": 5.10,
       "duration": "00:45:35",
       "calories": 622
+    },
+    {
+      "id": 1605,
+      "weekday": "Tuesday",
+      "month": "December",
+      "dom": 10,
+      "year": "2024",
+      "avgPace": "8`56``",
+      "distance": 4.13,
+      "duration": "00:36:14",
+      "calories": 514
     }
   ]
 }

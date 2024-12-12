@@ -69,7 +69,7 @@ function displayMobileTime() {
         const secs = `${seconds}`;
         document.getElementById('mobile-seconds').innerHTML = secs;
         const currentTime = `${String(hours).padStart(2, '0')}.${minutes}`;
-        document.getElementById('mobile-time').innerHTML =currentTime;
+        document.getElementById('mobile-time').innerHTML = currentTime;
     };
     updateTime();
     setInterval(updateTime, 1000);
@@ -77,7 +77,6 @@ function displayMobileTime() {
 
 displayTime();
 displayMobileTime();
-
 
 const totalApps = document.querySelectorAll('.app-link-icon');
 const totalCalculatorApps = document.querySelectorAll('.calculators .app-link-icon');

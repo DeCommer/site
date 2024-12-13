@@ -28,4 +28,5 @@ clearBtn.addEventListener('click', () => {
     messageTxt.innerHTML = ``;
     costOfTradeTxt.innerHTML = ``;
     resultTxt.innerHTML = ``;
+    disclaimerTxt.innerHTML = ``;
 });

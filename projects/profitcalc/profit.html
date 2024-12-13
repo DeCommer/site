@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Risk Calculator</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    <link rel="stylesheet" href="./profit.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/scripts.js" defer></script>
+    <script src="./profit.js" defer></script>
+</head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+            <div class="header-links">
+                <div class="left-header-links">
+                <a href="https://github.com/DeCommer?tab=repositories" target="_blank">GitHub</a>
+                <a href="/">Home</a>
+            </div>
+            <button id="theme-toggle" class="theme-btn" type="button">
+                <span class="theme-icon">🌕</span>
+            </button>
+            </div>
+            </nav>
+            <div class="hero">
+                <div class="elem-logo">
+                <p class="logo-upper-left" id="seconds">00</p>
+                <h1 class="logo-center">D<span>e</span></h1>
+                <p class="logo-bottom-center-name">DeCommer</p>
+                <p class="logo-bottom-center"><span id="time">00:00</span></p>
+                </div>
+                <div class="title-container">
+                <div>
+                <h2 class="title">Joseph DeCommer</h2>
+                <p class="description-text">Trade Risk Calculator</p>
+                </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile-title-container app-hidden">
+        <div class="sm-elem-logo">
+            <p class="sm-logo-upper-left" id="mobile-seconds">00</p>
+            <h1 class="sm-logo-center">D<span class="sm-logo-sm-txt">e</span></h1>
+            <p class="sm-logo-bottom-center-name">DeCommer</p>
+            <p class="sm-logo-bottom-center"><span id="mobile-time">00.00</span></p>
+        </div>
+        <div>
+            <h2 class="title">DeCommer.com</h2>
+            <p class="description-text">Trade Risk Calculator (Mobile)</p>
+        </div>
+        </div>
+        <div class="apps-container">
+            <h1 class="title">Trade Risk Calculator</h1>
+            <div class="input-area">
+                <div class="in-container">
+                    <label>Stop Loss $</label>
+                    <input id="stop-in" type="number" min="0" placeholder="0">
+                </div>
+                <p class="math-txt">-</p>
+                <div class="in-container">
+                    <label>Entry $</label>
+                    <input id="entry-in" type="number" min="0" placeholder="0">
+                </div>
+                <p class="math-txt">x</p>
+                <div class="in-container">
+                    <label># of Shares</label>
+                    <input id="shares-in" type="number" min="0" placeholder="0">
+                </div>
+            </div>
+            <div class="btn-area">
+                <button id="enter-btn" class="btn">Enter</button>
+                <button id="clear-btn" class="btn">Clear</button>
+            </div>
+            <div class="results-area">
+                <p id="message"></p>
+                <p id="cost-txt"></p>
+                <p id="result-txt"></p>
+            </div>
+            <p id="disclaimer" class="disclaimer-txt"></p>
+        </div>
+        <footer>
+            <p>🇺🇸 Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
+        </footer>
+        <script data-name="BMC-Widget" 
+            data-cfasync="false" 
+            data-id="JosephDeCommer" 
+            data-description="Support me on Buy me a coffee!" 
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+            data-color="#a2faa7" data-position="Right" data-x_margin="18" data-y_margin="18">
+        </script>
+    </body>
+</html>

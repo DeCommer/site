@@ -1,0 +1,38 @@
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.math-txt {
+    margin-top: 15px;
+}
+
+.btn-area {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.results-area {
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.span-txt {
+    color: var(--orange);
+}
+
+.disclaimer-txt {
+    font-size: .8rem;
+    color: var(--orange);
+}

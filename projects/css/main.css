@@ -84,17 +84,18 @@ html[data-theme='dark'] {
   }
   
   html[data-theme='dark'] {
-        --bg: #222831;
-        --text: #bdbdbd;
-        --orange: #76ABAE;
-        --orangeHi: #9fe5e8;
-        --activeGreen: #26b402;
-        --activeGreenHi: #049637;
-        --slate: #31363F;
-        --leftGrad: #229799;
-        --centerGrad: #48CFCB;
-        --rightGrad: #F5F5F5;
-        --panelBg: #222831;
+    --bg: #222831;
+    --text: #d2e3ee;
+    --orange: #76ABAE;
+    --orangeHi: #9fe5e8;
+    --activeGreen: #26b402;
+    --activeGreenHi: #049637;
+    --slate: #31363F;
+    --labelTxt: #d2e3ee;
+    --leftGrad: #229799;
+    --centerGrad: #48CFCB;
+    --rightGrad: #F5F5F5;
+    --panelBg: #222831;
   }
   
 

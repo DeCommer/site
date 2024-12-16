@@ -68,6 +68,8 @@
 
 .nxtBtn:hover {
     background-color: var(--slate);
+    color: var(--labelTxt);
+    border: 1px solid var(--labelTxt);
 }
 
 .correct {

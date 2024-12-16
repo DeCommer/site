@@ -477,6 +477,21 @@ footer {
     font-size: 1rem;
 }
 
+.micro-btn {
+    margin: 5px 0 0 75%;
+    font-size: .7rem;
+    padding: 2px 5px;
+}
+
+.micro-active{
+    background-color: var(--activeGreen);
+    color: var(--bg);
+}
+
+.micro-active:hover{
+    background-color: var(--activeGreenHi);
+}
+
 .active {
     background-color: var(--activeGreen);
     border: none;

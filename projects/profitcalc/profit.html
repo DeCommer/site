@@ -51,7 +51,12 @@
         </div>
         </div>
         <div class="apps-container">
+            <button id="adv-btn" class="btn micro-btn">Advanced</button>
             <h1 class="title">Trade Risk Calculator</h1>
+            <div id="target-container" class="in-container hide">
+                <label>Profit target $</label>
+                <input id="target-in" type="number" min="0" placeholder="0">
+            </div>
             <div class="input-area">
                 <div class="in-container">
                     <label>Stop Loss $</label>
@@ -74,6 +79,7 @@
             </div>
             <div class="results-area">
                 <p id="message"></p>
+                <p id="profit-txt" class="hide"></p>
                 <p id="cost-txt"></p>
                 <p id="result-txt"></p>
             </div>

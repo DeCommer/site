@@ -32,6 +32,14 @@
     color: var(--orange);
 }
 
+.profit-txt {
+    color: #42d72b;
+}
+
+.risk-txt {
+    color: #bb0808;
+}
+
 .disclaimer-txt {
     font-size: .8rem;
     color: var(--orange);

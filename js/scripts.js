@@ -32,10 +32,10 @@ if (storedTheme)
 toggle.onclick = function() {
     var currentTheme = document.documentElement.getAttribute("data-theme");
     var targetTheme = "light";
-    icon.innerHTML = `<p class="dm-txt">Dark Mode</p>🌑` ;
+    icon.innerHTML = `🌑` ;
     if (currentTheme === "light") {
         targetTheme = "dark";
-        icon.innerHTML = `<p class="dm-txt">Light Mode</p>🌕` ;
+        icon.innerHTML = `🌕` ;
     }
     document.documentElement.setAttribute('data-theme', targetTheme)
     localStorage.setItem('theme', targetTheme);

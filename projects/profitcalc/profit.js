@@ -33,7 +33,7 @@ enterBtn.addEventListener('click', () => {
     if(state == 1) {
         const profit = parseFloat((target.value - entry.value) * numOfShares.value).toFixed(2);
         const result = parseFloat((stop.value - entry.value) * numOfShares.value).toFixed(2);
-        const costOfTrade = parseInt(entry.value * numOfShares.value);
+        const costOfTrade = parseInt(entry.value * numOfShares.value).toFixed(2);
         // messageTxt.innerHTML = `If your stop loss is hit`;
         profitTxt.innerHTML = `Profit <span class="span-txt profit-txt">$${profit}</span>`;
         costOfTradeTxt.innerHTML = `Cost of trade: <span class="span-txt">$${costOfTrade}</span>`;
@@ -42,7 +42,7 @@ enterBtn.addEventListener('click', () => {
 
     }else if(state == 0) {
         const result = parseFloat((stop.value - entry.value) * numOfShares.value).toFixed(2);
-        const costOfTrade = parseInt(entry.value * numOfShares.value);
+        const costOfTrade = parseInt(entry.value * numOfShares.value).toFixed(2);
         // messageTxt.innerHTML = `If your stop loss is hit`;
         costOfTradeTxt.innerHTML = `Cost of trade: <span class="span-txt">$${costOfTrade}</span>`;
         resultTxt.innerHTML = `Risk: <span class="span-txt">$${result}<sup>*</sup></span>`;

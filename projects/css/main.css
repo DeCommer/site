@@ -206,12 +206,15 @@ select {
 }
 
 .nav-bar {
-    /* border: 1px solid red; */
+    /* border: 1px solid; */
+    /* border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1; */
+    /* border-radius: 20%; */
     display: flex;
     justify-content: center;
-    width: 100%;
-    padding-top: 30px;
-    margin-bottom: 50px;
+    align-items: center;
+    width: 95%;
+    /* padding-top: 30px; */
+    margin: 50px auto;
 }
 
 .header-links {
@@ -239,7 +242,8 @@ select {
 } */
 
 .hero {
-    border-bottom: 1px solid var(--slate);
+    border-bottom: 1px solid;
+    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     color: var(--text);
     display: flex;
     margin-bottom: 50px;

@@ -28,9 +28,9 @@ const displayRuns = (data) => {
             <div class="data-title">Month   </div>
             <div class="data-title">Day     </div>
             <div class="data-title">Year    </div>
-            <div class="data-title">Avg Pace</div>
             <div class="data-title">Distance</div>
-            <div class="data-title">Duration</div>
+            <div class="data-title">Avg Pace</div>
+            <div class="data-title">Time</div>
             <div class="data-title">Calories</div>
         </div>
         `
@@ -44,8 +44,8 @@ const displayRuns = (data) => {
                      <div class="data-item" data-label="Month">   ${item.month}                 </div>
                      <div class="data-item" data-label="Day">     ${item.dom}                   </div>
                      <div class="data-item" data-label="Year">    ${item.year}                  </div>
-                     <div class="data-item" data-label="Avg Pace">${item.avgPace}               </div>
                      <div class="data-item" data-label="Distance">${item.distance}              </div>
+                     <div class="data-item" data-label="Avg Pace">${item.avgPace}               </div>
                      <div class="data-item" data-label="Duration">${item.duration}              </div>
                      <div class="data-item" data-label="Calories">${formatNumber(item.calories)}</div>
                 </div>`;
@@ -154,11 +154,11 @@ const displayRuns = (data) => {
             calSum += run.calories;
             distSum += (run.distance);
     }); 
-    totalRuns.innerHTML = `<p>Total Runs: <span>${formatNumber(Math.round(runSum))}</span>`;
-    totalDist.innerHTML = `<p>Distance: <span>${formatNumber(Math.round(distSum) - 35)}</span> mi`;
+    totalRuns.innerHTML = `<p>Total Runs: <span>${formatNumber(Math.round(runSum) - 1)}</span>`;
+    totalDist.innerHTML = `<p>Distance: <span>${formatNumber(Math.round(distSum) - 31)}</span> mi`;
     totalCal.innerHTML = `<p>Calories: <span>${formatNumber(Math.round(calSum))}</span>`;
 
     const milesToVolt = VOLT - (distSum);
-    document.getElementById('countdown').innerHTML = `<p><span style="color: var(--orange);">${Math.round(milesToVolt) + 35}</span> miles to go!</p>`
-    console.log(`${formatNumber(Math.round(milesToVolt) + 35)} miles until Nike+ Volt Level`);
+    document.getElementById('countdown').innerHTML = `<p><span style="color: var(--orange);">${Math.round(milesToVolt) + 31}</span> miles to go!</p>`
+    console.log(`${formatNumber(Math.round(milesToVolt) + 31)} miles until Nike+ Volt Level`);
 }

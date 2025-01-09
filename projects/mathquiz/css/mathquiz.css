@@ -329,7 +329,7 @@ label span {
 
   .questions {
     border: 1px solid rgb(16, 89, 134);
-    background-color: #fff;
+    background-color: var(--slate);
     max-height: fit-content;
     display: flex;
     flex-direction: column;

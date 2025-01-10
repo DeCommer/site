@@ -14,6 +14,10 @@ const disclaimerTxt = document.getElementById("disclaimer");
 
 state = 0;
 
+function formatNumber(num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 advBtn.addEventListener('click', ()=> {
     if(state == 0) {
         state = 1;
@@ -35,17 +39,17 @@ enterBtn.addEventListener('click', () => {
         const result = parseFloat((stop.value - entry.value) * numOfShares.value).toFixed(2);
         const costOfTrade = parseInt(entry.value * numOfShares.value).toFixed(2);
         // messageTxt.innerHTML = `If your stop loss is hit`;
-        profitTxt.innerHTML = `Profit <span class="span-txt profit-txt">$${profit}</span>`;
-        costOfTradeTxt.innerHTML = `Cost of trade: <span class="span-txt">$${costOfTrade}</span>`;
-        resultTxt.innerHTML = `Risk: <span class="span-txt risk-txt">$${result}<sup>*</sup></span>`;
+        profitTxt.innerHTML = `Profit <span class="span-txt profit-txt">$${formatNumber(profit)}</span>`;
+        costOfTradeTxt.innerHTML = `Cost of trade: <span class="span-txt">$${formatNumber(costOfTrade)}</span>`;
+        resultTxt.innerHTML = `Risk: <span class="span-txt risk-txt">$${formatNumber(result)}<sup>*</sup></span>`;
         disclaimerTxt.innerHTML = `<sup>*</sup>Do not risk more than you can afford`;
 
     }else if(state == 0) {
         const result = parseFloat((stop.value - entry.value) * numOfShares.value).toFixed(2);
         const costOfTrade = parseInt(entry.value * numOfShares.value).toFixed(2);
         // messageTxt.innerHTML = `If your stop loss is hit`;
-        costOfTradeTxt.innerHTML = `Cost of trade: <span class="span-txt">$${costOfTrade}</span>`;
-        resultTxt.innerHTML = `Risk: <span class="span-txt">$${result}<sup>*</sup></span>`;
+        costOfTradeTxt.innerHTML = `Cost of trade: <span class="span-txt">$${formatNumber(costOfTrade)}</span>`;
+        resultTxt.innerHTML = `Risk: <span class="span-txt">$${formatNumber(result)}<sup>*</sup></span>`;
         disclaimerTxt.innerHTML = `<sup>*</sup>Do not risk more than you can afford`;
     }
 

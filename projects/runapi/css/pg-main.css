@@ -17,7 +17,7 @@
 
 .metrics {
     /* border: 1px solid red; */
-    color: var(--orange);
+    color: var(--red);
     display: flex;
     padding-bottom: 20px;
     align-items: center;
@@ -99,7 +99,7 @@ button {
 
 .pagination-button:disabled {
     color: var(--slate);
-    background-color: var(--orange);
+    background-color: var(--red);
 }
 
 .run-data-container {
@@ -127,7 +127,7 @@ button {
     font-weight: bold;
     width: 100%;
     text-align: center;
-    color: var(--orange);
+    color: var(--red);
 }
 
 .data-item {

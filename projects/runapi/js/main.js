@@ -159,6 +159,6 @@ const displayRuns = (data) => {
     totalCal.innerHTML = `<p>Calories: <span>${formatNumber(Math.round(calSum))}</span>`;
 
     const milesToVolt = VOLT - (distSum);
-    document.getElementById('countdown').innerHTML = `<p><span style="color: var(--orange);">${Math.round(milesToVolt) + 31}</span> miles to go!</p>`
+    document.getElementById('countdown').innerHTML = `<p><span style="color: var(--red);">${Math.round(milesToVolt) + 31}</span> miles to go!</p>`
     console.log(`${formatNumber(Math.round(milesToVolt) + 31)} miles until Nike+ Volt Level`);
 }

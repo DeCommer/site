@@ -12,7 +12,7 @@
 }
 
 .app-header h1 {
-    color: var(--orange);
+    color: var(--red);
 }
 
 .quiz {
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     background: var(--bg);
-    color: var(--orange);
+    color: var(--red);
     font-weight: 600;
     font-size: 1.2rem;
     width: 50%;
@@ -78,7 +78,7 @@
 }
 
 .incorrect {
-    background-color: var(--orange);
+    background-color: var(--red);
     color: var(--bg);
 }
 
@@ -92,7 +92,7 @@
 .quiz-results-text {
     font-size: 1.5rem;
     padding: 5px;
-    color: var(--orange);
+    color: var(--red);
 }
 
 .message-text {

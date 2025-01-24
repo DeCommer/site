@@ -91,7 +91,7 @@ img {
 }
 
 .info-link:hover {
-    color: var(--orange);
+    color: var(--red);
 }
 .data-container .title {
     margin-bottom: 10px;

@@ -7,7 +7,7 @@ body{
 }
 
 .balance-txt {
-color: var(--orange);
+color: var(--red);
 }
 
 input {
@@ -16,7 +16,7 @@ input {
 
 .text-link:hover {
     cursor: pointer;
-    color: var(--orange);
+    color: var(--red);
 }
 
 .login-apps-container {
@@ -87,7 +87,7 @@ input {
     border: 1px solid #ccc;
     margin: 10px;
     padding: 5px 20px;
-    border-top: 5px solid var(--orange);
+    border-top: 5px solid var(--red);
     height: 100px;
     width: 250px;
 }

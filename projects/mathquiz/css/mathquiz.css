@@ -21,7 +21,7 @@
 .op {
     font-size: 3rem;
     padding: 0 20px;
-    color: var(--orange);
+    color: var(--red);
 }
 
 #ansArea {
@@ -93,12 +93,12 @@
 
 #pts-area p:last-child {
     margin-top: 15px;
-    color: var(--orange);
+    color: var(--red);
     /* text-shadow: 0 0 5px rgba(0, 0, 0, 0.718); */
 }
 
 #pts-area h2 {
-    color: var(--orange);
+    color: var(--red);
     margin: 15px 0;
     padding: 0;
 }
@@ -173,7 +173,7 @@ label span {
 /* SETTINGS MODAL STYLES **********************************/
 .modeBtn {
     border: none;
-    background-color: var(--orange);
+    background-color: var(--red);
     color: #fff;
     font-size: 1rem;
     padding: 2px 10px;
@@ -181,7 +181,7 @@ label span {
 }
 
 .modeBtn:hover {
-    background-color: var(--orangeHi);
+    background-color: var(--redHi);
     color: #fff;
 }
 
@@ -196,7 +196,7 @@ label span {
 }
 
 .settings-btn:hover {
-    color: var(--orange);
+    color: var(--red);
     transition: ease-in 0.2s;
 }
 
@@ -220,14 +220,14 @@ label span {
     top: .5rem;
     right: 1rem;
     font-size: 2rem;
-    color: var(--orange);
+    color: var(--red);
     cursor: pointer;
     border: none;
     background: none;
   }
 
   #q-in {
-    color: var(--orange);
+    color: var(--red);
     font-size: 1rem;
     width: 100px;
     padding: 3px;
@@ -237,7 +237,7 @@ label span {
 
   #q-in-enter-btn {
     border: none;
-    background-color: var(--orange);
+    background-color: var(--red);
     color: #fff;
     font-size: 1rem;
     padding: 4px 13px;
@@ -245,7 +245,7 @@ label span {
   }
 
   #q-in-enter-btn:hover {
-    background-color: var(--orangeHi);
+    background-color: var(--redHi);
   }
 
 /* WIN MODAL STYLES***************************/
@@ -266,7 +266,7 @@ label span {
   .winModal h1 {
     border-bottom: 1px solid var(--text);
     font-size: 2.5rem;
-    color: var(--orange);
+    color: var(--red);
   }
   
   .winModal p {
@@ -318,7 +318,7 @@ label span {
     top: 1rem;
     right: 1rem;
     font-size: 2rem;
-    color: var(--orange);
+    color: var(--red);
     border: none;
     background: none;
   }

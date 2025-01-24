@@ -8,7 +8,7 @@
 }
 
 .span-days-remaining {
-    color: var(--orange);
+    color: var(--red);
 }
 
 .iq-question {
@@ -28,7 +28,7 @@
 }
 
 .app-header h1 {
-    color: var(--orange);
+    color: var(--red);
 }
 
 .timer-container {
@@ -61,7 +61,7 @@
 
 .countdown-text-digits {
     font-size: 1.5rem;
-    color: var(--orange);
+    color: var(--red);
 }
 
 textarea {

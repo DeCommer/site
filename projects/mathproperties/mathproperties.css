@@ -35,11 +35,11 @@ section {
 .math-props-title {
     margin-bottom: 10px;
     text-align: center;
-    color: var(--orange);
+    color: var(--red);
 }
 section p {
     padding: 10px;
-    color: var(--orange);
+    color: var(--red);
 }
 
 @media(max-width: 700px) {

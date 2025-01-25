@@ -31,7 +31,7 @@ h2 {
 .reset_btn {
     display: flex;
     font-size: 1.4rem;
-    background-color: var(--orange);
+    background-color: var(--red);
     margin: 0px;
     padding: 5px 10px;
     color: var(--bg);
@@ -40,7 +40,7 @@ h2 {
 }
 
 .reset_btn:hover {
-    color: var(--orangeHi);
+    color: var(--redHi);
 }
 
 @media screen and (max-width: 900px) {

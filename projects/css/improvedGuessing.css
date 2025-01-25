@@ -15,8 +15,8 @@
   
   .number {
     background: var(--slate);
-    color: var(--orange);
-    border: 1px solid var(--orange);
+    color: var(--red);
+    border: 1px solid var(--red);
     border-radius: 15px;
     font-size: 6rem;
     width: 150px;
@@ -42,7 +42,7 @@
   }
   
   .btn {
-    background-color: var(--orange);
+    background-color: var(--red);
     color: var(--bg);
     font-size: 1.2rem;
     border: none;
@@ -53,7 +53,7 @@
 }
 
 .btn:hover {
-    background-color: var(--orange);
+    background-color: var(--red);
 }
   
   .btn:active {

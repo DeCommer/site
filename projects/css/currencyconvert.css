@@ -4,7 +4,7 @@
 
 .converter-container {
     border: 2px solid;
-    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    border-image: linear-gradient(-45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
     margin-top: 0px;
     max-width: 550px;
@@ -98,7 +98,7 @@ h2 span {
 .converter-container .result-currency {
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: var(--orange);
+    color: var(--red);
 }
 
 @media(max-width: 900px) {

@@ -202,7 +202,7 @@ label span {
 
 .settings-modal {
     border: 2px solid;
-    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    border-image: linear-gradient(-45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 45px;
     position: absolute;
     text-align: center;
@@ -284,7 +284,7 @@ label span {
 
   .winModal {
     border: 2px solid;
-    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    border-image: linear-gradient(-45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 45px;
     position: absolute;
     text-align: center;

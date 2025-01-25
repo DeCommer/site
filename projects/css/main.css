@@ -92,9 +92,9 @@ html[data-theme='dark'] {
     --centerGrad: #ced1da;
     --rightGrad: #1b489d;
     --labelTxt: #3C3B6E;
-    --tomato: #fff;
-    --short: #42f5a1;
-    --long: #3C3B6E;
+    --tomato: #fdb9b9;
+    --short: #fcfffe;
+    --long: #3dafe0;
     --panelBg: #fff;
   }
   

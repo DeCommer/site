@@ -258,7 +258,7 @@ select {
 
 .hero {
     border-bottom: 1px solid;
-    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    border-image: linear-gradient(-45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     color: var(--text);
     display: flex;
     margin-bottom: 50px;
@@ -282,7 +282,7 @@ select {
 
 .elem-logo {
     border: 3px solid;
-    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    border-image: linear-gradient(-45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     background-color: var(--panelBg);
     position: relative;
     padding: 0;
@@ -337,7 +337,7 @@ select {
 
 .sm-elem-logo {
     border: 2px solid;
-    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    border-image: linear-gradient(-45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     color: var(--text);
     position: relative;
     margin-right: 10px;
@@ -397,7 +397,7 @@ select {
 
 .app-card {
     border: 2px solid;
-    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    border-image: linear-gradient(-45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
     /* border-radius: 10px; */
     padding: 25px;
@@ -465,7 +465,7 @@ footer {
 
   .paintings-main-container > img {
     border: 2px solid;
-    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    border-image: linear-gradient(-45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
     width: 100%;
     height: 100%;
@@ -474,7 +474,7 @@ footer {
 
 .apps-container {
     border: 2px solid;
-    border-image: linear-gradient(45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
+    border-image: linear-gradient(-45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
     background-color: var(--panelBg);
     display: flex;

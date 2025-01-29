@@ -17869,10 +17869,21 @@
       "month": "January",
       "dom":25,
       "year": "2025",
-      "avgPace": "801``",
+      "avgPace": "8`01`",
       "distance": 5.51,
       "duration": "00:44:15",
       "calories": 672
+    },
+    {
+      "id": 1628,
+      "weekday": "Wednesday",
+      "month": "January",
+      "dom":29,
+      "year": "2025",
+      "avgPace": "8`13`",
+      "distance": 3.24,
+      "duration": "00:26:41",
+      "calories": 412
     }
   ]
 }

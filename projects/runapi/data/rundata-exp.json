@@ -18093,6 +18093,17 @@
       "distance": 5.02,
       "duration": "00:45:01",
       "calories": 605
+    },
+    {
+      "id": 1648,
+      "weekday": "Wednesday",
+      "month": "March",
+      "dom":19,
+      "year": "2025",
+      "avgPace": "8`15`",
+      "distance": 3.22,
+      "duration": "00:26:38",
+      "calories": 410
     }
   ]
 }

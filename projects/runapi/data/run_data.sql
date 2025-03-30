@@ -1672,6 +1672,7 @@ INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, c
 INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Saturday', 'March', '22', '2025', '7`51``', '4.40', '00:34:32', '534');
 INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Tuesday', 'March', '25', '2025', '8`23``', '5.16', '00:43:16', '627');
 INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Thursday', 'March', '27', '2025', '8`19``', '5.21', '00:43:21', '635');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Sunday', 'March', '30', '2025', '8`35``', '5.07', '00:43:30', '628');
 
 
 

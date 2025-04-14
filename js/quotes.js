@@ -33,6 +33,9 @@ const generateQuote = function() {
         quote: "Conquer yourself rather than the world.",
         attr: "René Descartes"
     },
+    {
+        
+    }
 ];
 
     let arrayIdx = Math.floor(Math.random() * quotes.length);

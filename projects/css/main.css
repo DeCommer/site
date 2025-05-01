@@ -98,19 +98,19 @@ html[data-theme='dark'] {
     --panelBg: #fff;
   }
   
-  html[data-theme='dark'] {
-    --bg: #222831;
+html[data-theme='dark'] {
+    --bg: #062244;
     --text: #d2e3ee;
-    --red: #76ABAE;
-    --redHi: #9fe5e8;
+    --red: #bd1e48;
+    --redHi: #d65e7e;
     --activeGreen: #26b402;
     --activeGreenHi: #049637;
     --slate: #31363F;
-    --labelTxt: #d2e3ee;
-    --leftGrad: #229799;
-    --centerGrad: #48CFCB;
-    --rightGrad: #F5F5F5;
-    --panelBg: #222831;
+    --leftGrad: #175197;
+    --labelTxt: #F5F5F5;
+    --centerGrad: #F5F5F5;
+    --rightGrad: #B31942;
+    --panelBg: #062244;
   }
   
 

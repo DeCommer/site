@@ -86,8 +86,8 @@ html[data-theme='dark'] {
     --red: #cd152a;
     --redHi: #f95064;
     --slate: #d2e3ee;
-    --activeGreen: #42d72b;
-    --activeGreenHi: #4ae632;
+    --activeGreen: #42a3db;
+    --activeGreenHi: #5fb5e7;
     --leftGrad: #cd152a;
     --centerGrad: #ced1da;
     --rightGrad: #1b489d;
@@ -103,8 +103,8 @@ html[data-theme='dark'] {
     --text: #a0b3c0;
     --red: #b10909;
     --redHi: #e93c3c;
-    --activeGreen: #26b402;
-    --activeGreenHi: #66e492;
+    --activeGreen: #0274b6;
+    --activeGreenHi: #5fb5e7;
     --slate: #31363F;
     --leftGrad: #0a3b77;
     --labelTxt: #F5F5F5;

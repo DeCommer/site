@@ -499,6 +499,19 @@ footer {
     background-color: var(--redHi);
 }
 
+#reset, #reset-btn, #clear-btn, #reset-button,
+#reset-sim-btn, #binom-reset-btn,
+.reset-btn, .resetBtn, .resetbtn, #debit-btn, #savings-btn  {
+    background-color: var(--activeGreen);
+}
+
+#reset:hover,#reset-btn:hover, #clear-btn:hover, reset-btn:hover, .resetBtn:hover,
+#reset-button:hover,
+#reset-sim-btn:hover, #binom-reset-btn:hover,
+#debit-btn:hover, #savings-btn:hover,.resetbtn:hover {
+    background-color: var(--activeGreenHi);
+}
+
 .sm-btn {
     padding: 5px 20px;
     font-size: 1rem;

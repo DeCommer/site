@@ -372,6 +372,11 @@ footer {
     height: 50px;
 }
 
+.ai-text {
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
 .paintings-main-container {
     /* border: 1px solid fuchsia; */
     max-width: 1500px;

@@ -1,0 +1,9 @@
+
+.dice-container {
+    display: flex;
+}
+
+img {
+    height: 190px;
+    margin: 15px;
+}

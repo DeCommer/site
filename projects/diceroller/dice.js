@@ -1,5 +1,6 @@
 const rollBtn = document.getElementById('roll-btn');
 let message = document.getElementById('messageTxt');
+let doubles = document.getElementById('doublesTxt');
 
 let dice1 = Math.floor(Math.random() * 6) + 1;
 let dice2 = Math.floor(Math.random() * 6) + 1;
@@ -18,12 +19,23 @@ function rollDice() {
         d1Image.innerHTML = `<img src="../assets/dice/${dice1}.png">`;
         d2Image.innerHTML = `<img src="../assets/dice/${dice2}.png">`;
     }
+
+    if(dice1 === 1 && dice2 === 1) {
+        doubles.innerHTML = "Snake Eyes!!!";
+    }else if(dice1 === dice2) {
+        doubles.innerHTML = "Doubles!"
+    }
+    else {
+        doubles.innerHTML = "";
+    }
+
     if(total === 8 || total === 11) {
         message.innerHTML = `You got an ${total}!`;
     }else {
         message.innerHTML = `You got a ${total}!`;
     }
 }
+rollDice();
 
 rollBtn.addEventListener('click', () => {
     rollDice();

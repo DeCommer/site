@@ -1,9 +1,34 @@
 
 .dice-container {
+    /* border: 1px solid red; */
     display: flex;
+    justify-content: center;
+    width: 450px;
 }
 
 img {
     height: 190px;
     margin: 15px;
 }
+
+.message {
+    height: 25px;
+}
+
+.message p {
+    font-size: 1.5rem;
+}
+
+
+  @media (max-width: 700px) {
+
+    .dice-container {
+    width: 325px;
+}
+
+    img {
+    height: 140px;
+    margin: 15px;
+}
+
+  }

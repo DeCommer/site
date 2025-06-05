@@ -18360,6 +18360,17 @@
     },
     {
       "id": 1671,
+      "weekday": "Monday",
+      "month": "June",
+      "dom":2,
+      "year": "2025",
+      "avgPace": "17`55``",
+      "distance": 0.01,
+      "duration": "00:00:18",
+      "calories": 1
+    },
+    {
+      "id": 1672,
       "weekday": "Thursday",
       "month": "June",
       "dom":5,

@@ -155,10 +155,10 @@ const displayRuns = (data) => {
             distSum += (run.distance);
     }); 
     totalRuns.innerHTML = `<p>Total Runs: <span>${formatNumber(Math.round(runSum))}</span>`;
-    totalDist.innerHTML = `<p>Distance: <span>${formatNumber(Math.round(distSum) + 5)}</span> mi`;
+    totalDist.innerHTML = `<p>Distance: <span>${formatNumber(Math.round(distSum) + 4)}</span> mi`;
     totalCal.innerHTML = `<p>Calories: <span>${formatNumber(Math.round(calSum))}</span>`;
 
     const milesToVolt = VOLT - (distSum);
-    document.getElementById('countdown').innerHTML = `<p><span style="color: var(--red);">${Math.round(milesToVolt) + 31}</span> miles to go!</p>`
-    console.log(`${formatNumber(Math.round(milesToVolt) + 31)} miles until Nike+ Volt Level`);
+    document.getElementById('countdown').innerHTML = `<p><span style="color: var(--red);">${Math.round(milesToVolt) - 4}</span> miles to go!</p>`
+    console.log(`${formatNumber(Math.round(milesToVolt) - 4)} miles until Nike+ Volt Level`);
 }

@@ -24,6 +24,6 @@ At DeCommer.com, we believe that the right tools can transform the way you appro
 
 - **Constantly Updated**: We regularly add new features and tools to ensure you always have access to the latest resources.
 
-![image of site](./img/siteImg.png)
+![image of site](./img/siteImage.png)
 
 https://www.decommer.com

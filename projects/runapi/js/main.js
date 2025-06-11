@@ -139,12 +139,16 @@ const displayRuns = (data) => {
 
     //Metrics
     const VOLT = 9320;
+    const pace = `7'46''`;
     function formatNumber(num) {
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
     const totalRuns = document.querySelector('.total-runs');
     const totalDist = document.querySelector('.total-distance');
     const totalCal = document.querySelector('.total-cal');
+    const totalPace = document.querySelector('.total-pace');
+
+    totalPace.innerHTML = `Avg Pace <span>${pace}</span>`;
 
     let runSum = 0;
     let distSum = 0;
@@ -154,11 +158,11 @@ const displayRuns = (data) => {
             calSum += run.calories;
             distSum += (run.distance);
     }); 
-    totalRuns.innerHTML = `<p>Total Runs: <span>${formatNumber(Math.round(runSum))}</span>`;
+    totalRuns.innerHTML = `<p>Total Runs: <span>${formatNumber(Math.round(runSum) + 1)}</span>`;
     totalDist.innerHTML = `<p>Distance: <span>${formatNumber(Math.round(distSum) + 4)}</span> mi`;
     totalCal.innerHTML = `<p>Calories: <span>${formatNumber(Math.round(calSum))}</span>`;
 
     const milesToVolt = VOLT - (distSum);
-    document.getElementById('countdown').innerHTML = `<p><span style="color: var(--red);">${Math.round(milesToVolt) - 4}</span> miles to go!</p>`
-    console.log(`${formatNumber(Math.round(milesToVolt) - 4)} miles until Nike+ Volt Level`);
+    document.getElementById('countdown').innerHTML = `<p><span style="color: var(--red);">${Math.round(milesToVolt) - 5}</span> miles to go!</p>`
+    console.log(`${formatNumber(Math.round(milesToVolt) - 5)} miles until Nike+ Volt Level`);
 }

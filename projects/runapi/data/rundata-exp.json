@@ -16556,7 +16556,7 @@
     },
     {
       "id": 1506,
-      "weekday": "Thusday",
+      "weekday": "Thursday",
       "month": "May",
       "dom": 23,
       "year": "2024",
@@ -16919,7 +16919,7 @@
     },
     {
       "id": 1539,
-      "weekday": "Thusday",
+      "weekday": "Thursday",
       "month": "July",
       "dom": 25,
       "year": "2024",
@@ -18500,6 +18500,17 @@
       "distance": 5.53,
       "duration": "00:45:57",
       "calories": 685
+    },
+    {
+      "id": 1683,
+      "weekday": "Thursday",
+      "month": "July",
+      "dom":10,
+      "year": "2025",
+      "avgPace": "7`53``",
+      "distance": 4.14,
+      "duration": "00:32:42",
+      "calories": 482
     }
   ]
 }

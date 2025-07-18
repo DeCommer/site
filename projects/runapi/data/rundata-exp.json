@@ -18511,6 +18511,28 @@
       "distance": 4.14,
       "duration": "00:32:42",
       "calories": 482
+    },
+    {
+      "id": 1684,
+      "weekday": "Tuesday",
+      "month": "July",
+      "dom":15,
+      "year": "2025",
+      "avgPace": "8`06``",
+      "distance": 4.57,
+      "duration": "00:37:05",
+      "calories": 532
+    },
+    {
+      "id": 1685,
+      "weekday": "Thursday",
+      "month": "July",
+      "dom":17,
+      "year": "2025",
+      "avgPace": "7`45``",
+      "distance": 3.13,
+      "duration": "00:24:18",
+      "calories": 366
     }
   ]
 }

@@ -18533,6 +18533,39 @@
       "distance": 3.13,
       "duration": "00:24:18",
       "calories": 366
+    },
+    {
+      "id": 1686,
+      "weekday": "Monday",
+      "month": "July",
+      "dom":21,
+      "year": "2025",
+      "avgPace": "7`46``",
+      "distance": 4.12,
+      "duration": "00:32:03",
+      "calories": 485
+    },
+    {
+      "id": 1687,
+      "weekday": "Wednesday",
+      "month": "July",
+      "dom":23,
+      "year": "2025",
+      "avgPace": "8`30``",
+      "distance": 5.59,
+      "duration": "00:47:34",
+      "calories": 656
+    },
+    {
+      "id": 1688,
+      "weekday": "Saturday",
+      "month": "July",
+      "dom":26,
+      "year": "2025",
+      "avgPace": "8`11``",
+      "distance": 7.02,
+      "duration": "00:57:30",
+      "calories": 823
     }
   ]
 }

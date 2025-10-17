@@ -18731,6 +18731,51 @@
       "distance": 10.79,
       "duration": "01:28:37",
       "calories": 1259
+    },
+    {
+      "id": 1704,
+      "weekday": "Friday",
+      "month": "October",
+      "dom":3,
+      "year": "2025",
+      "avgPace": "7`49``",
+      "distance": 6.41,
+      "duration": "00:50:07",
+      "calories": 767
+    },
+    {
+      "id": 1705,
+      "weekday": "Saturday",
+      "month": "October",
+      "dom":4,
+      "year": "2025",
+      "avgPace": "8`12``",
+      "distance": 10.67,
+      "duration": "01:27:31",
+      "calories": 1237
+    },
+    {
+      "id": 1706,
+      "weekday": "Saturday",
+      "month": "October",
+      "dom":11,
+      "year": "2025",
+      "avgPace": "7`57``",
+      "distance": 10.78,
+      "duration": "01:25:40",
+      "calories": 1261
+    },
+    {
+      "id": 1707,
+      "weekday": "Friday",
+      "month": "October",
+      "dom":17,
+      "year": "2025",
+      "avgPace": "7`56``",
+      "distance": 6.51,
+      "duration": "00:51:42",
+      "calories": 779
     }
+        
   ]
 }

@@ -1719,6 +1719,20 @@ INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, c
 INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Saturday', 'August', '23', '2025', '7`57``', '10.12', '01:20:31', '1162');
 INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Saturday', 'August', '30', '2025', '7`50``', '10.10', '01:19:06', '1164');
 INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Monday', 'September', '1', '2025', '8`09``', '12.13', '01:38:55', '1393');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Saturday', 'September', '6', '2025', '7`48``', '6.51', '00:50:51', '762');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Sunday', 'September', '7', '2025', '7`55``', '4.44', '00:35:11', '509');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Saturday', 'September', '13', '2025', '8`22``', '12.16', '01:41:46', '1402');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Friday', 'September', '19', '2025', '8`01``', '6.54', '00:52:32', '787');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Saturday', 'September', '20', '2025', '8`02``', '6.52', '00:52:28', '781');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Friday', 'September', '26', '2025', '8`08``', '10.62', '01:26:25', '1240');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Saturday', 'September', '27', '2025', '8`13``', '10.79', '01:28:37', '1259');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Friday', 'October', '3', '2025', '7`49``', '6.41', '00:50:07', '767');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Saturday', 'October', '4', '2025', '8`12``', '10.67', '01:27:31', '1237');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Saturday', 'October', '11', '2025', '7`57``', '10.78', '01:25:40', '1261');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Friday', 'October', '17', '2025', '7`56``', '6.51', '00:51:42', '779');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Saturday', 'October', '18', '2025', '7`43``', '3.19', '00:24:38', '372');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Sunday', 'October', '19', '2025', '8`03``', '6.43', '00:51:52', '766');
+INSERT INTO run_data (weekday, month, dom, year, avg_pace, distance, duration, calories) VALUES ('Saturday', 'October', '25', '2025', '8`10``', '12.17', '01:39:23', '1421');
 
 
 

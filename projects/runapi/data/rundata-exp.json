@@ -18654,6 +18654,160 @@
       "distance": 12.13,
       "duration": "01:38:55",
       "calories": 1393
+    },
+    {
+      "id": 1697,
+      "weekday": "Saturday",
+      "month": "September",
+      "dom":6,
+      "year": "2025",
+      "avgPace": "7`48``",
+      "distance": 6.51,
+      "duration": "00:50:51",
+      "calories": 762
+    },
+    {
+      "id": 1698,
+      "weekday": "Sunday",
+      "month": "September",
+      "dom":7,
+      "year": "2025",
+      "avgPace": "7`55``",
+      "distance": 4.44,
+      "duration": "00:35:11",
+      "calories": 509
+    },
+    {
+      "id": 1699,
+      "weekday": "Saturday",
+      "month": "September",
+      "dom":13,
+      "year": "2025",
+      "avgPace": "8`22``",
+      "distance": 12.16,
+      "duration": "01:41:46",
+      "calories": 1402
+    },
+    {
+      "id": 1700,
+      "weekday": "Friday",
+      "month": "September",
+      "dom":19,
+      "year": "2025",
+      "avgPace": "8`01``",
+      "distance": 6.54,
+      "duration": "00:52:32",
+      "calories": 787
+    },
+    {
+      "id": 1701,
+      "weekday": "Saturday",
+      "month": "September",
+      "dom":20,
+      "year": "2025",
+      "avgPace": "8`02``",
+      "distance": 6.52,
+      "duration": "00:52:28",
+      "calories": 781
+    },
+    {
+      "id": 1702,
+      "weekday": "Friday",
+      "month": "September",
+      "dom":26,
+      "year": "2025",
+      "avgPace": "8`08``",
+      "distance": 10.62,
+      "duration": "01:26:25",
+      "calories": 1240
+    },
+    {
+      "id": 1703,
+      "weekday": "Saturday",
+      "month": "September",
+      "dom":27,
+      "year": "2025",
+      "avgPace": "8`13``",
+      "distance": 10.79,
+      "duration": "01:28:37",
+      "calories": 1259
+    },
+    {
+      "id": 1704,
+      "weekday": "Friday",
+      "month": "October",
+      "dom":3,
+      "year": "2025",
+      "avgPace": "7`49``",
+      "distance": 6.41,
+      "duration": "00:50:07",
+      "calories": 767
+    },
+    {
+      "id": 1705,
+      "weekday": "Saturday",
+      "month": "October",
+      "dom":4,
+      "year": "2025",
+      "avgPace": "8`12``",
+      "distance": 10.67,
+      "duration": "01:27:31",
+      "calories": 1237
+    },
+    {
+      "id": 1706,
+      "weekday": "Saturday",
+      "month": "October",
+      "dom":11,
+      "year": "2025",
+      "avgPace": "7`57``",
+      "distance": 10.78,
+      "duration": "01:25:40",
+      "calories": 1261
+    },
+    {
+      "id": 1707,
+      "weekday": "Friday",
+      "month": "October",
+      "dom":17,
+      "year": "2025",
+      "avgPace": "7`56``",
+      "distance": 6.51,
+      "duration": "00:51:42",
+      "calories": 779
+    },
+    {
+      "id": 1708,
+      "weekday": "Saturday",
+      "month": "October",
+      "dom":18,
+      "year": "2025",
+      "avgPace": "7`43``",
+      "distance": 3.19,
+      "duration": "00:24:38",
+      "calories": 372
+    },
+    {
+      "id": 1709,
+      "weekday": "Sunday",
+      "month": "October",
+      "dom":19,
+      "year": "2025",
+      "avgPace": "8`03``",
+      "distance": 6.43,
+      "duration": "00:51:52",
+      "calories": 766
+    },
+    {
+      "id": 1710,
+      "weekday": "Saturday",
+      "month": "October",
+      "dom":25,
+      "year": "2025",
+      "avgPace": "8`10``",
+      "distance": 12.17,
+      "duration": "01:39:23",
+      "calories": 1421
     }
   ]
 }

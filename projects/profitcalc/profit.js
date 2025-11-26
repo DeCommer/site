@@ -1,5 +1,5 @@
 const targetContainer = document.getElementById("target-container");
-const target =document.getElementById("target-in");
+const target = document.getElementById("target-in");
 const stop = document.getElementById("stop-in");
 const entry = document.getElementById("entry-in");
 const numOfShares = document.getElementById("shares-in");
@@ -39,8 +39,12 @@ enterBtn.addEventListener('click', () => {
         const result = parseFloat((stop.value - entry.value) * numOfShares.value).toFixed(2);
         const costOfTrade = parseInt(entry.value * numOfShares.value).toFixed(2);
         // messageTxt.innerHTML = `If your stop loss is hit`;
-        profitTxt.innerHTML = `Profit <span class="span-txt profit-txt">$${formatNumber(profit)}</span>`;
-        costOfTradeTxt.innerHTML = `Cost of Trade: <span class="span-txt">$${formatNumber(costOfTrade)}</span>`;
+        if(profit < 0) {
+            profitTxt.innerHTML = `Profit <span class="risk-txt profit-txt">$${formatNumber(profit)}</span>`;
+        }else {
+            profitTxt.innerHTML = `Profit <span class="span-txt profit-txt">$${formatNumber(profit)}</span>`;
+        }
+        costOfTradeTxt.innerHTML = `Cost of Trade: <span class="normal-txt">$${formatNumber(costOfTrade)}</span>`;
         resultTxt.innerHTML = `Risk: <span class="span-txt risk-txt">$${formatNumber(result)}<sup>*</sup></span>`;
         disclaimerTxt.innerHTML = `<sup>*</sup>Do not risk more than you can afford`;
 
@@ -48,7 +52,7 @@ enterBtn.addEventListener('click', () => {
         const result = parseFloat((stop.value - entry.value) * numOfShares.value).toFixed(2);
         const costOfTrade = parseInt(entry.value * numOfShares.value).toFixed(2);
         // messageTxt.innerHTML = `If your stop loss is hit`;
-        costOfTradeTxt.innerHTML = `Cost of trade: <span class="span-txt">$${formatNumber(costOfTrade)}</span>`;
+        costOfTradeTxt.innerHTML = `Cost of trade: <span class="normal-txt">$${formatNumber(costOfTrade)}</span>`;
         resultTxt.innerHTML = `Risk: <span class="span-txt">$${formatNumber(result)}<sup>*</sup></span>`;
         disclaimerTxt.innerHTML = `<sup>*</sup>Do not risk more than you can afford`;
     }

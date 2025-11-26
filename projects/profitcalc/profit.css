@@ -32,6 +32,10 @@
     color: var(--red);
 }
 
+.normal-txt {
+    color: var(--labelTxt);
+}
+
 .profit-txt {
     color: #42d72b;
 }

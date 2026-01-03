@@ -139,7 +139,7 @@ const displayRuns = (data) => {
 
     //Metrics
     const VOLT = 9320;
-    const pace = `7'46''`;
+    const pace = `7'47''`;
     function formatNumber(num) {
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
@@ -159,7 +159,7 @@ const displayRuns = (data) => {
             distSum += (run.distance);
     }); 
     totalRuns.innerHTML = `<p>Total Runs: <span>${formatNumber(Math.round(runSum))}</span>`;
-    totalDist.innerHTML = `<p>Distance: <span>${formatNumber(Math.round(distSum) + 4)}</span> mi`;
+    totalDist.innerHTML = `<p>Distance: <span>${formatNumber(Math.round(distSum) + 5)}</span> mi`;
     totalCal.innerHTML = `<p>Calories: <span>${formatNumber(Math.round(calSum))}</span>`;
 
     const milesToVolt = VOLT - (distSum);

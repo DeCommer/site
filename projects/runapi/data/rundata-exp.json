@@ -18973,6 +18973,83 @@
       "distance": 12.20,
       "duration": "01:44:33",
       "calories": 1451
+    },
+    {
+      "id": 1726,
+      "weekday": "Saturday",
+      "month": "January",
+      "dom":10,
+      "year": "2026",
+      "avgPace": "8`07``",
+      "distance": 10.77,
+      "duration": "01:27:30",
+      "calories": 1276
+    },
+    {
+      "id": 1727,
+      "weekday": "Saturday",
+      "month": "January",
+      "dom":10,
+      "year": "2026",
+      "avgPace": "8`19``",
+      "distance": 1.35,
+      "duration": "00:11:16",
+      "calories": 164
+    },
+    {
+      "id": 1728,
+      "weekday": "Saturday",
+      "month": "January",
+      "dom":17,
+      "year": "2026",
+      "avgPace": "8`39``",
+      "distance": 12.18,
+      "duration": "01:45:27",
+      "calories": 1432
+    },
+    {
+      "id": 1729,
+      "weekday": "Monday",
+      "month": "January",
+      "dom":19,
+      "year": "2026",
+      "avgPace": "8`38``",
+      "distance": 3.23,
+      "duration": "00:27:52",
+      "calories": 372
+    },
+    {
+      "id": 1730,
+      "weekday": "Saturday",
+      "month": "January",
+      "dom":31,
+      "year": "2026",
+      "avgPace": "8`12``",
+      "distance": 8.08,
+      "duration": "01:06:15",
+      "calories": 970
+    },
+    {
+      "id": 1731,
+      "weekday": "Sunday",
+      "month": "February",
+      "dom":1,
+      "year": "2026",
+      "avgPace": "8`00``",
+      "distance": 5.10,
+      "duration": "00:40:52",
+      "calories": 627
+    },
+    {
+      "id": 1732,
+      "weekday": "Saturday",
+      "month": "February",
+      "dom":7,
+      "year": "2026",
+      "avgPace": "8`30``",
+      "distance": 6.10,
+      "duration": "00:51:52",
+      "calories": 706
     }
   ]
 }

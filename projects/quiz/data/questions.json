@@ -61,6 +61,15 @@
                 {"text": "the bus", "correct": false},
                 {"text": "the one he dropped on the floor", "correct": false}
             ]
+        },
+        {
+            "question": "Who's the guy that was the guy in that thing?",
+            "answers": [
+                {"text": "Dirk", "correct": true},
+                {"text": "Billy", "correct": false},
+                {"text": "A stranger", "correct": false},
+                {"text": "The guy", "correct": false}
+            ]
         }
     ]
 }

@@ -19050,6 +19050,17 @@
       "distance": 6.10,
       "duration": "00:51:52",
       "calories": 706
+    },
+    {
+      "id": 1733,
+      "weekday": "Saturday",
+      "month": "February",
+      "dom":14,
+      "year": "2026",
+      "avgPace": "8`02``",
+      "distance": 12.28,
+      "duration": "01:38:41",
+      "calories": 1478
     }
   ]
 }

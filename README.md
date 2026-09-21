@@ -2,7 +2,7 @@
 
 **Welcome to DeCommer.com: Your Ultimate Tool Hub!**
 
-DeCommer.com is your go-to destination for a wide array of handy online tools designed to make your life easier and more efficient. Whether you're a student, a professional, or just someone who loves to learn, our platform offers a suite of apps tailored to meet your needs.
+DeCommer.com is your go-to destination for a wide array of handy online tools designed to make your life easier and more efficient. Whether you're a student, a professional, or just someone who loves to learn, our platform offers a suite of apps tailored to meet your needs. - Please do not just blindly copy this. Learn from it.
 
 ### Explore Our Features:
 

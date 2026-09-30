@@ -14,13 +14,13 @@ let holdArray = [];
 
 const hand = document.getElementById('hand');
 
-// const holdBts = document.querySelectorAll('.hold-btn');
-// const dealBtn = document.querySelector('.deal-btn');
-// const holdBtn_1 = document.querySelector('.hold-btn-1');
-// const holdBtn_2 = document.querySelector('.hold-btn-2');
-// const holdBtn_3 = document.querySelector('.hold-btn-3');
-// const holdBtn_4 = document.querySelector('.hold-btn-4');
-// const holdBtn_5 = document.querySelector('.hold-btn-5');
+const holdBts = document.querySelectorAll('.hold-btn');
+const dealBtn = document.querySelector('.deal-btn');
+const holdBtn_1 = document.querySelector('.hold-btn-1');
+const holdBtn_2 = document.querySelector('.hold-btn-2');
+const holdBtn_3 = document.querySelector('.hold-btn-3');
+const holdBtn_4 = document.querySelector('.hold-btn-4');
+const holdBtn_5 = document.querySelector('.hold-btn-5');
 
 
 if (round === 0) {

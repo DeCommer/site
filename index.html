@@ -1,138 +1,191 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Joseph DeCommer</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="The Website of Joseph DeCommer">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.decommer.com">
-    <meta property="og:description" content="This site serves as an example of JavaScript work by Joseph DeCommer">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:name" content="DeCommer.com">
-    <link rel="shortcut icon" href="#">
-    <style>html{visibility: hidden;opacity:0;}</style>
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/scripts.js" defer></script>
-    <script src="./js/scratch.js" defer></script>
-    <noscript>If you are seeing this message JavaScript is disabled on your device.</noscript>
-  </head>
-  <body>
-      <header>
-        <nav class="nav-bar">
-          <div class="header-links">
-            <div class="left-header-links">
-              <a href="https://www.linkedin.com/in/joseph-decommer/" target="_blank">Linkedin</a>
-              <a href="https://github.com/DeCommer/site" target="_blank">GitHub</a>
-              <a href="./paintings.html">Select Paintings</a>
-          </div>
-          <button id="theme-toggle" class="theme-btn" type="button">
-             <span class="theme-icon">🌓</span>
-           </button>
-          </div>
-        </nav>
-          <div class="hero">
-            <div class="elem-logo">
-              <!-- <p class="logo-upper-left randNum">00</p> -->
-              <p class="logo-upper-left" id="seconds">00</p>
-              <h1 class="logo-center">D<span>e</span></h1>
-              <p class="logo-bottom-center-name">DeCommer</p>
-              <!-- <p class="logo-bottom-center"><span class="randNum">00</span>.<span class="randNum">00</span></p> -->
-              <p class="logo-bottom-center"><span id="time">00:00</span></p>
-            </div>
-            <div class="title-container">
-              <div>
-              <h2 class="title">Joseph DeCommer</h2>
-              <p class="description-text">Hobbyist Developer</p>
-            </div>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Joseph DeCommer — Web Apps</title>
+  <meta property="og:title" content="The Website of Joseph DeCommer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.decommer.com">
+  <meta property="og:description" content="Web apps made by Joseph DeCommer">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:name" content="DeCommer.com">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="masthead">
+      <a class="wordmark" href="./" aria-label="DeCommer.com home">DECOMMER.COM</a>
+      <nav class="top-links" aria-label="Primary navigation">
+        <a href="https://www.linkedin.com/in/joseph-decommer/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+        <a href="https://github.com/DeCommer/site" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        <a href="./paintings.html">Paintings <span>↗</span></a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span class="theme-dot" aria-hidden="true"></span>
+        <span class="theme-label">Theme</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="hero-kicker">HOBBYIST DEVELOPER <span>•</span> 34 WEB APPS</p>
+          <h1 id="hero-title"><span>Joseph</span><span>DeCommer</span></h1>
+          <div class="hero-bottom">
+            <p>A collection of calculators, utilities, API projects, and small experiments.</p>
+            <a class="jump-link" href="#projects">View all apps <span>↓</span></a>
           </div>
         </div>
-        </header>
-        <div class="mobile-title-container app-hidden">
-          <div class="sm-elem-logo">
-              <p class="sm-logo-upper-left" id="mobile-seconds">00</p>
-              <h1 class="sm-logo-center">D<span class="sm-logo-sm-txt">e</span></h1>
-              <p class="sm-logo-bottom-center-name">DeCommer</p>
-              <p class="sm-logo-bottom-center"><span id="mobile-time">00:00</span></p>
+
+        <aside class="logo-panel" aria-label="DeCommer identity">
+          <div class="logo-topline">
+            <span id="seconds">00</span>
+            <span>DECOMMER.COM</span>
           </div>
-          <div>
-              <h2 class="title">DeCommer.com</h2>
-              <p class="description-text">Hobbyist Developer (Mobile)</p>
+          <div class="monogram" aria-hidden="true">
+            <span class="mono-d">D</span><span class="mono-e">e</span>
+          </div>
+          <div class="logo-footer">
+            <strong>DECOMMER</strong>
+            <span id="time">00:00</span>
+          </div>
+        </aside>
+      </section>
+
+      <div class="category-strip" aria-hidden="true">
+        <span>01 / Calculators</span>
+        <span>02 / Tools</span>
+        <span>03 / API</span>
+        <span>04 / Fun</span>
+      </div>
+
+      <section class="project-index" id="projects" aria-labelledby="projects-title">
+        <div class="index-heading">
+          <p class="section-label">PROJECT INDEX</p>
+          <h2 id="projects-title">All apps</h2>
+          <p class="index-total">34 total</p>
+        </div>
+
+        <section class="project-group" aria-labelledby="calculators-title">
+          <div class="group-intro">
+            <p class="group-number">01</p>
+            <div>
+              <h3 id="calculators-title">Calculators</h3>
+              <p>10 apps</p>
             </div>
           </div>
-      <div class="apps-main-container" id="apps">
-        <section class="calculators app-card">
-          <div class="app-card-header">
-            <h2><span class="h2-icon">🚀</span> Calculators</h2>
-            <p id="cal-apps" class="count-app-txt">##</p>
+          <div class="project-list">
+            <a href="./projects/oe.html"><span class="project-no">01</span><span class="project-name">Odd / Even Calculator</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/timecalc.html"><span class="project-no">02</span><span class="project-name">Time Calculator</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/percentcalc.html"><span class="project-no">03</span><span class="project-name">Percent Calculator</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/cnp.html"><span class="project-no">04</span><span class="project-name">CnP Calculator</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/bmi/bmi.html"><span class="project-no">05</span><span class="project-name">BMI Calculator</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/bmrcalc.html"><span class="project-no">06</span><span class="project-name">BMR Calculator</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/agecalc.html"><span class="project-no">07</span><span class="project-name">Age Calculator</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/tipclac.html"><span class="project-no">08</span><span class="project-name">Tip Calculator</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/profitcalc/profit.html"><span class="project-no">09</span><span class="project-name">Trade Risk Calculator</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/mathproperties/mathproperties.html"><span class="project-no">10</span><span class="project-name">Math Properties</span><span class="project-arrow">↗</span></a>
           </div>
-          <div><span class="app-link-icon">🔗</span><a href="./projects/oe.html">Odd / Even Calculator</a></div>
-          <div><span class="app-link-icon">⏳</span><a href="./projects/timecalc.html">Time Calculator</a></div>
-          <div><span class="app-link-icon">🔋</span><a href="./projects/percentcalc.html">Percent Calculator</a></div>
-          <div><span class="app-link-icon">🥊</span><a href="./projects/cnp.html">CnP Calculator</a></div>
-          <div><span class="app-link-icon">🫃🏻</span><a href="./projects/bmi/bmi.html">BMI Calculator</a></div>
-          <div><span class="app-link-icon">🪑</span><a href="./projects/bmrcalc.html">BMR Calculator</a></div>
-          <div><span class="app-link-icon">👴</span><a href="./projects/agecalc.html">Age Calculator</a></div>
-          <div><span class="app-link-icon">💳</span><a href="./projects/tipclac.html">Tip Calculator</a></div>
-          <div><span class="app-link-icon">📉</span><a href="./projects/profitcalc/profit.html">Trade Risk Calculator</a></div>
-          <div><span class="app-link-icon">🧫</span><a href="./projects/mathproperties/mathproperties.html">Math Properties</a></div>
         </section>
-        <section class="tools app-card">
-          <div class="app-card-header">
-            <h2><span class="h2-icon">🧰</span> Tools</h2>
-            <p id="tools-apps" class="count-app-txt">##</p>
+
+        <section class="project-group" aria-labelledby="tools-title">
+          <div class="group-intro">
+            <p class="group-number">02</p>
+            <div>
+              <h3 id="tools-title">Tools</h3>
+              <p>8 apps</p>
+            </div>
           </div>
-          <div><span class="app-link-icon">🔢</span><a href="./projects/arrayUtility/arrays.html">Array Generator</a></div>
-          <div><span class="app-link-icon">🗳️</span><a href="./projects/clickcount.html">Counter</a></div>
-          <div><span class="app-link-icon">📊</span><a href="./projects/progressbartest.html">Progress Bar</a></div>
-          <!-- <div><span class="app-link-icon">🍅</span><a href="./projects/tomatotime.html">Tomato Timer</a></div> -->
-          <div><span class="app-link-icon">🕵️‍♂️</span><a href="./projects/passgen.html">Password Gen</a></div>
-          <div><span class="app-link-icon">🏃‍➡️</span><a href="./projects/advancedDistConverter.html">KM / MI Converter</a></div>
-          <div><span class="app-link-icon">🌡️</span><a href="./projects/tempconverter.html">Temp Converter</a></div>
-          <div><span class="app-link-icon">⚖️</span><a href="./projects/weightconverter.html">Weight Converter</a></div>
-          <div><span class="app-link-icon">📐</span><a href="./projects/raddegconverter.html">Radians/Degrees</a></div>
-        </section>
-        <section class="api app-card">
-          <div class="app-card-header">
-            <h2><span class="h2-icon">🎛️</span> API</h2>
-            <p id="api-apps" class="count-app-txt">##</p>
+          <div class="project-list">
+            <a href="./projects/arrayUtility/arrays.html"><span class="project-no">01</span><span class="project-name">Array Generator</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/clickcount.html"><span class="project-no">02</span><span class="project-name">Counter</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/progressbartest.html"><span class="project-no">03</span><span class="project-name">Progress Bar</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/passgen.html"><span class="project-no">04</span><span class="project-name">Password Gen</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/advancedDistConverter.html"><span class="project-no">05</span><span class="project-name">KM / MI Converter</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/tempconverter.html"><span class="project-no">06</span><span class="project-name">Temp Converter</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/weightconverter.html"><span class="project-no">07</span><span class="project-name">Weight Converter</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/raddegconverter.html"><span class="project-no">08</span><span class="project-name">Radians / Degrees</span><span class="project-arrow">↗</span></a>
           </div>
-          <div><span class="app-link-icon">📖</span><a href="./projects/runapi/paging.html">Running Log</a></div>
-          <div><span class="app-link-icon">🔬</span><a href="./projects/periodic-project/periodic.html">Periodic Table</a></div>
-          <div><span class="app-link-icon">🗺️</span><a href="./projects/map/map.html">State Facts Map</a></div>
-          <!-- <div><span class="app-link-icon">🧂</span><a href="https://decommer.github.io/practiceNetwork/ingredientsub.html">Ingredient Sub API(WIP)</a></div> -->
-          <div><span class="app-link-icon">💵</span><a href="./projects/currencyconvert.html">Currency Converter</a></div>
-          <div><span class="app-link-icon">👫</span><a href="./projects/population.html">Population Counter</a></div>
-          <div><span class="app-link-icon">🎢</span><a href="./projects/quadratic-solver.html">Quadratic Solver</a></div>
-          <div><span class="app-link-icon">💼</span><a href="./projects/interviewq/interviewq.html">Interview Practice</a></div>
-          <div><span class="app-link-icon">⁉️</span><a href="./projects/quiz/quiz.html">Qrazy Quiz</a></div>
         </section>
-        <section class="fun app-card">
-          <div class="app-card-header">
-            <h2><span class="h2-icon">🎊</span> Fun</h2>
-            <p id="fun-apps" class="count-app-txt">##</p>
+
+        <section class="project-group" aria-labelledby="api-title">
+          <div class="group-intro">
+            <p class="group-number">03</p>
+            <div>
+              <h3 id="api-title">API</h3>
+              <p>8 apps</p>
+            </div>
           </div>
-          <div><span class="app-link-icon">🪙</span><a href="./projects/coinflip.html">Coin Flipper</a></div>
-          <div><span class="app-link-icon">💰</span><a href="./projects/bank/bank.html">Bank Sim</a></div>
-          <div><span class="app-link-icon">🃏</span><a href="./projects/blackjack/blackjack.html">Blackjack</a></div>
-          <div><span class="app-link-icon">🧮</span><a href="./projects/mathquiz/mathQuiz.html">Math Quiz</a></div>
-          <div><span class="app-link-icon">🎲</span><a href="./projects/diceroller/dice.html">Dice Roller</a></div>
-          <div><span class="app-link-icon">🧠</span><a href="./projects/match.html">Match Game</a></div>
-          <div><span class="app-link-icon">🤔</span><a href="./projects/guess.html">Guessing Game</a></div>
-          <div><span class="app-link-icon">🔐</span><a href="./projects/improvedguessing.html">Guessing Game 2</a></div>
+          <div class="project-list">
+            <a href="./projects/runapi/paging.html"><span class="project-no">01</span><span class="project-name">Running Log</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/periodic-project/periodic.html"><span class="project-no">02</span><span class="project-name">Periodic Table</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/map/map.html"><span class="project-no">03</span><span class="project-name">State Facts Map</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/currencyconvert.html"><span class="project-no">04</span><span class="project-name">Currency Converter</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/population.html"><span class="project-no">05</span><span class="project-name">Population Counter</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/quadratic-solver.html"><span class="project-no">06</span><span class="project-name">Quadratic Solver</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/interviewq/interviewq.html"><span class="project-no">07</span><span class="project-name">Interview Practice</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/quiz/quiz.html"><span class="project-no">08</span><span class="project-name">Qrazy Quiz</span><span class="project-arrow">↗</span></a>
+          </div>
         </section>
+
+        <section class="project-group" aria-labelledby="fun-title">
+          <div class="group-intro">
+            <p class="group-number">04</p>
+            <div>
+              <h3 id="fun-title">Fun</h3>
+              <p>8 apps</p>
+            </div>
+          </div>
+          <div class="project-list">
+            <a href="./projects/coinflip.html"><span class="project-no">01</span><span class="project-name">Coin Flipper</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/bank/bank.html"><span class="project-no">02</span><span class="project-name">Bank Sim</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/blackjack/blackjack.html"><span class="project-no">03</span><span class="project-name">Blackjack</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/mathquiz/mathQuiz.html"><span class="project-no">04</span><span class="project-name">Math Quiz</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/diceroller/dice.html"><span class="project-no">05</span><span class="project-name">Dice Roller</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/match.html"><span class="project-no">06</span><span class="project-name">Match Game</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/guess.html"><span class="project-no">07</span><span class="project-name">Guessing Game</span><span class="project-arrow">↗</span></a>
+            <a href="./projects/improvedguessing.html"><span class="project-no">08</span><span class="project-name">Guessing Game 2</span><span class="project-arrow">↗</span></a>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <strong>Joseph DeCommer</strong>
+        <span class="year"></span>
       </div>
-    <footer>
-      <p>🇺🇸 Joseph DeCommer</p><p class="year"></p> <p> Hosted by GitHub</p>
+      <p>No AI was used to make these apps.</p>
+      <p>Hosted by GitHub.</p>
     </footer>
-    <p class="ai-text">*No AI was used to make these apps</p>
-    <script data-name="BMC-Widget" 
-    data-cfasync="false" 
-    data-id="JosephDeCommer" 
-    data-description="Support me on Buy me a coffee!" 
-    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
-    data-color="#a2faa7" data-position="Right" data-x_margin="18" data-y_margin="18">
-    </script>
-    <iframe src="https://github.com/sponsors/DeCommer/button" title="Sponsor DeCommer" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
-  </body>
+  </div>
+
+  <script>
+    const root = document.documentElement;
+    const toggle = document.getElementById('theme-toggle');
+    const storedTheme = localStorage.getItem('theme');
+    const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    root.dataset.theme = storedTheme || preferredTheme;
+
+    toggle.addEventListener('click', () => {
+      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', root.dataset.theme);
+    });
+
+    document.querySelector('.year').textContent = new Date().getFullYear();
+
+    function updateClock() {
+      const now = new Date();
+      let hours = now.getHours() % 12 || 12;
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('seconds').textContent = seconds;
+      document.getElementById('time').textContent = `${String(hours).padStart(2, '0')}:${minutes}`;
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
 </html>

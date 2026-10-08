@@ -1,0 +1,86 @@
+name: Version app stylesheet references
+
+on:
+  push:
+    paths:
+      - '.github/workflows/bust-app-css-cache.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-app-html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Add cache-busting version to shared app CSS
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          paths = [
+              'projects/oe.html',
+              'projects/timecalc.html',
+              'projects/percentcalc.html',
+              'projects/cnp.html',
+              'projects/bmi/bmi.html',
+              'projects/bmrcalc.html',
+              'projects/agecalc.html',
+              'projects/tipclac.html',
+              'projects/profitcalc/profit.html',
+              'projects/mathproperties/mathproperties.html',
+              'projects/arrayUtility/arrays.html',
+              'projects/clickcount.html',
+              'projects/progressbartest.html',
+              'projects/passgen.html',
+              'projects/advancedDistConverter.html',
+              'projects/tempconverter.html',
+              'projects/weightconverter.html',
+              'projects/raddegconverter.html',
+              'projects/runapi/paging.html',
+              'projects/periodic-project/periodic.html',
+              'projects/map/map.html',
+              'projects/currencyconvert.html',
+              'projects/population.html',
+              'projects/quadratic-solver.html',
+              'projects/interviewq/interviewq.html',
+              'projects/quiz/quiz.html',
+              'projects/coinflip.html',
+              'projects/bank/bank.html',
+              'projects/blackjack/blackjack.html',
+              'projects/mathquiz/mathQuiz.html',
+              'projects/diceroller/dice.html',
+              'projects/match.html',
+              'projects/guess.html',
+              'projects/improvedguessing.html',
+          ]
+
+          pattern = re.compile(r'(href=["\'][^"\']*css/main\.css)(?:\?v=[^"\']*)?(["\'])')
+          changed = []
+          missing = []
+          for name in paths:
+              path = Path(name)
+              text = path.read_text(encoding='utf-8')
+              updated, count = pattern.subn(r'\1?v=20261008-5\2', text)
+              if count:
+                  path.write_text(updated, encoding='utf-8')
+                  changed.append(name)
+              else:
+                  missing.append(name)
+
+          print(f'Updated {len(changed)} app pages')
+          if missing:
+              raise SystemExit('No main.css reference found in: ' + ', '.join(missing))
+          PY
+      - name: Commit cache-busted app pages
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add projects
+          git commit -m "Version shared stylesheet across app pages"
+          git push origin master

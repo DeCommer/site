@@ -1,3 +1,8 @@
+const siteTheme = document.createElement('link');
+siteTheme.rel = 'stylesheet';
+siteTheme.href = '/projects/css/site-theme.css';
+document.head.appendChild(siteTheme);
+
 const year = document.querySelectorAll('.year');
 year.forEach(year => {
     yearText = new Date().getFullYear();

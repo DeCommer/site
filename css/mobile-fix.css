@@ -1,4 +1,142 @@
-/* Mobile layout corrections for the editorial redesign. */
+/* Responsive and component corrections for the editorial redesign. */
+
+/* Compact controls should stay compact. The shared redesign deliberately makes
+   primary action buttons prominent, but these controls are toggles/secondary actions. */
+body :where(.sm-btn) {
+  min-height: 34px !important;
+  margin: 5px !important;
+  padding: 7px 12px !important;
+  border: 1px solid var(--dc-line, currentColor) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--dc-ink, var(--text)) !important;
+  font-size: .72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: .035em !important;
+  line-height: 1 !important;
+}
+
+body :where(.sm-btn):hover,
+body :where(.sm-btn.active) {
+  border-color: var(--dc-accent, var(--red)) !important;
+  background: var(--dc-accent, var(--red)) !important;
+  color: var(--dc-accent-ink, #fff) !important;
+}
+
+body :where(.micro-btn) {
+  min-height: 30px !important;
+  margin: 5px 0 0 auto !important;
+  padding: 5px 9px !important;
+  font-size: .66rem !important;
+}
+
+/* Bank Simulator: let the account cards breathe and make paired actions legible. */
+.login-apps-container {
+  border: 0 !important;
+  border-top: 3px solid var(--dc-ink, var(--text)) !important;
+  border-bottom: 1px solid var(--dc-line, var(--text)) !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 24px !important;
+  gap: 12px !important;
+}
+
+.account-card {
+  height: auto !important;
+  min-height: 170px !important;
+  padding: 20px !important;
+  border: 1px solid var(--dc-line, #ccc) !important;
+  border-top: 3px solid var(--dc-accent, var(--red)) !important;
+  background: transparent !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-content: flex-start !important;
+  gap: 7px !important;
+}
+
+.account-card:nth-child(2) {
+  border-top-color: var(--dc-ink, var(--text)) !important;
+}
+
+.account-card > p {
+  flex: 0 0 100%;
+  margin: 0 0 4px !important;
+}
+
+.account-card .btn {
+  flex: 1 1 calc(50% - 7px);
+  min-width: 88px;
+  min-height: 36px !important;
+  margin: 4px 0 !important;
+  padding: 7px 10px !important;
+  font-size: .7rem !important;
+}
+
+#debit-withdraw-btn,
+#savings-withdraw-btn {
+  border-color: var(--dc-ink, var(--text)) !important;
+  background: var(--dc-ink, var(--text)) !important;
+  color: var(--dc-paper, var(--bg)) !important;
+}
+
+#debit-btn,
+#savings-btn {
+  border-color: var(--dc-accent, var(--red)) !important;
+  background: var(--dc-accent, var(--red)) !important;
+  color: var(--dc-accent-ink, #fff) !important;
+}
+
+.input-modal,
+.transfer-modal {
+  border: 1px solid var(--dc-line, var(--text)) !important;
+  border-top: 3px solid var(--dc-accent, var(--red)) !important;
+  box-shadow: none !important;
+}
+
+/* Coin Flip Lab: preserve the playful layout but remove controls distorted by
+   the site's primary-button rule. */
+.outer-container .main-container,
+.main-container-2,
+.stat-results {
+  border: 0 !important;
+  border-top: 3px solid var(--dc-ink, var(--text)) !important;
+  border-bottom: 1px solid var(--dc-line, var(--text)) !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 22px !important;
+}
+
+.buttons-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttons-area .btn {
+  min-width: 84px;
+  margin: 4px !important;
+}
+
+.size-btn {
+  width: 34px !important;
+  min-width: 34px !important;
+  height: 34px !important;
+  min-height: 34px !important;
+  padding: 0 !important;
+  border: 1px solid var(--dc-line, var(--text)) !important;
+  background: transparent !important;
+  color: var(--dc-ink, var(--text)) !important;
+  font-size: 1rem !important;
+  line-height: 1 !important;
+}
+
+.size-btn:hover {
+  border-color: var(--dc-accent, var(--red)) !important;
+  background: transparent !important;
+  color: var(--dc-accent, var(--red)) !important;
+}
 
 @media (max-width: 850px) {
   /* Homepage: keep the identity panel on the right without letting it cover the name. */
@@ -20,6 +158,17 @@
 
   .site-shell .logo-panel {
     min-width: 0;
+  }
+
+  /* The row number already gives each app a visual cue on mobile. Repeating an
+     arrow on all 34 rows adds noise, so remove it and reclaim the space. */
+  .site-shell .project-list a {
+    grid-template-columns: 32px minmax(0, 1fr) !important;
+    padding-right: 0 !important;
+  }
+
+  .site-shell .project-arrow {
+    display: none !important;
   }
 }
 
@@ -66,6 +215,22 @@
     height: 64px !important;
     margin: 0 !important;
   }
+
+  .account-area {
+    gap: 12px !important;
+  }
+
+  .account-card {
+    width: min(100%, 330px) !important;
+    margin: 0 auto !important;
+  }
+
+  .outer-container .main-container,
+  .main-container-2,
+  .stat-results {
+    width: min(100% - 28px, 520px) !important;
+    max-width: 100% !important;
+  }
 }
 
 @media (max-width: 520px) {
@@ -81,6 +246,15 @@
 
   .site-shell .logo-panel {
     min-height: 230px !important;
+  }
+
+  .account-card .btn {
+    flex-basis: 100%;
+  }
+
+  .coin img {
+    width: min(220px, 68vw) !important;
+    height: auto !important;
   }
 }
 

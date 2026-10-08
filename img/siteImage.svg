@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1292" height="1056" viewBox="0 0 1292 1056">
+  <rect width="1292" height="1056" fill="#f4f3ef"/>
+  <style>
+    .sans{font-family:Arial,Helvetica,sans-serif;fill:#101010}.mono{font-family:Consolas,'Liberation Mono',monospace}.muted{fill:#6f706c}.accent{fill:#3157ff}.line{stroke:#c9c9c3;stroke-width:1}.inkline{stroke:#101010;stroke-width:1}.heavy{font-weight:800}.black{font-weight:900}
+  </style>
+  <g transform="translate(40 0)">
+    <line x1="0" y1="82" x2="1212" y2="82" class="inkline"/>
+    <text x="0" y="50" class="sans black" font-size="14" letter-spacing="1.7">DECOMMER.COM</text>
+    <text x="855" y="50" class="sans heavy" font-size="13">LinkedIn</text><path d="M913 47 L919 41 M915 41 H919 V45" fill="none" stroke="#3157ff" stroke-width="1.5"/>
+    <text x="947" y="50" class="sans heavy" font-size="13">GitHub</text><path d="M995 47 L1001 41 M997 41 H1001 V45" fill="none" stroke="#3157ff" stroke-width="1.5"/>
+    <text x="1035" y="50" class="sans heavy" font-size="13">Paintings</text><path d="M1099 47 L1105 41 M1101 41 H1105 V45" fill="none" stroke="#3157ff" stroke-width="1.5"/>
+    <circle cx="1158" cy="45" r="7" fill="none" stroke="#101010" stroke-width="1"/>
+    <path d="M1158 38 A7 7 0 0 0 1158 52 Z" fill="#101010"/>
+    <text x="1173" y="50" class="sans heavy" font-size="12">Theme</text>
+    <text x="0" y="133" class="mono muted" font-size="12" letter-spacing="1">HOBBYIST DEVELOPER</text>
+    <circle cx="148" cy="129" r="2.5" fill="#3157ff"/>
+    <text x="160" y="133" class="mono muted" font-size="12" letter-spacing="1">34 WEB APPS</text>
+    <text x="0" y="312" class="sans black" font-size="154" letter-spacing="-10">Joseph</text>
+    <text x="73" y="436" class="sans black accent" font-size="154" letter-spacing="-11">DeCommer</text>
+    <text x="0" y="548" class="sans muted" font-size="19">A collection of calculators, utilities, API projects,</text>
+    <text x="0" y="574" class="sans muted" font-size="19">and small experiments.</text>
+    <text x="690" y="560" class="sans black" font-size="14">View all apps</text>
+    <path d="M790 551 V562 M786 558 L790 562 L794 558" fill="none" stroke="#3157ff" stroke-width="1.7"/>
+    <line x1="689" y1="569" x2="800" y2="569" stroke="#101010" stroke-width="2"/>
+    <g transform="translate(900 122)">
+      <rect x="0" y="0" width="312" height="438" fill="#171717"/>
+      <text x="22" y="29" fill="#f8f7f2" class="mono" font-size="11" letter-spacing="1">24</text>
+      <text x="183" y="29" fill="#f8f7f2" class="mono" font-size="11" letter-spacing="1">DECOMMER.COM</text>
+      <circle cx="321" cy="154" r="86" fill="none" stroke="#3157ff" stroke-width="31"/>
+      <text x="57" y="264" style="font-family:Arial,Helvetica,sans-serif;fill:#f8f7f2;font-weight:900" font-size="150" letter-spacing="-18">D</text>
+      <text x="163" y="245" style="font-family:Arial,Helvetica,sans-serif;fill:#3157ff;font-weight:900" font-size="92" letter-spacing="-8">e</text>
+      <text x="22" y="411" fill="#f8f7f2" class="sans black" font-size="11" letter-spacing="2">DECOMMER</text>
+      <text x="243" y="411" fill="#f8f7f2" class="mono" font-size="11" letter-spacing="1">08:34</text>
+    </g>
+    <line x1="0" y1="614" x2="1212" y2="614" class="inkline"/>
+    <g transform="translate(0 614)">
+      <line x1="0" y1="44" x2="1212" y2="44" class="inkline"/>
+      <line x1="303" y1="0" x2="303" y2="44" class="line"/>
+      <line x1="606" y1="0" x2="606" y2="44" class="line"/>
+      <line x1="909" y1="0" x2="909" y2="44" class="line"/>
+      <text x="0" y="27" class="mono muted" font-size="10.5" letter-spacing="0.7">01 / CALCULATORS</text>
+      <text x="319" y="27" class="mono muted" font-size="10.5" letter-spacing="0.7">02 / TOOLS</text>
+      <text x="622" y="27" class="mono muted" font-size="10.5" letter-spacing="0.7">03 / API</text>
+      <text x="925" y="27" class="mono muted" font-size="10.5" letter-spacing="0.7">04 / FUN</text>
+    </g>
+    <g transform="translate(0 720)">
+      <text x="0" y="18" class="mono muted" font-size="11" letter-spacing="1">PROJECT INDEX</text>
+      <text x="402" y="67" class="sans black" font-size="82" letter-spacing="-5">All apps</text>
+      <text x="1160" y="66" class="mono muted" font-size="11" text-anchor="end">34 total</text>
+      <line x1="0" y1="91" x2="1212" y2="91" stroke="#101010" stroke-width="3"/>
+      <text x="0" y="147" class="mono accent heavy" font-size="12">01</text>
+      <text x="62" y="171" class="sans black" font-size="54" letter-spacing="-3">Calculators</text>
+      <text x="62" y="196" class="mono muted" font-size="11">10 apps</text>
+      <g transform="translate(470 118)">
+        <line x1="0" y1="0" x2="742" y2="0" class="line"/>
+        <g class="sans">
+          <text x="0" y="38" class="mono muted" font-size="10">01</text><text x="55" y="39" font-size="20" font-weight="700">Odd / Even Calculator</text><path d="M724 37 L732 29 M726 29 H732 V35" fill="none" stroke="#3157ff" stroke-width="1.5"/><line x1="0" y1="58" x2="742" y2="58" class="line"/>
+          <text x="0" y="96" class="mono muted" font-size="10">02</text><text x="55" y="97" font-size="20" font-weight="700">Time Calculator</text><path d="M724 95 L732 87 M726 87 H732 V93" fill="none" stroke="#3157ff" stroke-width="1.5"/><line x1="0" y1="116" x2="742" y2="116" class="line"/>
+          <text x="0" y="154" class="mono muted" font-size="10">03</text><text x="55" y="155" font-size="20" font-weight="700">Percent Calculator</text><path d="M724 153 L732 145 M726 145 H732 V151" fill="none" stroke="#3157ff" stroke-width="1.5"/><line x1="0" y1="174" x2="742" y2="174" class="line"/>
+          <text x="0" y="212" class="mono muted" font-size="10">04</text><text x="55" y="213" font-size="20" font-weight="700">CnP Calculator</text><path d="M724 211 L732 203 M726 203 H732 V209" fill="none" stroke="#3157ff" stroke-width="1.5"/><line x1="0" y1="232" x2="742" y2="232" class="line"/>
+          <text x="0" y="270" class="mono muted" font-size="10">05</text><text x="55" y="271" font-size="20" font-weight="700">BMI Calculator</text><path d="M724 269 L732 261 M726 261 H732 V267" fill="none" stroke="#3157ff" stroke-width="1.5"/><line x1="0" y1="290" x2="742" y2="290" class="line"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

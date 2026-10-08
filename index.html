@@ -163,6 +163,11 @@
     </footer>
   </div>
 
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">
+    <span aria-hidden="true">↑</span>
+    <span class="back-to-top-label">Top</span>
+  </button>
+
   <script>
     const root = document.documentElement;
     const toggle = document.getElementById('theme-toggle');
@@ -187,6 +192,23 @@
     }
     updateClock();
     setInterval(updateClock, 1000);
+
+    const backToTop = document.getElementById('back-to-top');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    function updateBackToTop() {
+      backToTop.classList.toggle('is-visible', window.scrollY > 520);
+    }
+
+    window.addEventListener('scroll', updateBackToTop, { passive: true });
+    updateBackToTop();
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: reducedMotion.matches ? 'auto' : 'smooth'
+      });
+    });
   </script>
 </body>
 </html>

@@ -1,0 +1,103 @@
+/* Mobile layout corrections for the editorial redesign. */
+
+@media (max-width: 850px) {
+  /* Homepage: keep the identity panel on the right without letting it cover the name. */
+  .site-shell .hero {
+    grid-template-columns: minmax(0, 1fr) 96px !important;
+    gap: 16px !important;
+  }
+
+  .site-shell .hero-copy {
+    min-width: 0 !important;
+  }
+
+  .site-shell .hero h1 {
+    max-width: 100%;
+    margin: 42px 0 44px !important;
+    font-size: clamp(2.75rem, 13vw, 4.8rem) !important;
+    line-height: .82 !important;
+  }
+
+  .site-shell .logo-panel {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  /* Apps and Paintings: reserve a real column for the logo instead of using flex space. */
+  .mobile-title-container {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 64px !important;
+    column-gap: 14px !important;
+    row-gap: 8px !important;
+    justify-content: stretch !important;
+    align-items: center !important;
+  }
+
+  .mobile-title-container > div:not(.sm-elem-logo) {
+    min-width: 0 !important;
+    width: auto !important;
+    max-width: 100% !important;
+    text-align: left !important;
+  }
+
+  .mobile-title-container .title {
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: clamp(1.65rem, 7.8vw, 2.55rem) !important;
+    line-height: .92 !important;
+    letter-spacing: -.055em !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .mobile-title-container .description-text {
+    max-width: 100% !important;
+    margin-top: 8px !important;
+  }
+
+  .mobile-title-container .sm-elem-logo {
+    grid-column: 2 !important;
+    justify-self: end !important;
+    width: 64px !important;
+    min-width: 64px !important;
+    max-width: 64px !important;
+    height: 64px !important;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .site-shell .hero {
+    grid-template-columns: minmax(0, 1fr) 78px !important;
+    gap: 12px !important;
+  }
+
+  .site-shell .hero h1 {
+    margin: 34px 0 38px !important;
+    font-size: clamp(2.25rem, 12vw, 3.25rem) !important;
+  }
+
+  .site-shell .logo-panel {
+    min-height: 230px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .mobile-title-container {
+    grid-template-columns: minmax(0, 1fr) 56px !important;
+    column-gap: 10px !important;
+  }
+
+  .mobile-title-container .title {
+    font-size: 1.55rem !important;
+  }
+
+  .mobile-title-container .sm-elem-logo {
+    width: 56px !important;
+    min-width: 56px !important;
+    max-width: 56px !important;
+    height: 56px !important;
+  }
+}

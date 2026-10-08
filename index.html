@@ -197,7 +197,7 @@
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
     function updateBackToTop() {
-      backToTop.classList.toggle('is-visible', window.scrollY > 520);
+      backToTop.classList.toggle('is-visible', window.scrollY > 0);
     }
 
     window.addEventListener('scroll', updateBackToTop, { passive: true });

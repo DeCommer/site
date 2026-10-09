@@ -1,0 +1,75 @@
+name: Refine app card depth
+
+on:
+  push:
+    paths:
+      - '.github/workflows/refine-card-depth.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  refine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Refine borders and shadows
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          styles = Path('styles.css')
+          css = styles.read_text()
+          replacements = {
+          """  border: 1px solid var(--line);\n  border-radius: 10px;\n  background: var(--paper);\n  box-shadow:\n    0 1px 2px rgba(0, 0, 0, .07),\n    0 4px 10px rgba(0, 0, 0, .05);""":
+          """  border: 1px solid color-mix(in srgb, var(--ink) 24%, var(--line));\n  border-radius: 10px;\n  background: var(--paper);\n  box-shadow:\n    0 0 12px rgba(0, 0, 0, .055),\n    0 2px 8px rgba(0, 0, 0, .035);""",
+          """html[data-theme=\"dark\"] .project-list a {\n  box-shadow:\n    0 1px 2px rgba(0, 0, 0, .22),\n    0 4px 12px rgba(0, 0, 0, .16);\n}""":
+          """html[data-theme=\"dark\"] .project-list a {\n  border-color: color-mix(in srgb, var(--ink) 34%, var(--line));\n  box-shadow:\n    0 0 16px rgba(0, 0, 0, .20),\n    0 2px 10px rgba(0, 0, 0, .12);\n}""",
+          """  box-shadow:\n    0 2px 4px rgba(0, 0, 0, .08),\n    0 6px 14px rgba(0, 0, 0, .07);""":
+          """  box-shadow:\n    0 0 16px rgba(0, 0, 0, .07),\n    0 3px 10px rgba(0, 0, 0, .05);"""
+          }
+          for old, new in replacements.items():
+              if old not in css:
+                  raise SystemExit(f'Expected styles.css block missing: {old[:60]!r}')
+              css = css.replace(old, new, 1)
+          styles.write_text(css)
+
+          fix = Path('css/mobile-fix.css')
+          css = fix.read_text()
+          replacements = {
+          """  border: 1px solid var(--dc-line, #c9c9c3) !important;\n  border-radius: 14px !important;\n  background: var(--dc-paper, var(--bg)) !important;\n  box-shadow:\n    0 1px 2px rgba(0, 0, 0, .08),\n    0 6px 16px rgba(0, 0, 0, .07) !important;""":
+          """  border: 1px solid color-mix(in srgb, var(--dc-ink, #101010) 26%, var(--dc-line, #c9c9c3)) !important;\n  border-radius: 14px !important;\n  background: var(--dc-paper, var(--bg)) !important;\n  box-shadow:\n    0 0 14px rgba(0, 0, 0, .06),\n    0 2px 10px rgba(0, 0, 0, .04) !important;""",
+          """  box-shadow:\n    0 1px 2px rgba(0, 0, 0, .24),\n    0 6px 18px rgba(0, 0, 0, .2) !important;""":
+          """  border-color: color-mix(in srgb, var(--dc-ink, #f3f2ed) 36%, var(--dc-line, #343531)) !important;\n  box-shadow:\n    0 0 18px rgba(0, 0, 0, .20),\n    0 2px 12px rgba(0, 0, 0, .13) !important;""",
+          """  border: 1px solid var(--dc-line, #ccc) !important;\n  border-radius: 10px !important;\n  background: var(--dc-paper, var(--bg)) !important;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, .06) !important;""":
+          """  border: 1px solid color-mix(in srgb, var(--dc-ink, #101010) 24%, var(--dc-line, #ccc)) !important;\n  border-radius: 10px !important;\n  background: var(--dc-paper, var(--bg)) !important;\n  box-shadow:\n    0 0 10px rgba(0, 0, 0, .05),\n    0 2px 6px rgba(0, 0, 0, .035) !important;"""
+          }
+          for old, new in replacements.items():
+              if old not in css:
+                  raise SystemExit(f'Expected mobile-fix.css block missing: {old[:60]!r}')
+              css = css.replace(old, new, 1)
+          fix.write_text(css)
+
+          for path in Path('.').rglob('*.html'):
+              html = path.read_text(errors='ignore')
+              updated = html.replace('mobile-fix.css?v=20261009-1', 'mobile-fix.css?v=20261009-2')
+              if path.name == 'index.html':
+                  updated = updated.replace('styles.css?v=20261009-1', 'styles.css?v=20261009-2')
+              if updated != html:
+                  path.write_text(updated)
+          PY
+      - name: Commit refinements
+        shell: bash
+        run: |
+          git config user.name "github-pages[bot]"
+          git config user.email "github-pages[bot]@users.noreply.github.com"
+          git add styles.css css/mobile-fix.css -- '*.html'
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Soften app card shadows and strengthen borders"
+            git push origin master
+          fi

@@ -6,7 +6,6 @@
     /* border: 1px solid #09396c;
     padding: 10px; */
     margin-bottom: 5px;
-
 }
 
 .map-container path {
@@ -54,7 +53,7 @@
 
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.459);
-  }
+}
 
 .closeModal {
     position: absolute;
@@ -77,6 +76,37 @@ img {
     width: 100%;
 }
 
+.state-flag-frame {
+    width: min(100%, 520px);
+    min-height: 120px;
+    margin: 18px auto 22px;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--dc-line, var(--text));
+    background: var(--dc-paper-2, var(--bg));
+    overflow: hidden;
+}
+
+.info-modal .state-flag {
+    display: block !important;
+    width: auto !important;
+    max-width: 100% !important;
+    max-height: 240px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    object-fit: contain;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.state-flag-fallback {
+    margin: 0;
+    color: var(--dc-muted, var(--text));
+    font-size: .8rem;
+    text-align: center;
+}
+
 .info-modal li {
     list-style-type: none;
     color: var(--text);
@@ -93,6 +123,7 @@ img {
 .info-link:hover {
     color: var(--red);
 }
+
 .data-container .title {
     margin-bottom: 10px;
     font-size: 3rem;
@@ -136,5 +167,18 @@ img {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: min(92vw, 620px);
+        max-height: 88vh;
+        padding: 34px 22px 26px;
+        overflow: auto;
+    }
+
+    .state-flag-frame {
+        min-height: 90px;
+        margin: 14px auto 18px;
+    }
+
+    .info-modal .state-flag {
+        max-height: 180px !important;
     }
 }

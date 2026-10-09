@@ -1,5 +1,40 @@
 /* Responsive and component corrections for the editorial redesign. */
 
+/* App surfaces: shallow cards rather than floating dashboard panels. */
+.apps-container,
+.app-card,
+.login-apps-container,
+.outer-container .main-container,
+.main-container-2,
+.stat-results {
+  border: 1px solid var(--dc-line, #c9c9c3) !important;
+  border-radius: 14px !important;
+  background: var(--dc-paper, var(--bg)) !important;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, .08),
+    0 6px 16px rgba(0, 0, 0, .07) !important;
+  overflow: hidden;
+}
+
+html[data-theme='dark'] :where(
+  .apps-container,
+  .app-card,
+  .login-apps-container,
+  .outer-container .main-container,
+  .main-container-2,
+  .stat-results
+) {
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, .24),
+    0 6px 18px rgba(0, 0, 0, .2) !important;
+}
+
+/* Give the common app shell enough inset for the card edge to read clearly. */
+.apps-container,
+.app-card {
+  padding: 26px !important;
+}
+
 /* Compact controls should stay compact. The shared redesign deliberately makes
    primary action buttons prominent, but these controls are toggles/secondary actions. */
 body :where(.sm-btn) {
@@ -32,11 +67,6 @@ body :where(.micro-btn) {
 
 /* Bank Simulator: let the account cards breathe and make paired actions legible. */
 .login-apps-container {
-  border: 0 !important;
-  border-top: 3px solid var(--dc-ink, var(--text)) !important;
-  border-bottom: 1px solid var(--dc-line, var(--text)) !important;
-  box-shadow: none !important;
-  background: transparent !important;
   padding: 24px !important;
   gap: 12px !important;
 }
@@ -46,16 +76,21 @@ body :where(.micro-btn) {
   min-height: 170px !important;
   padding: 20px !important;
   border: 1px solid var(--dc-line, #ccc) !important;
-  border-top: 3px solid var(--dc-accent, var(--red)) !important;
-  background: transparent !important;
+  border-radius: 10px !important;
+  background: var(--dc-paper, var(--bg)) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .06) !important;
   display: flex !important;
   flex-wrap: wrap !important;
   align-content: flex-start !important;
   gap: 7px !important;
 }
 
+.account-card:first-child {
+  border-top: 3px solid var(--dc-accent, var(--red)) !important;
+}
+
 .account-card:nth-child(2) {
-  border-top-color: var(--dc-ink, var(--text)) !important;
+  border-top: 3px solid var(--dc-ink, var(--text)) !important;
 }
 
 .account-card > p {
@@ -89,20 +124,14 @@ body :where(.micro-btn) {
 .input-modal,
 .transfer-modal {
   border: 1px solid var(--dc-line, var(--text)) !important;
-  border-top: 3px solid var(--dc-accent, var(--red)) !important;
-  box-shadow: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .16) !important;
 }
 
-/* Coin Flip Lab: preserve the playful layout but remove controls distorted by
-   the site's primary-button rule. */
+/* Coin Flip Lab: preserve the playful layout but use the same shallow-card language. */
 .outer-container .main-container,
 .main-container-2,
 .stat-results {
-  border: 0 !important;
-  border-top: 3px solid var(--dc-ink, var(--text)) !important;
-  border-bottom: 1px solid var(--dc-line, var(--text)) !important;
-  box-shadow: none !important;
-  background: transparent !important;
   padding: 22px !important;
 }
 
@@ -216,6 +245,12 @@ body :where(.micro-btn) {
     margin: 0 !important;
   }
 
+  .apps-container,
+  .app-card {
+    padding: 20px !important;
+    border-radius: 12px !important;
+  }
+
   .account-area {
     gap: 12px !important;
   }
@@ -230,6 +265,7 @@ body :where(.micro-btn) {
   .stat-results {
     width: min(100% - 28px, 520px) !important;
     max-width: 100% !important;
+    border-radius: 12px !important;
   }
 }
 

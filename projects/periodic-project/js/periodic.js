@@ -12,8 +12,9 @@ const displayElements = (data) => {
     const dataContainer = document.querySelector('.info-modal')
 
     tableMain.addEventListener('click',  e => {
-        if (!e.target.matches('.card')) return;
-        let elemId = Number(e.target.id);
+        const card = e.target.closest('.card');
+        if (!card || !tableMain.contains(card)) return;
+        const elemId = Number(card.id);
         // console.log(e.target.id)
         for(let i = 0; i < data.elements.length; i++) {
                 let i = elemId;
@@ -38,10 +39,10 @@ const displayElements = (data) => {
             
         dataContainer.showModal()
 
-        if(elemId > 0) {
-            modal.style.position = 'fixed';
-            modal.style.top = `-${document.body.scrollY}px`;
-        }
+        modal.style.position = '';
+        modal.style.top = '';
+        modal.style.left = '';
+        modal.style.transform = '';
     },{capture: true});
 
     closeModal.addEventListener('click', () => {

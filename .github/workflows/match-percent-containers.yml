@@ -1,4 +1,4 @@
-name: Match app containers to Percent Calculator
+name: Refresh Percent container stylesheet references
 
 on:
   push:
@@ -9,121 +9,25 @@ permissions:
   contents: write
 
 jobs:
-  apply:
+  refresh-html:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: master
-      - name: Apply Percent Calculator container treatment
+      - name: Bump app shared stylesheet version
         shell: bash
         run: |
-          python - <<'PY'
-          from pathlib import Path
-
-          path = Path('css/mobile-fix.css')
-          css = path.read_text()
-
-          old = '''/* App surfaces: shallow cards rather than floating dashboard panels. */
-.apps-container,
-.app-card,
-.login-apps-container,
-.outer-container .main-container,
-.main-container-2,
-.stat-results {
-  border: 1px solid color-mix(in srgb, var(--dc-ink, #101010) 26%, var(--dc-line, #c9c9c3)) !important;
-  border-radius: 14px !important;
-  background: var(--dc-paper, var(--bg)) !important;
-  box-shadow:
-    0 0 14px rgba(0, 0, 0, .06),
-    0 2px 10px rgba(0, 0, 0, .04) !important;
-  overflow: hidden;
-}
-
-html[data-theme='dark'] :where(
-  .apps-container,
-  .app-card,
-  .login-apps-container,
-  .outer-container .main-container,
-  .main-container-2,
-  .stat-results
-) {
-  border-color: color-mix(in srgb, var(--dc-ink, #f3f2ed) 36%, var(--dc-line, #343531)) !important;
-  box-shadow:
-    0 0 18px rgba(0, 0, 0, .20),
-    0 2px 12px rgba(0, 0, 0, .13) !important;
-}
-'''
-
-          new = '''/* App surfaces: match the Percent Calculator container treatment. */
-.apps-container,
-.app-card,
-.login-apps-container,
-.outer-container .main-container,
-.main-container-2,
-.stat-results,
-.container {
-  border: 2px solid !important;
-  border-image: linear-gradient(-45deg,
-    var(--leftGrad, var(--dc-ink, #101010)) 10%,
-    var(--centerGrad, var(--dc-line, #c9c9c3)) 50%,
-    var(--rightGrad, var(--dc-accent, #3157ff)) 100%) 1 !important;
-  border-radius: 0 !important;
-  background: var(--dc-paper, var(--bg)) !important;
-  box-shadow:
-    0 2px 4px 0 rgba(0, 0, 0, .13),
-    0 1px 1px 0 rgba(0, 0, 0, .17) !important;
-}
-'''
-
-          if old not in css:
-              raise SystemExit('Expected app surface block not found')
-          css = css.replace(old, new, 1)
-
-          old_account = '''  border: 1px solid color-mix(in srgb, var(--dc-ink, #101010) 24%, var(--dc-line, #ccc)) !important;
-  border-radius: 10px !important;
-  background: var(--dc-paper, var(--bg)) !important;
-  box-shadow:
-    0 0 10px rgba(0, 0, 0, .05),
-    0 2px 6px rgba(0, 0, 0, .035) !important;'''
-          new_account = '''  border: 2px solid !important;
-  border-image: linear-gradient(-45deg,
-    var(--leftGrad, var(--dc-ink, #101010)) 10%,
-    var(--centerGrad, var(--dc-line, #c9c9c3)) 50%,
-    var(--rightGrad, var(--dc-accent, #3157ff)) 100%) 1 !important;
-  border-radius: 0 !important;
-  background: var(--dc-paper, var(--bg)) !important;
-  box-shadow:
-    0 2px 4px 0 rgba(0, 0, 0, .13),
-    0 1px 1px 0 rgba(0, 0, 0, .17) !important;'''
-          if old_account not in css:
-              raise SystemExit('Expected Bank account-card block not found')
-          css = css.replace(old_account, new_account, 1)
-
-          css = css.replace('''\n.account-card:first-child {\n  border-top: 3px solid var(--dc-accent, var(--red)) !important;\n}\n\n.account-card:nth-child(2) {\n  border-top: 3px solid var(--dc-ink, var(--text)) !important;\n}\n''', '\n')
-
-          css = css.replace('''  .apps-container,\n  .app-card {\n    padding: 20px !important;\n    border-radius: 12px !important;\n  }''', '''  .apps-container,\n  .app-card {\n    padding: 20px !important;\n  }''')
-
-          css = css.replace('''    width: min(100% - 28px, 520px) !important;\n    max-width: 100% !important;\n    border-radius: 12px !important;''', '''    width: min(100% - 28px, 520px) !important;\n    max-width: 100% !important;''')
-
-          path.write_text(css)
-
-          # Refresh only project/app pages. The homepage stays on its existing stylesheet URLs.
-          for html_path in Path('projects').rglob('*.html'):
-              html = html_path.read_text(errors='ignore')
-              updated = html.replace('mobile-fix.css?v=20261009-2', 'mobile-fix.css?v=20261009-3')
-              if updated != html:
-                  html_path.write_text(updated)
-          PY
-      - name: Commit app container styling
+          find projects -type f -name '*.html' -print0 | xargs -0 perl -pi -e 's/mobile-fix\.css\?v=20261009-2/mobile-fix.css?v=20261009-3/g'
+      - name: Commit refreshed app references
         shell: bash
         run: |
           git config user.name "github-pages[bot]"
           git config user.email "github-pages[bot]@users.noreply.github.com"
-          git add css/mobile-fix.css projects
+          git add projects
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No app references needed updating."
           else
-            git commit -m "Match app containers to Percent Calculator"
+            git commit -m "Refresh Percent-style app containers"
             git push origin master
           fi

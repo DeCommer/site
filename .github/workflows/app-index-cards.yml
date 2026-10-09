@@ -16,73 +16,26 @@ jobs:
         with:
           ref: master
       - name: Add shallow cards to project index
-        shell: python
+        shell: bash
         run: |
+          python - <<'PY'
           from pathlib import Path
+          import base64
 
-          path = Path('styles.css')
-          css = path.read_text()
-          old = '''.project-list { border-top: 1px solid var(--line); }
-.project-list a {
-  min-height: 62px;
-  display: grid;
-  grid-template-columns: 42px 1fr 28px;
-  align-items: center;
-  gap: 14px;
-  padding: 0 8px 0 0;
-  border-bottom: 1px solid var(--line);
-  text-decoration: none;
-  transition: background-color .15s ease, padding .15s ease, color .15s ease;
-}
-.project-list a:hover {
-  background: var(--hover);
-  padding-left: 13px;
-}
-'''
-          new = '''.project-list {
-  display: grid;
-  gap: 10px;
-}
-.project-list a {
-  min-height: 62px;
-  display: grid;
-  grid-template-columns: 42px 1fr 28px;
-  align-items: center;
-  gap: 14px;
-  padding: 0 14px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--paper);
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, .07),
-    0 4px 10px rgba(0, 0, 0, .05);
-  text-decoration: none;
-  transition: background-color .15s ease, padding .15s ease, color .15s ease, border-color .15s ease, box-shadow .15s ease, transform .15s ease;
-}
-html[data-theme="dark"] .project-list a {
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, .22),
-    0 4px 12px rgba(0, 0, 0, .16);
-}
-.project-list a:hover {
-  background: var(--hover);
-  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
-  padding-left: 18px;
-  transform: translateY(-1px);
-  box-shadow:
-    0 2px 4px rgba(0, 0, 0, .08),
-    0 6px 14px rgba(0, 0, 0, .07);
-}
-'''
+          old = base64.b64decode('LnByb2plY3QtbGlzdCB7IGJvcmRlci10b3A6IDFweCBzb2xpZCB2YXIoLS1saW5lKTsgfQoucHJvamVjdC1saXN0IGEgewogIG1pbi1oZWlnaHQ6IDYycHg7CiAgZGlzcGxheTogZ3JpZDsKICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDQycHggMWZyIDI4cHg7CiAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICBnYXA6IDE0cHg7CiAgcGFkZGluZzogMCA4cHggMCAwOwogIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCB2YXIoLS1saW5lKTsKICB0ZXh0LWRlY29yYXRpb246IG5vbmU7CiAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMTVzIGVhc2UsIHBhZGRpbmcgLjE1cyBlYXNlLCBjb2xvciAuMTVzIGVhc2U7Cn0KLnByb2plY3QtbGlzdCBhOmhvdmVyIHsKICBiYWNrZ3JvdW5kOiB2YXIoLS1ob3Zlcik7CiAgcGFkZGluZy1sZWZ0OiAxM3B4Owp9Cg==').decode()
+          new = base64.b64decode('LnByb2plY3QtbGlzdCB7CiAgZGlzcGxheTogZ3JpZDsKICBnYXA6IDEwcHg7Cn0KLnByb2plY3QtbGlzdCBhIHsKICBtaW4taGVpZ2h0OiA2MnB4OwogIGRpc3BsYXk6IGdyaWQ7CiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiA0MnB4IDFmciAyOHB4OwogIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgZ2FwOiAxNHB4OwogIHBhZGRpbmc6IDAgMTRweDsKICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saW5lKTsKICBib3JkZXItcmFkaXVzOiAxMHB4OwogIGJhY2tncm91bmQ6IHZhcigtLXBhcGVyKTsKICBib3gtc2hhZG93OgogICAgMCAxcHggMnB4IHJnYmEoMCwgMCwgMCwgLjA3KSwKICAgIDAgNHB4IDEwcHggcmdiYSgwLCAwLCAwLCAuMDUpOwogIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKICB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWNvbG9yIC4xNXMgZWFzZSwgcGFkZGluZyAuMTVzIGVhc2UsIGNvbG9yIC4xNXMgZWFzZSwgYm9yZGVyLWNvbG9yIC4xNXMgZWFzZSwgYm94LXNoYWRvdyAuMTVzIGVhc2UsIHRyYW5zZm9ybSAuMTVzIGVhc2U7Cn0KaHRtbFtkYXRhLXRoZW1lPSJkYXJrIl0gLnByb2plY3QtbGlzdCBhIHsKICBib3gtc2hhZG93OgogICAgMCAxcHggMnB4IHJnYmEoMCwgMCwgMCwgLjIyKSwKICAgIDAgNHB4IDEycHggcmdiYSgwLCAwLCAwLCAuMTYpOwp9Ci5wcm9qZWN0LWxpc3QgYTpob3ZlciB7CiAgYmFja2dyb3VuZDogdmFyKC0taG92ZXIpOwogIGJvcmRlci1jb2xvcjogY29sb3ItbWl4KGluIHNyZ2IsIHZhcigtLWFjY2VudCkgNDUlLCB2YXIoLS1saW5lKSk7CiAgcGFkZGluZy1sZWZ0OiAxOHB4OwogIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtMXB4KTsKICBib3gtc2hhZG93OgogICAgMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgLjA4KSwKICAgIDAgNnB4IDE0cHggcmdiYSgwLCAwLCAwLCAuMDcpOwp9Cg==').decode()
+
+          css_path = Path('styles.css')
+          css = css_path.read_text()
           if old not in css:
               raise SystemExit('Expected project-list block not found')
-          path.write_text(css.replace(old, new, 1))
+          css_path.write_text(css.replace(old, new, 1))
 
           index = Path('index.html')
           html = index.read_text()
           html = html.replace('href="./styles.css"', 'href="./styles.css?v=20261009-1"', 1)
           index.write_text(html)
-
+          PY
       - name: Commit card styling
         shell: bash
         run: |

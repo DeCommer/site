@@ -1,0 +1,35 @@
+name: Fix homepage name overlap
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-hero-overlap.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Remove C background patch while preserving overlap
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text()
+          old = '<h1 id="hero-title"><span>Joseph</span><span style="background: transparent;">De<b style="position: relative; z-index: 2; background: var(--paper); font-weight: inherit;">C</b>ommer</span></h1>'
+          new = '<h1 id="hero-title"><span>Joseph</span><span style="background: transparent;">DeCommer</span></h1>'
+          assert old in s
+          p.write_text(s.replace(old, new, 1))
+          PY
+      - name: Commit fix
+        run: |
+          git config user.name "github-pages[bot]"
+          git config user.email "github-pages[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Remove square behind homepage C"
+          git push origin master

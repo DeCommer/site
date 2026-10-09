@@ -1,0 +1,71 @@
+/* Full-bleed divider corrections for the widened Math Quiz card. */
+.math-quiz-container .math-quiz-toolbar,
+.math-quiz-container #scoreArea,
+.math-quiz-container #pts-area {
+    position: relative;
+}
+
+.math-quiz-container .math-quiz-toolbar {
+    border-bottom: 0 !important;
+}
+
+.math-quiz-container .math-quiz-toolbar::after {
+    content: "";
+    position: absolute;
+    left: -26px;
+    right: -26px;
+    bottom: 0;
+    border-bottom: 1px solid var(--dc-line, var(--text));
+    pointer-events: none;
+}
+
+.math-quiz-container #mQMain {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 32px !important;
+}
+
+.math-quiz-container #scoreArea {
+    border-bottom: 0 !important;
+}
+
+.math-quiz-container #scoreArea::after {
+    content: "";
+    position: absolute;
+    left: -58px;
+    right: -58px;
+    bottom: 0;
+    border-bottom: 1px solid var(--dc-line, var(--text));
+    pointer-events: none;
+}
+
+.math-quiz-container #pts-area {
+    border-top: 0 !important;
+}
+
+.math-quiz-container #pts-area::before {
+    content: "";
+    position: absolute;
+    left: -58px;
+    right: -58px;
+    top: 0;
+    border-top: 1px solid var(--dc-line, var(--text));
+    pointer-events: none;
+}
+
+@media (max-width: 800px) {
+    .math-quiz-container .math-quiz-toolbar::after {
+        left: -20px;
+        right: -20px;
+    }
+
+    .math-quiz-container #mQMain {
+        padding: 0 10px !important;
+    }
+
+    .math-quiz-container #scoreArea::after,
+    .math-quiz-container #pts-area::before {
+        left: -30px;
+        right: -30px;
+    }
+}

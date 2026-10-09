@@ -26,12 +26,10 @@
 }
 
 .inputs-container {
-    /* border: 1px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .eqText {
     font-size: 1.5rem;
@@ -61,12 +59,10 @@
     color: #fff;
     font-size: 1rem;
     padding: 5px;
-    /* width: 100%; */
     cursor: pointer;
 }
 
 .results-container {
-    /* border: 1px solid fuchsia; */
     text-align: left;
     margin-top: 15px;
 }
@@ -108,18 +104,14 @@
 }
 
 .calculator-container {
-    /* border: 1px solid yellow; */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 #calculator {
-    /* box-shadow: 0 8px 50px -8px rgba(0, 0, 0, 0.3); */
-    /* border: 1px solid #0f4a89; */
     border: 2px solid;
     border-image: linear-gradient(-45deg, var(--leftGrad) 10%, var(--centerGrad) 50%, var(--rightGrad) 100%) 1;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .17);
@@ -132,8 +124,18 @@ cite {
     margin: 15px;
 }
 
-@media  (max-width: 800px) {
+/* Keep numeric entries readable after the shared input padding is applied. */
+body .main-container .varIn {
+    width: 96px !important;
+    min-width: 96px !important;
+    padding: 10px 12px !important;
+    margin: 8px !important;
+    text-align: center !important;
+    font-size: 1.05rem !important;
+    font-variant-numeric: tabular-nums;
+}
 
+@media (max-width: 800px) {
     .main-container {
         flex-direction: column;
     }
@@ -144,13 +146,8 @@ cite {
     }
 
     .left-container {
-        /* border: 1px solid red; */
         background: none;
         border: none;
-    }
-
-    .varIn {
-        width: 45px;
     }
 
     .calculator-container {
@@ -171,10 +168,30 @@ cite {
     .app-hidden {
         display: block;
     }
+
     .hero {
         display: none !important;
     }
+
     .title-container {
         color: var(--text);
+    }
+}
+
+@media (max-width: 520px) {
+    .inputs-container {
+        gap: 0;
+    }
+
+    .eqText {
+        font-size: 1.2rem;
+    }
+
+    body .main-container .varIn {
+        width: 78px !important;
+        min-width: 78px !important;
+        margin: 4px !important;
+        padding: 9px 8px !important;
+        font-size: 1rem !important;
     }
 }

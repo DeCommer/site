@@ -129,6 +129,9 @@ button { font: inherit; }
 }
 .hero h1 span { display: block; }
 .hero h1 span:last-child {
+  position: relative;
+  z-index: 1;
+  background: var(--paper);
   color: var(--accent);
   margin-left: clamp(28px, 5vw, 74px);
 }

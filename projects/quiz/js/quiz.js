@@ -63,7 +63,8 @@ function quiz(data) {
         }
     }
     function selectAnswer(e) {
-        const selectedBtn = e.target;
+        const selectedBtn = e.currentTarget;
+        selectedBtn.classList.add("selected");
         const isCorrect = selectedBtn.dataset.correct === "true";
         if(isCorrect) {
             selectedBtn.classList.add("correct");

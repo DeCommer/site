@@ -304,40 +304,21 @@ button { font: inherit; }
   font-size: .67rem;
 }
 
-.project-list {
-  display: grid;
-  gap: 10px;
-}
+.project-list { border-top: 1px solid var(--line); }
 .project-list a {
   min-height: 62px;
   display: grid;
   grid-template-columns: 42px 1fr 28px;
   align-items: center;
   gap: 14px;
-  padding: 0 14px;
-  border: 1px solid color-mix(in srgb, var(--ink) 24%, var(--line));
-  border-radius: 10px;
-  background: var(--paper);
-  box-shadow:
-    0 0 12px rgba(0, 0, 0, .055),
-    0 2px 8px rgba(0, 0, 0, .035);
+  padding: 0 8px 0 0;
+  border-bottom: 1px solid var(--line);
   text-decoration: none;
-  transition: background-color .15s ease, padding .15s ease, color .15s ease, border-color .15s ease, box-shadow .15s ease, transform .15s ease;
-}
-html[data-theme="dark"] .project-list a {
-  border-color: color-mix(in srgb, var(--ink) 34%, var(--line));
-  box-shadow:
-    0 0 16px rgba(0, 0, 0, .20),
-    0 2px 10px rgba(0, 0, 0, .12);
+  transition: background-color .15s ease, padding .15s ease, color .15s ease;
 }
 .project-list a:hover {
   background: var(--hover);
-  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
-  padding-left: 18px;
-  transform: translateY(-1px);
-  box-shadow:
-    0 0 16px rgba(0, 0, 0, .07),
-    0 3px 10px rgba(0, 0, 0, .05);
+  padding-left: 13px;
 }
 .project-no {
   color: var(--muted);

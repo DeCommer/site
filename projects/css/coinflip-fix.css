@@ -1,0 +1,33 @@
+/* Coin Flip Lab title sizing corrections. */
+.outer-container .main-container > h1,
+.right-area .main-container-2 > h1.title,
+.right-area .stat-results > h1.title {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 18px !important;
+  padding: 0 12px;
+  text-align: center;
+  font-size: clamp(1.65rem, 3.6vw, 2.35rem) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -.035em !important;
+  white-space: normal !important;
+  overflow-wrap: break-word;
+}
+
+.right-area .stat-results > h1.title {
+  padding-inline: 42px;
+}
+
+@media (max-width: 520px) {
+  .outer-container .main-container > h1,
+  .right-area .main-container-2 > h1.title,
+  .right-area .stat-results > h1.title {
+    margin-bottom: 14px !important;
+    padding-inline: 8px;
+    font-size: clamp(1.35rem, 7vw, 1.85rem) !important;
+  }
+
+  .right-area .stat-results > h1.title {
+    padding-inline: 10px;
+  }
+}

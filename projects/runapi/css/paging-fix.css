@@ -1,0 +1,57 @@
+/* Running Log pagination refinements. */
+@media (max-width: 900px) {
+    .page-num-container {
+        width: 100%;
+        margin-top: 18px;
+    }
+
+    #pagination.pageNumbers {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        flex-wrap: nowrap;
+    }
+
+    #pagination :is(
+        .first-button,
+        .prev10-button,
+        .prev-button,
+        .next-button,
+        .next10-button,
+        .last-button
+    ) {
+        flex: 0 1 auto;
+        min-width: 0 !important;
+        min-height: 34px !important;
+        margin: 0 !important;
+        padding: 5px 7px !important;
+        font-size: .66rem !important;
+        line-height: 1 !important;
+        white-space: nowrap;
+    }
+
+    #pagination :is(.prev10-button, .next10-button) {
+        padding-inline: 6px !important;
+    }
+}
+
+@media (max-width: 380px) {
+    #pagination.pageNumbers {
+        gap: 2px;
+    }
+
+    #pagination :is(
+        .first-button,
+        .prev10-button,
+        .prev-button,
+        .next-button,
+        .next10-button,
+        .last-button
+    ) {
+        min-height: 32px !important;
+        padding: 4px 5px !important;
+        font-size: .61rem !important;
+    }
+}
